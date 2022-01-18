@@ -81,7 +81,9 @@
       href: reference-architectures/unreal-pixel-streaming-at-scale.md
   - name: Azure Game Developer Virtual Machine
     items:
-      - name: Overview - What is Service Bus Messaging?
-        href: kits/overview.md
-      - name: Quickstart - Create a Game Developer Virtual Machine with Unreal Engine
-        href: kits/create-game-developer-vm-for-unreal.md
+    - name: Azure Game Developer Virtual Machine
+      href: kits/index.yml 
+    - name: Overview - What is Service Bus Messaging?
+      href: kits/overview.md
+    - name: Quickstart - Create a Game Developer Virtual Machine with Unreal Engine
+      href: kits/create-game-developer-vm-for-unreal.md
