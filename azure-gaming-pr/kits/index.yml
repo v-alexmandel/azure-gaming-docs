@@ -1,0 +1,28 @@
+### YamlMime:Landing
+
+title: Azure Game Developer Virtual Machine
+summary: The Game Developer Virtual Machine is a customized VM image on the Azure cloud platform, built by game developers for game developers.
+
+metadata:
+  title: Azure Game Developer Virtual Machine
+  description: The Game Developer Virtual Machine is a customized VM image on the Azure cloud platform, built by game developers for game developers.
+  ms.service: azure-gaming
+  ms.topic: landing-page
+  author: EliotSeattle
+  ms.author: eliotgra
+  ms.date: 01/24/2022
+  
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+  # Card
+  - title: Azure Game Developer Virtual Machine
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: What is the Azure Game Developer Virtual Machine?
+          url: overview.md
+      - linkListType: quickstart
+        links:
+        - text: Quickstart - Create a Game Developer Virtual Machine with Unreal Engine
+          url: create-game-developer-vm-for-unreal.md
