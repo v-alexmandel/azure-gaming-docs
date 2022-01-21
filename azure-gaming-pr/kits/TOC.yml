@@ -1,0 +1,14 @@
+- name: Azure Game Developer Virtual Machine
+  items:
+  - name: Azure Game Developer Virtual Machine
+    href: index.yml 
+- name: Overview
+  expanded: true
+  items:
+  - name: Overview - What is Service Bus Messaging?
+    href: overview.md
+- name: Quickstarts
+  expanded: true
+  items:
+  - name: Quickstart - Create a Game Developer Virtual Machine with Unreal Engine
+    href: create-game-developer-vm-for-unreal.md
