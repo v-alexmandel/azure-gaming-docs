@@ -7,8 +7,119 @@
   items:
   - name: What is the Azure Game Developer Virtual Machine?
     href: overview.md
+  - name: Tools includes on the Game Developer Virtual Machine
+    href: 
+  - name: Choosing the right GPU SKU and optimizing costs
+    href:     
 - name: Quickstarts
-  expanded: true
+  expanded: false
   items:
   - name: Create a Game Developer Virtual Machine with Unreal Engine
     href: create-game-developer-vm-for-unreal.md
+  - name: Create a Game Developer Virtual Machine with Unity 
+    href: 
+  - name: Remoting into the Game Developer Virtual Machine with Teradici
+    href: 
+  - name: Remoting into the Game Developer Virtual Machine with Parsec 
+    href: 
+  - name: Create a Game Developer Virtual Machine with an ARM template
+    href:
+- name: Concepts
+  expanded: false
+  items:
+  - name: Game Developer Virtual Machine architecture 
+    href: 
+  - name: Enterprise security and guidance
+    href: 
+  - name: Integrate with DevOps pipelines
+    href: 
+  - name: Add More Tools to the Game Developer Virtual Machine using scripting
+    href: 
+  - name: Integrate with a hybrid network in Azure and on-premises
+    href: 
+  - name: Remote game development in Azure
+    href: 
+  - name: Working with Incredibuild in Azure
+    href: 
+  - name: Working with Perforce in Azure
+    href: 
+  - name: Visual Studio Community Edition capabilities on the Game Development Virtual Machine
+    href: 
+- name: How-to Guides
+  expanded: false
+  items:
+  - name: Integrate with a GitHub repository 
+    href:
+  - name: Integrate with a Perforce repository 
+    href:
+  - name: Integrate with Azure Active Directory 
+    href:
+  - name: Integrate with Incredibuild
+    href:
+  - name: Storing game builds on Azure Blob storage for fast downloads to developer kits
+    href:
+  - name: Using the Game Developer Virtual Machine as a build server
+    href:
+  - name: Using Unreal Pixel Streaming with the Game Developer Virtual Machine	
+    href:
+  - name: Upgrading from one VM SKU to another
+    href:
+  - name: Adding striped disks for more IOPS
+    href:
+  - name: Using the Microsoft Game Developer Kit (GDK) on the Game Development Virtual Machine
+    href:
+  - name: Adding Photoshop to the Game Developer Virtual Machine
+    href:
+  - name: Adding Maya to the Game Developer Virtual Machine
+    href:
+  - name: Improving Build Times with a Separate VM that has the latest repository
+    href:
+  - name: Deploying Game Developer Virtual Machines to an entire studio?
+    href:
+  - name: Collaboration Best Practices
+    href: 
+  - name: Setup a Pool of the Game Developer Virtual Machines in DevTest Labs  
+    href:                                                          
+- name: Samples
+  expanded: false
+  items:
+  - name: Create a Game Developer Virtual Machine with an ARM template
+    href:     
+- name: Reference
+  expanded: false
+  items:
+  - name: Release notes
+    href: 
+  - name: Known issues 
+    href:
+  - name: Roadmap
+    href:
+  - name: Support 
+    href:
+  - name: Parsec overview
+    href:
+  - name: Perforce overview
+    href:
+  - name: PlayFab overview
+    href:
+  - name: Teradici overview
+    href:
+  - name: Unity overview
+    href:
+  - name: Unreal Engine overview
+    href:                                         
+- name: Resources
+  expanded: false
+  items:
+  - name: Best practices for Perforce in Azure
+    href:
+  - name: Best practices for Unreal Engine in Azure 
+    href:
+  - name: Best practices for Unity in Azure 
+    href:                        
+  - name: Perforce AAD Integration
+    href:
+  - name: Using PlayFab with Unreal Engine
+    href:
+  - name: Using PlayFab with Unity
+    href:            
