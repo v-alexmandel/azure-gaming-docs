@@ -5,7 +5,7 @@
 - name: Overview
   expanded: true
   items:
-  - name: What is Service Bus Messaging?
+  - name: What is the Azure Game Developer Virtual Machine?
     href: overview.md
 - name: Quickstarts
   expanded: true
