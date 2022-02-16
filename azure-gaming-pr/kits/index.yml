@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Azure Game Developer Virtual Machine
-summary: The Game Developer Virtual Machine is a customized VM image on the Azure cloud platform, built by game developers for game developers.
+title: Azure Game Development Virtual Machine
+summary: The Game Development Virtual Machine is a customized VM image on the Azure cloud platform, built by game developers for game developers.
 
 metadata:
-  title: Azure Game Developer Virtual Machine
-  description: The Game Developer Virtual Machine is a customized VM image on the Azure cloud platform, built by game developers for game developers.
+  title: Azure Game Development Virtual Machine
+  description: The Game Development Virtual Machine is a customized VM image on the Azure cloud platform, built by game developers for game developers.
   ms.service: azure-gaming
   ms.topic: landing-page
   author: EliotSeattle
@@ -16,37 +16,37 @@ metadata:
 
 landingContent:
   # Card
-  - title: Get started with your Azure Game Developer Virtual Machine
+  - title: Get started with your Azure Game Development Virtual Machine
     linkLists:
       - linkListType: overview
         links:
-        - text: What is the Azure Game Developer Virtual Machine?
+        - text: What is the Azure Game Development Virtual Machine?
           url: overview.md
-        - text: Tools includes on the Game Developer Virtual Machine
+        - text: Tools includes on the Game Development Virtual Machine
           url: overview.md
         - text: Release notes
           url: overview.md
       - linkListType: quickstart
         links:
-        - text: Create a Game Developer Virtual Machine with Unreal Engine
+        - text: Create a Game Development Virtual Machine with Unreal Engine
           url: create-game-developer-vm-for-unreal.md
-        - text: Create a Game Developer Virtual Machine with Unity
+        - text: Create a Game Development Virtual Machine with Unity
           url: overview.md
 
   # Card
-  - title: Manage your Game Developer Virtual Machine
+  - title: Manage your Game Development Virtual Machine
     linkLists:
       - linkListType: architecture
         links:
-        - text: Game Developer Virtual Machine architecture
+        - text: Game Development Virtual Machine architecture
           url: overview.md
         - text: Enterprise security & guidance
           url: overview.md
       - linkListType: how-to-guide
         links:
-        - text: Remoting into the Game Developer Virtual Machine with Teradici
+        - text: Remoting into the Game Development Virtual Machine with Teradici
           url: overview.md
-        - text: Remoting into the Game Developer Virtual Machine with Parsec
+        - text: Remoting into the Game Development Virtual Machine with Parsec
           url: overview.md
         - text: Integrate with a Perforce repository
           url: overview.md
@@ -54,7 +54,7 @@ landingContent:
           url: overview.md
 
   # Card
-  - title: Use your Game Developer Virtual Machine for Game Production in Azure
+  - title: Use your Game Development Virtual Machine for Game Production in Azure
     linkLists:
       - linkListType: learn
         links:
@@ -62,9 +62,9 @@ landingContent:
           url: overview.md
         - text: Integrate with DevOps pipelines
           url: overview.md
-        - text: Using the Game Developer Virtual Machine as a build server
+        - text: Using the Game Development Virtual Machine as a build server
           url: overview.md
-        - text: Setup a Pool of the Game Developer Virtual Machines in DevTest Labs
+        - text: Setup a Pool of the Game Development Virtual Machines in DevTest Labs
           url: overview.md
 
   # Card

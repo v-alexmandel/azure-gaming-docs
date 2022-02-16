@@ -1,39 +1,39 @@
-- name: Azure Game Developer Virtual Machine
+- name: Azure Game Development Virtual Machine
   items:
-  - name: Azure Game Developer Virtual Machine
+  - name: Azure Game Development Virtual Machine
     href: index.yml 
 - name: Overview
   expanded: true
   items:
-  - name: What is the Azure Game Developer Virtual Machine?
+  - name: What is the Azure Game Development Virtual Machine?
     href: overview.md
-  - name: Tools includes on the Game Developer Virtual Machine
+  - name: Tools includes on the Game Development Virtual Machine
     href: 
   - name: Choosing the right GPU SKU and optimizing costs
     href:     
 - name: Quickstarts
   expanded: false
   items:
-  - name: Create a Game Developer Virtual Machine with Unreal Engine
+  - name: Create a Game Development Virtual Machine with Unreal Engine
     href: create-game-developer-vm-for-unreal.md
-  - name: Create a Game Developer Virtual Machine with Unity 
+  - name: Create a Game Development Virtual Machine with Unity 
     href: 
-  - name: Remoting into the Game Developer Virtual Machine with Teradici
+  - name: Remoting into the Game Development Virtual Machine with Teradici
     href: 
-  - name: Remoting into the Game Developer Virtual Machine with Parsec 
+  - name: Remoting into the Game Development Virtual Machine with Parsec 
     href: 
-  - name: Create a Game Developer Virtual Machine with an ARM template
+  - name: Create a Game Development Virtual Machine with an ARM template
     href:
 - name: Concepts
   expanded: false
   items:
-  - name: Game Developer Virtual Machine architecture 
+  - name: Game Development Virtual Machine architecture 
     href: 
   - name: Enterprise security and guidance
     href: 
   - name: Integrate with DevOps pipelines
     href: 
-  - name: Add More Tools to the Game Developer Virtual Machine using scripting
+  - name: Add More Tools to the Game Development Virtual Machine using scripting
     href: 
   - name: Integrate with a hybrid network in Azure and on-premises
     href: 
@@ -58,32 +58,32 @@
     href:
   - name: Storing game builds on Azure Blob storage for fast downloads to developer kits
     href:
-  - name: Using the Game Developer Virtual Machine as a build server
+  - name: Using the Game Development Virtual Machine as a build server
     href:
-  - name: Using Unreal Pixel Streaming with the Game Developer Virtual Machine	
+  - name: Using Unreal Pixel Streaming with the Game Development Virtual Machine	
     href:
   - name: Upgrading from one VM SKU to another
     href:
   - name: Adding striped disks for more IOPS
     href:
-  - name: Using the Microsoft Game Developer Kit (GDK) on the Game Development Virtual Machine
+  - name: Using the Microsoft Game Development Kit (GDK) on the Game Development Virtual Machine
     href:
-  - name: Adding Photoshop to the Game Developer Virtual Machine
+  - name: Adding Photoshop to the Game Development Virtual Machine
     href:
-  - name: Adding Maya to the Game Developer Virtual Machine
+  - name: Adding Maya to the Game Development Virtual Machine
     href:
   - name: Improving Build Times with a Separate VM that has the latest repository
     href:
-  - name: Deploying Game Developer Virtual Machines to an entire studio?
+  - name: Deploying Game Development Virtual Machines to an entire studio?
     href:
   - name: Collaboration Best Practices
     href: 
-  - name: Setup a Pool of the Game Developer Virtual Machines in DevTest Labs  
+  - name: Setup a Pool of the Game Development Virtual Machines in DevTest Labs  
     href:                                                          
 - name: Samples
   expanded: false
   items:
-  - name: Create a Game Developer Virtual Machine with an ARM template
+  - name: Create a Game Development Virtual Machine with an ARM template
     href:     
 - name: Reference
   expanded: false
