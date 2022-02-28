@@ -1,7 +1,5 @@
-- name: Azure Game Development Virtual Machine
-  items:
-  - name: Azure Game Development Virtual Machine
-    href: index.yml 
+- name: Game Development Virtual Machine documentation
+  href: index.yml 
 - name: Overview
   expanded: true
   items:
