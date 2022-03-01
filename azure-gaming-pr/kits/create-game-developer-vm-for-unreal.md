@@ -13,7 +13,7 @@ ms.prod: azure-gaming
 
 Get up and running with a Windows 10 or Server 2019 Game Development Virtual Machine that has Unreal Engine and other common game development tools pre-installed.
 
-## Prerequisite
+## Prerequisites
 
 - To create a Game Development Virtual Machine, you must have an Azure subscription. [Try Azure for free](https://azure.com/free). Please note Azure free accounts do not support GPU enabled virtual machine SKUs.
 - An [EPIC account](https://www.epicgames.com/id/login) to accept Epic Games store End User License Agreement after signing in to this VM.
