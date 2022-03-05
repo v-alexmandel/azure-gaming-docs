@@ -23,7 +23,7 @@ landingContent:
         - text: What is the Azure Game Development Virtual Machine?
           url: overview.md
         - text: Tools includes on the Game Development Virtual Machine
-          url: overview.md
+          url: tools-included-azure-game-dev-kit.md
         - text: Release notes
           url: overview.md
       - linkListType: quickstart

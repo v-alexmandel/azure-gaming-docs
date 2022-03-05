@@ -6,7 +6,7 @@
   - name: What is the Azure Game Development Virtual Machine?
     href: overview.md
   - name: Tools includes on the Game Development Virtual Machine
-    href: 
+    href: tools-included-azure-game-dev-kit.md
   - name: Choosing the right GPU SKU and optimizing costs
     href:     
 - name: Quickstarts
