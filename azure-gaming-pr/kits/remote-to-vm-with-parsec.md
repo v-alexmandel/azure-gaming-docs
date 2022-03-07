@@ -16,7 +16,7 @@ Access the Azure Game Development Virtual Machine using Parsec. Parsec is a high
 
 Check with your Parsec team administrator to ensure that there is an Azure Game Development Virtual Machine matched to your Parsec account in the Parsec admin panel. Usually, your team administrator invites you through the Parsec team’s dashboard. And you create your own account. For more information, please read [Parsec for Teams Onboarding Guide](https://pages.parsec.app/hubfs/AWS%20AMI%20marketplace/Parsec%20for%20Teams%20Onboarding%20Guide.pdf).
 
-:::image type="content" source="media/Parsec-computers-and-statuses.png" alt-text="Screenshot showing the Parsec app dashboard listing available computers and statuses":::
+:::image type="content" source="../media/Parsec-computers-and-statuses.png" alt-text="Screenshot showing the Parsec app dashboard listing available computers and statuses":::
 
 > [!NOTE]
 > This VM does not support Parsec Individuals (Warp) plan. You need to have a Teams plan or Enterprise plan to use Parsec. [Review the different Parsec plans](https://parsec.app/pricing) to learn more.

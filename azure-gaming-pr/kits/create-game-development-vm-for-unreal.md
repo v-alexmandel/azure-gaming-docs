@@ -16,7 +16,7 @@ Get up and running with a Windows 10 or Windows Server 2019 Game Development Vir
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.com/free). Please note Azure free accounts do not support GPU enabled virtual machine SKUs.
 - An [Epic Games account](https://www.epicgames.com/id/login) to accept Epic Games store End User License Agreement after signing in to this VM.
-- If you need deploy this VM with Windows 10 as the operating system, Multitenant Hosting Rights for Windows 10 is required. Verify you have an [eligible Windows 10 subscription license](https://docs.microsoft.com/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment#subscription-licenses-that-qualify-for-multitenant-hosting-rights) or a [Visual Studio subscription](https://docs.microsoft.com/azure/virtual-machines/windows/client-images) for dev/test scenarios.
+- If you need deploy this VM with Windows 10 as the operating system, Multitenant Hosting Rights for Windows 10 is required. Verify you have an [eligible Windows 10 subscription license](/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment#subscription-licenses-that-qualify-for-multitenant-hosting-rights) or a [Visual Studio subscription](/azure/virtual-machines/windows/client-images) for dev/test scenarios.
 If you choose to access the VM with either Teradici or Parsec, you need to have your own license keys to use during deployment.  
 
 ## Create your Game Development Virtual Machine
@@ -32,7 +32,7 @@ To create a Game Dev VM instance:
     - **Subscription** : If you have more than one subscription, select the one on which the machine will be created and billed. You must have resource creation privileges for this subscription.
     - **Resource group** : Create a new group or use an existing one.
     - **Region** : Select the datacenter that's most appropriate. For fastest network access, it's the datacenter that has most of your existing workloads or is the closest to your physical location. Learn more about [Azure Regions](https://azure.microsoft.com/global-infrastructure/regions/).
-    - **VM Size** : This VM currently supports the sizes of [NV](https://docs.microsoft.com/azure/virtual-machines/nv-series), [NVv3](https://docs.microsoft.com/azure/virtual-machines/nvv3-series), and [T4](https://docs.microsoft.com/azure/virtual-machines/nct4-v3-series). Choose a size that is appropriate for your workloads. Read more about [Windows VM sizes in Azure](https://docs.microsoft.com/azure/virtual-machines/sizes).
+    - **VM Size** : This VM currently supports the sizes of [NV](/azure/virtual-machines/nv-series), [NVv3](/azure/virtual-machines/nvv3-series), and [T4](/azure/virtual-machines/nct4-v3-series). Choose a size that is appropriate for your workloads. Read more about [Windows VM sizes in Azure](/azure/virtual-machines/sizes).
     - **Virtual machine name** : Enter the name of the virtual machine. This is how it will appear in your Azure portal.
     - **Admin username** : Enter the administrator username. This is the username you will use to log into your virtual machine, and need not be the same as your Azure username.
     - **Password** : Enter the password you will use to log into your virtual machine. Repeat the same password And **Confirm password** in the next field.
