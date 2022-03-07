@@ -32,7 +32,7 @@ To create a Game Dev VM instance:
     - **Subscription** : If you have more than one subscription, select the one on which the machine will be created and billed. You must have resource creation privileges for this subscription.
     - **Resource group** : Create a new group or use an existing one.
     - **Region** : Select the datacenter that's most appropriate. For fastest network access, it's the datacenter that has most of your existing workloads or is the closest to your physical location. Learn more about [Azure Regions](https://azure.microsoft.com/global-infrastructure/regions/).
-    - **VM Size** : This VM currently supports the sizes of [NV](/azure/virtual-machines/nv-series), [NVv3](/azure/virtual-machines/nvv3-series), and [T4](/azure/virtual-machines/nct4-v3-series). Choose a size that is appropriate for your workloads. Read more about [Windows VM sizes in Azure](/azure/virtual-machines/sizes).
+    - **VM Size** : This VM currently supports the sizes of [NV](https://docs.microsoft.com/azure/virtual-machines/nv-series), [NVv3](https://docs.microsoft.com/azure/virtual-machines/nvv3-series), and [T4](https://docs.microsoft.com/azure/virtual-machines/nct4-v3-series). Choose a size that is appropriate for your workloads. Read more about [Windows VM sizes in Azure](https://docs.microsoft.com/azure/virtual-machines/sizes).
     - **Virtual machine name** : Enter the name of the virtual machine. This is how it will appear in your Azure portal.
     - **Admin username** : Enter the administrator username. This is the username you will use to log into your virtual machine, and need not be the same as your Azure username.
     - **Password** : Enter the password you will use to log into your virtual machine. Repeat the same password And **Confirm password** in the next field.
@@ -104,5 +104,5 @@ When no longer needed, you can delete the resource group, virtual machine, and a
 
 - Explore the tools on the Game Dev VM by opening the  **Start**  menu.
 - Start to learn and use [Unreal Engine](https://www.unrealengine.com/learn).
-- Learn about game development on Azure by reading [Azure for Gaming](/azure/reference-architectures/unreal-pixel-streaming-in-azure) and trying out [tutorials]().
-- Read more about the [Game Development Virtual Machine]().
+- Learn about game development on Azure by reading [Azure for Gaming](https://docs.microsoft.com/gaming/azure/) and trying out tutorials.
+- Read more about the [Game Development Virtual Machine](./overview.md).

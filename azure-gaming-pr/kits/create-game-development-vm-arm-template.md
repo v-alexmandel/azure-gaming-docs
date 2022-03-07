@@ -25,7 +25,7 @@ If your environment meets the prerequisites and you're familiar with using ARM t
 
 ## Review the template
 
-The template used in this quickstart is from [Azure Quickstart Templates](). 
+The template used in this quickstart is from [Azure Quickstart Templates]().
 
 <!-- <Add copy of ARM template JSON (it’s really big)>  -->
 
@@ -77,7 +77,7 @@ Click on the Virtual Machine resource to go to its information page. Here you ca
 
 ## Clean up resources
 
-If you don’t want to use this virtual machine, delete it. Since the Game Development VM is associated with other resources, such as network interfaces, you will probably want to delete the entire resource group. You can delete the resource group in the portal by clicking on the Delete button and confirming. Or you can delete the resource group from the CLI with: 
+If you don’t want to use this virtual machine, delete it. Since the Game Development VM is associated with other resources, such as network interfaces, you will probably want to delete the entire resource group. You can delete the resource group in the portal by clicking on the Delete button and confirming. Or you can delete the resource group from the CLI with:
 
 ```azurecli-interactive
 echo "Enter the Resource Group name:" &&
