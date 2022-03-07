@@ -5,7 +5,7 @@
   items:
   - name: What is the Azure Game Development Virtual Machine?
     href: overview.md
-  - name: Tools includes on the Game Development Virtual Machine
+  - name: Tools included on the Game Development Virtual Machine
     href: tools-included-azure-game-dev-kit.md
   - name: Choosing the right GPU SKU and optimizing costs
     href:     
@@ -13,15 +13,15 @@
   expanded: false
   items:
   - name: Create a Game Development Virtual Machine with Unreal Engine
-    href: create-game-developer-vm-for-unreal.md
+    href: create-game-development-vm-for-unreal.md
   - name: Create a Game Development Virtual Machine with Unity 
     href: 
   - name: Remoting into the Game Development Virtual Machine with Teradici
     href: 
   - name: Remoting into the Game Development Virtual Machine with Parsec 
-    href: 
+    href: remote-to-vm-with-parsec.md
   - name: Create a Game Development Virtual Machine with an ARM template
-    href:
+    href: create-game-development-vm-arm-template.md
 - name: Concepts
   expanded: false
   items:
