@@ -26,11 +26,11 @@ Check with your Parsec team administrator to ensure that there is an Azure Game 
 1. Download and install the [Parsec app](https://parsec.app/downloads) on the device where you will initiate the remote connection from.
 2. Launch the Parsec app. You will be prompted to Log In. If you don’t know what credentials to use, check with your Parsec team administrator from step 1. This is NOT your Azure VM credentials.
 
-:::image type="content" source="media/Parsec-sign-in.png" alt-text="Screenshot showing the Parsec app sign in form":::
+:::image type="content" source="../media/Parsec-sign-in.png" alt-text="Screenshot showing the Parsec app sign in form":::
 
 3. Upon logging in successfully, you should be able to see the Azure Game Development VM which is assigned to you. Please make sure the VM is turned on, or else you won’t see it in the App. You may need click Reload button on the top right corner to see your VM.
 
-:::image type="content" source="media/Parsec-connect-to-vm.png" alt-text="Screenshot showing the Parsec app connect to VM button":::
+:::image type="content" source="../media/Parsec-connect-to-vm.png" alt-text="Screenshot showing the Parsec app connect to VM button":::
 
 4. Click Connect button in the Your Computer icon.
 5. Sign on using your Azure VM credentials.
@@ -49,5 +49,5 @@ None.
 ## Next steps
 
 - Explore the tools on the Game Dev VM by opening the Start menu.
-- Learn about the Game development on Azure by reading [Azure for Gaming](https://docs.microsoft.com/gaming/azure/) and trying out tutorials.
-- Read the article About Game Development Virtual Machine.
+- Learn about the Game development on Azure by reading [Azure for Gaming](/gaming/azure/) and trying out tutorials.
+- Read the article about the [Game Development Virtual Machine](./overview.md).

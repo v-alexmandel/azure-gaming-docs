@@ -21,7 +21,7 @@ If your environment meets the prerequisites and you're familiar with using ARM t
 ## Prerequisites
 
 - An Azure account with an active subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free) before you begin.
-- To use the CLI commands in this document from your local environment, you need the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
+- To use the CLI commands in this document from your local environment, you need the [Azure CLI](/cli/azure/install-azure-cli).
 
 ## Review the template
 
@@ -71,7 +71,7 @@ To see your Game Development Virtual Machine:
 
 You’ll see the Resource Group’s information:
 
-:::image type="content" source="media/game-dev-vm-resource-group.png" alt-text="Screenshot of an Azure Resource Group containing a Game Development Virtual Machine":::
+:::image type="content" source="../media/game-dev-vm-resource-group.png" alt-text="Screenshot of an Azure Resource Group containing a Game Development Virtual Machine":::
 
 Click on the Virtual Machine resource to go to its information page. Here you can find information on the VM, including connection details.
 
