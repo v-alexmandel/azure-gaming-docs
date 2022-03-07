@@ -19,9 +19,9 @@
   - name: Remoting into the Game Development Virtual Machine with Teradici
     href: 
   - name: Remoting into the Game Development Virtual Machine with Parsec 
-    href: 
+    href: remote-to-vm-with-parsec.md
   - name: Create a Game Development Virtual Machine with an ARM template
-    href:
+    href: create-game-development-vm-arm-template.md
 - name: Concepts
   expanded: false
   items:
