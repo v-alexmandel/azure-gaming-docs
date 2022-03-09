@@ -14,8 +14,6 @@
   items:
   - name: Create a Game Development Virtual Machine with Unreal Engine
     href: create-game-development-vm-for-unreal.md
-  - name: Create a Game Development Virtual Machine with Unity 
-    href: 
   - name: Remoting into the Game Development Virtual Machine with Teradici
     href: 
   - name: Remoting into the Game Development Virtual Machine with Parsec 
@@ -98,8 +96,6 @@
     href:
   - name: Teradici overview
     href:
-  - name: Unity overview
-    href:
   - name: Unreal Engine overview
     href:                                         
 - name: Resources
@@ -108,12 +104,8 @@
   - name: Best practices for Perforce in Azure
     href:
   - name: Best practices for Unreal Engine in Azure 
-    href:
-  - name: Best practices for Unity in Azure 
-    href:                        
+    href:                 
   - name: Perforce AAD Integration
     href:
   - name: Using PlayFab with Unreal Engine
-    href:
-  - name: Using PlayFab with Unity
-    href:            
+    href:          
