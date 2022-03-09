@@ -76,7 +76,7 @@
   expanded: false
   items:
   - name: Create a Game Development Virtual Machine with an ARM template
-    href:     
+    href: create-game-development-vm-arm-template.md    
 - name: Reference
   expanded: false
   items:
