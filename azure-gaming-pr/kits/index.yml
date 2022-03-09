@@ -24,8 +24,6 @@ landingContent:
           url: overview.md
         - text: Tools includes on the Game Development Virtual Machine
           url: tools-included-azure-game-dev-kit.md
-        - text: Release notes
-          url: overview.md
       - linkListType: quickstart
         links:
         - text: Create a Game Development Virtual Machine with Unreal Engine
@@ -37,8 +35,6 @@ landingContent:
       - linkListType: architecture
         links:
         - text: Game Development Virtual Machine architecture
-          url: overview.md
-        - text: Enterprise security & guidance
           url: overview.md
       - linkListType: how-to-guide
         links:
@@ -56,13 +52,13 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-        - text: Remote game development in Azure
+        - text: Game Development in Azure
           url: overview.md
         - text: Integrate with DevOps pipelines
           url: overview.md
-        - text: Using the Game Development Virtual Machine as a build server
+        - text: Using Azure Files for Shared Cache (DDC) with Unreal Engine
           url: overview.md
-        - text: Setup a Pool of the Game Development Virtual Machines in DevTest Labs
+        - text: Azure Game Development Solutions with Microsoft Partners
           url: overview.md
 
   # Card
