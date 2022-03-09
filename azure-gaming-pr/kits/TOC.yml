@@ -40,7 +40,7 @@
 - name: How-to Guides
   expanded: false
   items:
-  - name: Integrate with a GitHub repository 
+  - name: Using GitHub with Git Tools on Game Dev VM 
     href:
   - name: Integrate with a Perforce repository 
     href:
