@@ -25,15 +25,11 @@
   items:
   - name: Game Development Virtual Machine architecture 
     href: 
-  - name: Enterprise security and guidance
+  - name: Game Development in Azure
     href: 
   - name: Integrate with DevOps pipelines
     href: 
   - name: Add More Tools to the Game Development Virtual Machine using scripting
-    href: 
-  - name: Integrate with a hybrid network in Azure and on-premises
-    href: 
-  - name: Remote game development in Azure
     href: 
   - name: Visual Studio Community Edition capabilities on the Game Development Virtual Machine
     href: 
@@ -48,30 +44,10 @@
     href:
   - name: Integrate with Incredibuild
     href:
-  - name: Storing game builds on Azure Blob storage for fast downloads to developer kits
-    href:
-  - name: Using the Game Development Virtual Machine as a build server
-    href:
-  - name: Using Unreal Pixel Streaming with the Game Development Virtual Machine	
-    href:
-  - name: Upgrading from one VM SKU to another
-    href:
   - name: Adding striped disks for more IOPS
     href:
-  - name: Using the Microsoft Game Development Kit (GDK) on the Game Development Virtual Machine
-    href:
-  - name: Adding Photoshop to the Game Development Virtual Machine
-    href:
-  - name: Adding Maya to the Game Development Virtual Machine
-    href:
-  - name: Improving Build Times with a Separate VM that has the latest repository
-    href:
-  - name: Deploying Game Development Virtual Machines to an entire studio?
-    href:
-  - name: Collaboration Best Practices
-    href: 
-  - name: Setup a Pool of the Game Development Virtual Machines in DevTest Labs  
-    href:                                                          
+  - name: Using Azure Files for Shared Cache (DDC) with Unreal Engine
+    href:                                                    
 - name: Samples
   expanded: false
   items:
@@ -80,32 +56,14 @@
 - name: Reference
   expanded: false
   items:
-  - name: Release notes
+  - name: Azure Game Development Solutions with Microsoft Partners
     href: 
-  - name: Known issues 
-    href:
-  - name: Roadmap
-    href:
-  - name: Support 
-    href:
-  - name: Parsec overview
-    href:
-  - name: Perforce overview
-    href:
-  - name: PlayFab overview
-    href:
-  - name: Teradici overview
-    href:
-  - name: Unreal Engine overview
-    href:                                         
+  - name: Using PlayFab with Unreal Engine 
+    href:                  
 - name: Resources
   expanded: false
   items:
-  - name: Best practices for Perforce in Azure
+  - name: Support 
     href:
-  - name: Best practices for Unreal Engine in Azure 
-    href:                 
-  - name: Perforce AAD Integration
-    href:
-  - name: Using PlayFab with Unreal Engine
-    href:          
+  - name: Known issues  
+    href:                      
