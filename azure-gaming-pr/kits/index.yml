@@ -30,8 +30,6 @@ landingContent:
         links:
         - text: Create a Game Development Virtual Machine with Unreal Engine
           url: create-game-developer-vm-for-unreal.md
-        - text: Create a Game Development Virtual Machine with Unity
-          url: overview.md
 
   # Card
   - title: Manage your Game Development Virtual Machine
