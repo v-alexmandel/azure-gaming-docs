@@ -20,10 +20,7 @@
   expanded: false
   items:
   - name: GitHub and Git Tools on the Game Development Virtual Machine
-    href: github-git-tools-on-vm.md    
-- name: How-to Guides
-  expanded: false
-  items:                                          
+    href: github-git-tools-on-vm.md                                      
 - name: Samples
   expanded: false
   items:
