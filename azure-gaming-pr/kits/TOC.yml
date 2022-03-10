@@ -7,15 +7,11 @@
     href: overview.md
   - name: Tools included on the Game Development Virtual Machine
     href: tools-included-azure-game-dev-kit.md
-  - name: Choosing the right GPU SKU and optimizing costs
-    href:     
 - name: Quickstarts
   expanded: false
   items:
   - name: Create a Game Development Virtual Machine with Unreal Engine
     href: create-game-development-vm-for-unreal.md
-  - name: Remoting into the Game Development Virtual Machine with Teradici
-    href: 
   - name: Remoting into the Game Development Virtual Machine with Parsec 
     href: remote-to-vm-with-parsec.md
   - name: Create a Game Development Virtual Machine with an ARM template
@@ -23,31 +19,11 @@
 - name: Concepts
   expanded: false
   items:
-  - name: Game Development Virtual Machine architecture 
-    href: 
-  - name: Game Development in Azure
-    href: 
-  - name: Integrate with DevOps pipelines
-    href: 
-  - name: Add More Tools to the Game Development Virtual Machine using scripting
-    href: 
-  - name: Visual Studio Community Edition capabilities on the Game Development Virtual Machine
-    href: 
   - name: GitHub and Git Tools on the Game Development Virtual Machine
     href: github-git-tools-on-vm.md    
 - name: How-to Guides
   expanded: false
-  items:
-  - name: Integrate with a Perforce repository 
-    href:
-  - name: Integrate with Azure Active Directory 
-    href:
-  - name: Integrate with Incredibuild
-    href:
-  - name: Adding striped disks for more IOPS
-    href:
-  - name: Using Azure Files for Shared Cache (DDC) with Unreal Engine
-    href:                                                    
+  items:                                          
 - name: Samples
   expanded: false
   items:
@@ -55,15 +31,7 @@
     href: create-game-development-vm-arm-template.md    
 - name: Reference
   expanded: false
-  items:
-  - name: Azure Game Development Solutions with Microsoft Partners
-    href: 
-  - name: Using PlayFab with Unreal Engine 
-    href:                  
+  items:             
 - name: Resources
   expanded: false
   items:
-  - name: Support
-    href:
-  - name: Known issues 
-    href:                      
