@@ -32,19 +32,11 @@ landingContent:
   # Card
   - title: Manage your Game Development Virtual Machine
     linkLists:
-      - linkListType: architecture
-        links:
-        - text: Game Development Virtual Machine architecture
-          url: overview.md
       - linkListType: how-to-guide
         links:
         - text: Remoting into the Game Development Virtual Machine with Teradici
           url: overview.md
         - text: Remoting into the Game Development Virtual Machine with Parsec
-          url: overview.md
-        - text: Integrate with a Perforce repository
-          url: overview.md
-        - text: Integrate with Incredibuild
           url: overview.md
 
   # Card
@@ -52,13 +44,7 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-        - text: Game Development in Azure
-          url: overview.md
-        - text: Integrate with DevOps pipelines
-          url: overview.md
         - text: Using Azure Files for Shared Cache (DDC) with Unreal Engine
-          url: overview.md
-        - text: Azure Game Development Solutions with Microsoft Partners
           url: overview.md
 
   # Card
@@ -66,11 +52,7 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-        - text: Known issues
-          url: overview.md                    
-        - text: Get support
-          url: overview.md
         - text: Azure for gaming
-          url: /index.md
+          url: https://review.docs.microsoft.com/en-us/gaming/azure/?branch=game-dev-public-preview
 
 
