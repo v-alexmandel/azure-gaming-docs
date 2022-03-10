@@ -34,18 +34,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-        - text: Remoting into the Game Development Virtual Machine with Teradici
-          url: overview.md
         - text: Remoting into the Game Development Virtual Machine with Parsec
-          url: overview.md
-
-  # Card
-  - title: Use your Game Development Virtual Machine for Game Production in Azure
-    linkLists:
-      - linkListType: learn
-        links:
-        - text: Using Azure Files for Shared Cache (DDC) with Unreal Engine
-          url: overview.md
+          url: remote-to-vm-with-parsec.md
 
   # Card
   - title: Resources
