@@ -129,6 +129,6 @@ productDirectory:
       imageSrc: ./media/game-streaming.svg
       links:
         - text: What is the Azure Game Developer Virtual Machine?
-          url: kits/overview.md
+          url: game-dev-virtual-machine/overview.md
         - text: Quickstart - Create a Game Developer Virtual Machine with Unreal Engine
-          url: kits/create-game-developer-vm-for-unreal.md
+          url: game-dev-virtual-machine/create-game-developer-vm-for-unreal.md
