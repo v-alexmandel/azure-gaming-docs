@@ -14,6 +14,8 @@
     href: create-game-development-vm-for-unreal.md
   - name: Remoting into the Game Development Virtual Machine with Parsec 
     href: remote-to-vm-with-parsec.md
+  - name: Remoting into the Game Development Virtual Machine with Teradici 
+    href: remote-to-vm-with-teradici.md  
   - name: Create a Game Development Virtual Machine with an ARM template
     href: create-game-development-vm-arm-template.md
 - name: Concepts
