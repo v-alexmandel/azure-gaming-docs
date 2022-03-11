@@ -85,5 +85,3 @@
       href: game-dev-virtual-machine/index.yml 
     - name: Overview - What is Service Bus Messaging?
       href: game-dev-virtual-machine/overview.md
-    - name: Quickstart - Create a Game Developer Virtual Machine with Unreal Engine
-      href: game-dev-virtual-machine/create-game-developer-vm-for-unreal.md
