@@ -204,27 +204,38 @@ sudo su – perforce
 ```
 
 3. Configure the extension
+
 ```bash
 p4 extension --configure Auth::loginhook
 ```
-    1. change the following:
-        1. ExtP4USER: perforce
-        2. Auth-Protocol: saml
-        3. Service-URL: https://&lt;&lt;PUBLIC IP ADDRESS&gt;&gt;:3000
-    2. Exit vi and save the configuration
-    :wq <ENTER>
-4. Configure the extension instance
+
+4. Change the following:
+    1. ExtP4USER: perforce
+    2. Auth-Protocol: saml
+    3. Service-URL: https://&lt;&lt;PUBLIC IP ADDRESS&gt;&gt;:3000
+5. Exit vi and save the configuration
+
+```bash
+:wq <ENTER>
+```
+
+6. Configure the extension instance
+
 ```bash    
 p4 extension --configure Auth::loginhook --name loginhook-a1
 ```
-    1. change the following:
-        1. enable-logging: true
-        2. name-identifier: nameID
-        3. non-sso-users: perforce
-        4. sso-groups: sso
-        5. user-identifier: email
-    2. Exit vi and save the configuration
-    :wq <ENTER>
+
+4. change the following:
+    1. enable-logging: true
+    2. name-identifier: nameID
+    3. non-sso-users: perforce
+    4. sso-groups: sso
+    5. user-identifier: email
+5. Exit vi and save the configuration
+
+```bash
+:wq <ENTER>
+```
 
 ### Configure Helix Authentication Service for SAML
 
