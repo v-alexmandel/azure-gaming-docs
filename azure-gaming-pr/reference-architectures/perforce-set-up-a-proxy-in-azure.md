@@ -72,9 +72,11 @@ To have the Proxy communicate with the commit server, we need to make communicat
     3. Click **Add** to create the peering connection
 
 After creating the peering, you will see that the Peering Status is set to **Updating**. After about 30 seconds it should be in the **Connected** state.
+
 [![Peering result from proxy to commit](media/cloud-build-pipeline/perforce-proxy-vnetpeering-connected-1.png)](media/cloud-build-pipeline/perforce-proxy-vnetpeering-connected-1.png)
 
 When you navigate to the commit server Vnet, you will also be able to see the peering that was created.
+
 [![Peering result from commit to proxy](media/cloud-build-pipeline/perforce-proxy-vnetpeering-connected-2.png)](media/cloud-build-pipeline/perforce-proxy-vnetpeering-connected-2.png)
 
 ## Initializing the Cache Disk
