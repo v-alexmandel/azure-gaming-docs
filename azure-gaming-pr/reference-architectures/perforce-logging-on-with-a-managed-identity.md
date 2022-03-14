@@ -170,8 +170,6 @@ Write-Host $json.access_token
 5. Configure Perforce to use the files:
 
 ```dos
-p4 set P4USER=buildserver
-p4 set P4PORT=ssl:<<PUBLIC IP ADDRESS>>:1666
 p4 set P4LOGINSSO="c:\temp\get-token.cmd %ssoArgs%"
 ```
 
@@ -430,20 +428,28 @@ yes $(uuidgen) | p4 -u perforce passwd buildserver
 
 ## Test the setup
 
-Testing the setup can be done through multiple ways. Examples include the Windows Workstation that can be deployed as part of the Enhanced Studio Pack, or the use of the Azure Game Dev VM. In the end we’ll need a machine with the Perforce Client tools installed, either P4V or the CLI tools. It can be an on-premises machine or a cloud-based machine.
+Testing the setup can be done through multiple ways. Examples include the Windows Workstation that can be deployed as part of the Enhanced Studio Pack, or the use of the Azure Game Dev VM. In the end we’ll need a machine with the Perforce CLI tools installed.
 
 In this walkthrough we’ll RDP into an instance of the Azure Game Dev VM, as it has all the tools installed.
 
 To test the setup, you’ll need the IP address of the Helix Core instance. If the machine is in the same Virtual Network, this can be a Private IP address. If it is not in the same Virtual Network, it needs to be the public IP address. Regardless, make sure this machine is listed in the Network Security Group to be able to access Helix Core.
 
 1. RDP into the Virtual Machine
-2. Open up a Windows Terminal, and type:
 
-```bash
+2. Set the P4 Environment Variables:
+
+```dos
+p4 set P4USER=buildserver
+p4 set P4PORT=ssl:<<PUBLIC IP ADDRESS>>:1666
+```
+
+3. Perform a P4 login:
+
+```dos
 p4 login
 ```
 
-3. You should see a prompt telling you you have logged in:
+4. You should see a prompt telling you you have logged in:
 [![P4 CLI successful login using Managed Identity](media/cloud-build-pipeline/perforce-mi-login-success.png)](media/cloud-build-pipeline/perforce-mi-login-success.png)
 
 ## Troubleshooting
