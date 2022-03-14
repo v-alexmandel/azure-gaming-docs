@@ -21,7 +21,6 @@ To use the Perforce Proxy, a Helix Core commit server needs to be available. For
 
 ## End state
 
-###
 [![Perforce Proxy in Azure](media/cloud-build-pipeline/perforce-proxy-architecture.png)](media/cloud-build-pipeline/perforce-proxy-architecture.png)
 
 ## Setting up the Proxy machine
@@ -234,7 +233,7 @@ systemctl enable p4pd
 
 ## Connect to the Proxy
 
-After you have implemented the steps outlined above, the Proxy is ready to serve users. Using a machine that has the Perforce client tools installed and has its IP address whitelisted in the Network Security Group, we can now connect to the commit server using the proxy. The users and group settings remain the same, just change the IP address to point to the Proxy.
+After you have implemented the steps outlined above, the Proxy is ready to serve users. Using a machine that has the Perforce client tools installed and has its IP address listed in the Network Security Group, we can now connect to the commit server using the proxy. The users and group settings remain the same, just change the IP address to point to the Proxy.
 
 ## Troubleshooting
 

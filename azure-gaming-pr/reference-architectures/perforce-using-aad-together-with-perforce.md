@@ -39,7 +39,7 @@ sudo su – perforce
 p4login -v 1
 ```
 
-# Install Helix Authentication Service
+## Install Helix Authentication Service
 
 The official documentation for installing Helix Authentication Service (HAS) from Perforce can be found here. In order to group the whole flow in a single document, below are the main commands needed to install HAS.
 
@@ -149,7 +149,7 @@ p4 group sso
 ```
 
 The Users field is an array, so create a new line after Users:, indent by using a TAB and add John to the list of users in this group
-[![blkid output](media/cloud-build-pipeline/perforce-has-group.png)](media/cloud-build-pipeline/perforce-has-group.png)
+[![blkid output](media/cloud-build-pipeline/perforce-has-perforce-group.png)](media/cloud-build-pipeline/perforce-has-perforce-group.png)
 
 10.	Exit vi and save the configuration
 
@@ -173,7 +173,7 @@ The easiest way to configure HAS to work with AAD is by using Perforce’s AAD M
 
 After the **Enterprise Application** was successfully deployed, you should see a screen like this:
 
-[![AAD Enterprise Application Overview](media/cloud-build-pipeline/perforce-has-aad-overview.png)](media/cloud-build-pipeline/perforce-aad-overview.png)
+[![AAD Enterprise Application Overview](media/cloud-build-pipeline/perforce-has-aad-overview.png)](media/cloud-build-pipeline/perforce-has-aad-overview.png)
 
 First, we’ll add some users to make use of the **Enterprise Application**:
 
@@ -442,7 +442,7 @@ Testing the setup can be done through multiple ways. Examples include the Window
 
 In this walkthrough we’ll RDP into an instance of the Azure Game Dev VM, as it has all the tools installed.
 
-To test the setup, you’ll need the IP address of the Helix Core instance. If the machine is in the same Virtual Network, this can be a Private IP address. If it is not in the same Virtual Network, it needs to be the public IP address. Regardless, make sure this machine is whitelisted in the Network Security Group to be able to access Helix Core.
+To test the setup, you’ll need the IP address of the Helix Core instance. If the machine is in the same Virtual Network, this can be a Private IP address. If it is not in the same Virtual Network, it needs to be the public IP address. Regardless, make sure this machine is listed in the Network Security Group to be able to access Helix Core.
 
 1. RDP into the Virtual Machine
 2. Open up a Windows Terminal
@@ -457,7 +457,7 @@ p4 set P4PORT=ssl:<<PERFORCE IP ADDRESS>>:1666
 5. Hit Connect, you should see a browser opening, and P4V waiting for that to return
 [![P4V waiting for a successful logon](media/cloud-build-pipeline/perforce-has-p4v-loading.png)](media/cloud-build-pipeline/perforce-has-p4v-loading.png)
 6. The browser will complain the connection is not secure, this is because we have not yet correctly configured SSL, by default HAS is using a self-signed certificate for that. If you accept this for now, you will be able to log in using AAD. Once you have successfully done that, you’ll see something like this in the browser:
-[![HAS is logged on successfully](media/cloud-build-pipeline/perforce-has-has-success.png)](media/cloud-build-pipeline/perforce-has-success.png)
+[![HAS is logged on successfully](media/cloud-build-pipeline/perforce-has-has-success.png)](media/cloud-build-pipeline/perforce-has-has-success.png)
 7. When you open P4V back up, you’ll see it has been logged in.
 
 ## Setting up a custom domain name with SSL
