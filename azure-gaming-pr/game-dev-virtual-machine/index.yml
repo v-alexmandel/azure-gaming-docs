@@ -24,6 +24,8 @@ landingContent:
           url: overview.md
         - text: Tools includes on the Game Development Virtual Machine
           url: tools-included-azure-game-dev-kit.md
+        - text: Choosing the right GPU SKU and optimizing costs
+          url: choosing-gpu-sku.md 
       - linkListType: quickstart
         links:
         - text: Create a Game Development Virtual Machine with Unreal Engine

@@ -7,6 +7,8 @@
     href: overview.md
   - name: Tools included on the Game Development Virtual Machine
     href: tools-included-azure-game-dev-kit.md
+  - name: Choosing the right GPU SKU and optimizing costs
+    href: choosing-gpu-sku.md   
 - name: Quickstarts
   expanded: false
   items:
