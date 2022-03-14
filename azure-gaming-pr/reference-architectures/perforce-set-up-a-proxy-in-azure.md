@@ -21,7 +21,8 @@ To use the Perforce Proxy, a Helix Core commit server needs to be available. For
 
 ## End state
 
-The public GitHub repo can be found at **[Azure\Unreal-Pixel-Streaming](https://github.com/Azure/Unreal-Pixel-Streaming/)**. If you don't have a GitHub account, create one **[here](https://github.com/join)** and verify your email address.
+###
+[![Perforce Proxy in Azure](media/cloud-build-pipeline/perforce-proxy-architecture.png)](media/cloud-build-pipeline/perforce-proxy-architecture.png)
 
 ## Setting up the Proxy machine
 
@@ -71,8 +72,10 @@ To have the Proxy communicate with the commit server, we need to make communicat
     3. Click **Add** to create the peering connection
 
 After creating the peering, you will see that the Peering Status is set to **Updating**. After about 30 seconds it should be in the **Connected** state.
+[![Peering result from proxy to commit](media/cloud-build-pipeline/perforce-proxy-vnetpeering-connected-1.png)](media/cloud-build-pipeline/perforce-proxy-vnetpeering-connected-1.png)
 
 When you navigate to the commit server Vnet, you will also be able to see the peering that was created.
+[![Peering result from commit to proxy](media/cloud-build-pipeline/perforce-proxy-vnetpeering-connected-2.png)](media/cloud-build-pipeline/perforce-proxy-vnetpeering-connected-2.png)
 
 ## Initializing the Cache Disk
 
@@ -106,6 +109,7 @@ mount /dev/sdb1 /hxproxy
     ```bash
     blkid
     ```
+    [![blkid output](media/cloud-build-pipeline/perforce-proxy-disks.png)](media/cloud-build-pipeline/perforce-proxy-disks.png)
 
     2. Edit fstab
 
