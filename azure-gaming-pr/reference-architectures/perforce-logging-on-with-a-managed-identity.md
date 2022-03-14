@@ -434,7 +434,7 @@ Testing the setup can be done through multiple ways. Examples include the Window
 
 In this walkthrough we’ll RDP into an instance of the Azure Game Dev VM, as it has all the tools installed.
 
-To test the setup, you’ll need the IP address of the Helix Core instance. If the machine is in the same Virtual Network, this can be a Private IP address. If it is not in the same Virtual Network, it needs to be the public IP address. Regardless, make sure this machine is whitelisted in the Network Security Group to be able to access Helix Core.
+To test the setup, you’ll need the IP address of the Helix Core instance. If the machine is in the same Virtual Network, this can be a Private IP address. If it is not in the same Virtual Network, it needs to be the public IP address. Regardless, make sure this machine is listed in the Network Security Group to be able to access Helix Core.
 
 1. RDP into the Virtual Machine
 2. Open up a Windows Terminal, and type:
