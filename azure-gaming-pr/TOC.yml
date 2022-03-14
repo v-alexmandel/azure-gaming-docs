@@ -79,3 +79,15 @@
       href: reference-architectures/unreal-pixel-streaming-deploying.md
     - name: Unreal Pixel Streaming at Scale in Azure
       href: reference-architectures/unreal-pixel-streaming-at-scale.md
+    - name: Set up a STUN and TURN Server in Azure
+      href: reference-architectures/stun-turn-server-in-azure.md
+  - name: Cloud Build Pipelines
+    items:
+    - name: Perforce - Using AAD together with Perforce
+      href: reference-architectures/perforce-using-aad-together-with-perforce.md
+    - name: Perforce - Logging on with a Managed Identity
+      href: reference-architectures/perforce-logging-on-with-a-managed-identity.md
+    - name: Perforce - Set up a Proxy in Azure
+      href: reference-architectures/perforce-set-up-a-proxy-in-azure.md
+    - name: Incredibuild - Scale out your cloud builds
+      href: reference-architectures/incredibuild-scale-out-your-cloud-builds.md
