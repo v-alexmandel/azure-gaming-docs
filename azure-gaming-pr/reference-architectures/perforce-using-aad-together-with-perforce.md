@@ -147,8 +147,9 @@ yes $(uuidgen) | p4 -u perforce passwd john
 ```bash
 p4 group sso
 ```
-    The Users field is an array, so create a new line after Users:, indent by using a TAB and add John to the list of users in this group
-    [![blkid output](media/cloud-build-pipeline/perforce-has-group.png)](media/cloud-build-pipeline/perforce-has-group.png)
+
+The Users field is an array, so create a new line after Users:, indent by using a TAB and add John to the list of users in this group
+[![blkid output](media/cloud-build-pipeline/perforce-has-group.png)](media/cloud-build-pipeline/perforce-has-group.png)
 
 10.	Exit vi and save the configuration
 
@@ -197,27 +198,35 @@ Now, we’ll configure the single sign on. For this step, you’ll need the publ
 To complete this step, you’ll need the public IP address from the machine where HAS has been installed.
 1. SSH into the Virtual Machine
 2. Move to the perforce user
+
+```bash
 sudo su – perforce
+```
+
 3. Configure the extension
-    1. p4 extension --configure Auth::loginhook
-        1. change the following:
-            1. ExtP4USER: perforce
-            2. Auth-Protocol: saml
-            3. Service-URL: https://&lt;&lt;PUBLIC IP ADDRESS&gt;&gt;:3000
+```bash
+p4 extension --configure Auth::loginhook
+```
+    1. change the following:
+        1. ExtP4USER: perforce
+        2. Auth-Protocol: saml
+        3. Service-URL: https://&lt;&lt;PUBLIC IP ADDRESS&gt;&gt;:3000
     2. Exit vi and save the configuration
     :wq <ENTER>
 4. Configure the extension instance
-    1. p4 extension --configure Auth::loginhook --name loginhook-a1
-        1. change the following:
-            1. enable-logging: true
-            2. name-identifier: nameID
-            3. non-sso-users: perforce
-            4. sso-groups: sso
-            5. user-identifier: email
+```bash    
+p4 extension --configure Auth::loginhook --name loginhook-a1
+```
+    1. change the following:
+        1. enable-logging: true
+        2. name-identifier: nameID
+        3. non-sso-users: perforce
+        4. sso-groups: sso
+        5. user-identifier: email
     2. Exit vi and save the configuration
     :wq <ENTER>
 
-## Configure Helix Authentication Service for SAML
+### Configure Helix Authentication Service for SAML
 
 To configure HAS, you’ll need 3 pieces of information:
 
@@ -256,7 +265,7 @@ sudo mv .env .envold
 sudo vi .env
 ```
 
-4. Contents:
+4. Contents (replace the 3 entries with your own values):
 
 ```ini
 PROTOCOL=saml
@@ -381,7 +390,7 @@ sudo mv .env .envold
 sudo vi .env
 ```
 
-4. Contents:
+4. Contents (replace the 3 entries with your own values):
 
 ```ini
 PROTOCOL=oidc
@@ -405,7 +414,7 @@ OIDC_CLIENT_SECRET_FILE=client-secret.txt
 sudo vi client-secret.txt
 ```
 
-Just paste in the Client Secret, nothing else
+Just paste in the Client Secret, nothing else, and close VI
 
 ```bash
 :wq <ENTER>
@@ -439,16 +448,16 @@ To test the setup, you’ll need the IP address of the Helix Core instance. If t
 2. Open up a Windows Terminal
 3. Set the P4 Environment Variables:
 
-```bash
+```dos
 p4 set P4USER=john
-p4 set P4PORT=ssl:&lt;&lt;PERFORCE IP ADDRESS&gt;&gt;:1666
+p4 set P4PORT=ssl:<<PERFORCE IP ADDRESS>>:1666
 ```
 
 4. Open P4V, put in the username and the address if it is not set correctly
 5. Hit Connect, you should see a browser opening, and P4V waiting for that to return
-[![AAD Enterprise Application Overview](media/cloud-build-pipeline/perforce-has-aad-overview.png)](media/cloud-build-pipeline/perforce-aad-overview.png)
+[![P4V waiting for a successful logon](media/cloud-build-pipeline/perforce-has-p4v-loading.png)](media/cloud-build-pipeline/perforce-has-p4v-loading.png)
 6. The browser will complain the connection is not secure, this is because we have not yet correctly configured SSL, by default HAS is using a self-signed certificate for that. If you accept this for now, you will be able to log in using AAD. Once you have successfully done that, you’ll see something like this in the browser:
-[![AAD Enterprise Application Overview](media/cloud-build-pipeline/perforce-has-aad-overview.png)](media/cloud-build-pipeline/perforce-aad-overview.png)
+[![HAS is logged on successfully](media/cloud-build-pipeline/perforce-has-has-success.png)](media/cloud-build-pipeline/perforce-has-success.png)
 7. When you open P4V back up, you’ll see it has been logged in.
 
 ## Setting up a custom domain name with SSL
@@ -458,10 +467,16 @@ After completing all the steps above, the implementation uses an IP Address for 
 ### Make the Certificate available for HAS
 
 The certificate- and the key-file should be made available to HAS in the folder:
-/opt/perforce/helix-auth/certs
 
-The certificate should be named: server.crt
-The key should be named: server.key
+- /opt/perforce/helix-auth/certs
+
+The certificate should be named:
+
+- server.crt
+
+The key should be named:
+
+- server.key
 
 ### Change the AAD configuration (SAML)
 
@@ -555,8 +570,11 @@ Now HAS is available using the configured domain name, using SSL.
 
 Most issues can be resolved by using the log files from both the Extension and HAS. They can be found at these locations:
 Extension:
-/p4/1/depots/p4-extensions/117E9283-732B-45A6-9993-AE64C354F1C5/1-data/log.json
+
+- /p4/1/depots/p4-extensions/117E9283-732B-45A6-9993-AE64C354F1C5/1-data/log.json
 
 HAS:
-/opt/perforce/helix-auth-svc/auth-svc.log
+
+- /opt/perforce/helix-auth-svc/auth-svc.log
+
 The documentation on the Perforce Github page has an extensive amount of troubleshooting tips.
