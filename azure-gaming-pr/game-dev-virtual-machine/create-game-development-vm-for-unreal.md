@@ -78,7 +78,7 @@ After the VM is created and provisioned, there are three methods to access this 
 1. Follow the steps listed to [connect and sign on to Azure-based virtual machine](/azure/virtual-machines/windows/connect-logon). Use the credentials that you configured when created this virtual machine before. If you enable AAD for this VM, you can also use your corporate credentials for RDP access [if you meet the requirements](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows#requirements).  
 2. Once you sign on to the VM, you'll be prompted immediately to accept Epic Games store End User License Agreement (EULA). If your Epic Games account has already accepted the latest EULA agreement, there is no need to accept it again, and you will be redirected to the desktop after your Epic Games account is authenticated. This is a one-time step when first deploying a new game development VM, and you don’t need repeat this step when you access this VM again.
 
-:::image type="content" source="../media/sign-eula-agreement.png" alt-text="Screenshot of prompt to sign the EULA agreement for Epic Games":::
+:::image type="content" source="../media/create-game-development-vm-for-unreal/sign-eula-agreement.png" alt-text="Screenshot of prompt to sign the EULA agreement for Epic Games":::
 
 > [!NOTE]
 > Your VM may stay at the Windows welcome screen for up to 1 minute until you see the above EULA Agreement--this is normal.  
@@ -88,7 +88,7 @@ After the VM is created and provisioned, there are three methods to access this 
 > [!NOTE]
 > You may see a command prompt window pop up which shows the Microsoft GDK or other components are being installed in the background. This may take up to 10 minutes. You can safely ignore it but leave the window open, as it will automatically close once all the tasks are finished.
 
-:::image type="content" source="../media/user-configuration-tasks-messages-terminal.png" alt-text="Screenshot of terminal window showing user configuration tasks are still completing":::
+:::image type="content" source="../media/create-game-development-vm-for-unreal/user-configuration-tasks-messages-terminal.png" alt-text="Screenshot of terminal window showing user configuration tasks are still completing":::
 
 Alternatively, you can follow the steps to remote into the Game Development Virtual Machine with either [Teradici]() or [Parsec]() depending on your chosen method of remote access technology.
 

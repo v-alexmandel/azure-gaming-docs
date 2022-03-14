@@ -71,7 +71,7 @@ To see your Game Development Virtual Machine:
 
 You’ll see the Resource Group’s information:
 
-:::image type="content" source="../media/game-dev-vm-resource-group.png" alt-text="Screenshot of an Azure Resource Group containing a Game Development Virtual Machine":::
+:::image type="content" source="../media/create-game-development-vm-arm-template/game-dev-vm-resource-group.png" alt-text="Screenshot of an Azure Resource Group containing a Game Development Virtual Machine":::
 
 Click on the Virtual Machine resource to go to its information page. Here you can find information on the VM, including connection details.
 
