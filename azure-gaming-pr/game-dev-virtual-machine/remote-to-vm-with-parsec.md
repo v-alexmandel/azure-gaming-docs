@@ -28,7 +28,7 @@ Check with your Parsec team administrator to ensure that there is an Azure Game 
 
 3. Upon logging in successfully, you should be able to see the Azure Game Development VM which is assigned to you. Please make sure the VM is turned on, or else you won’t see it in the App. You may need click Reload button on the top right corner to see your VM.
 
-:::image type="content" source="../media/Parsec-connect-to-vm.png" alt-text="Screenshot showing the Parsec app connect to VM button":::
+:::image type="content" source="../media/remote-to-vm-with-parsec/Parsec-connect-to-vm.png" alt-text="Screenshot showing the Parsec app connect to VM button":::
 
 4. Click Connect button in the Your Computer icon.
 5. Sign on using your Azure VM credentials.
