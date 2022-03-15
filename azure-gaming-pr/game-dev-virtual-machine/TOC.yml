@@ -31,4 +31,11 @@
   expanded: false
   items:
   - name: Create a Game Development Virtual Machine with an ARM template
-    href: create-game-development-vm-arm-template.md    
+    href: create-game-development-vm-arm-template.md
+- name: How-to guides
+  expanded: false
+  items:
+  - name: Integrate with Azure Active Directory
+    href: integrate-vm-with-aad.md
+  - name: Use Azure Files for network derived data cache with Unreal Engine
+    href: use-azure-files-for-global-ddc.md          
