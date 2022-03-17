@@ -42,14 +42,14 @@ There are two different methods to mount the Azure Storage File Share.
 1. Select the **File Share**.
 1. Finish creating the VM.
 
-:::image type="content" source="../media/use-azure-files-for-global-ddc/mount-existing-storage-file-share.png" alt-text="Screenshot showing where to mount an existing Azure Storage File Share":::
+:::image type="content" source="./media/use-azure-files-for-global-ddc/mount-existing-storage-file-share.png" alt-text="Screenshot showing where to mount an existing Azure Storage File Share":::
 
 ### Method 2: Mount Azure File manually after Game Development Virtual Machine creation
 
 1. Follow the instructions to mount the [SMB Azure File share manually](/azure/storage/files/storage-how-to-use-files-windows).
 1. Verify that the mounted Azure file is accessible with permission to read/write files and folders after successful remote Game Development Virtual Machine access.
 
-:::image type="content" source="../media/use-azure-files-for-global-ddc/verify-mounted-file-accessible.png" alt-text="Screenshot showing a mounted Azure Storage File Share":::
+:::image type="content" source="./media/use-azure-files-for-global-ddc/verify-mounted-file-accessible.png" alt-text="Screenshot showing a mounted Azure Storage File Share":::
 
 ## Setup and use DDC
 
@@ -57,7 +57,7 @@ You can now follow the Epic Games documentation to [setup and use shared DDC](ht
 
 Below is the example of completed configuration of shared DDC, the Global Network DDC, in the Epic Unreal Engine Editor. The **S:/test** path is now connected to the Azure File share on your Game Development Virtual Machine.
 
-:::image type="content" source="../media/use-azure-files-for-global-ddc/epic-engine-global-network-ddc-path.png" alt-text="Screenshot showing the path of the connected Azure File share":::
+:::image type="content" source="./media/use-azure-files-for-global-ddc/epic-engine-global-network-ddc-path.png" alt-text="Screenshot showing the path of the connected Azure File share":::
 
 ## Next steps
 

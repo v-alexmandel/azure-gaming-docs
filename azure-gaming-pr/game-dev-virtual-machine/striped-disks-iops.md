@@ -12,7 +12,7 @@ ms.prod: azure-gaming
 
 You can either configure a disk volume that is striped across multiple data disks for the Game Development Virtual Machine on portal during VM creation as below or set up a striped volume using Disk Management console in the Windows operating system.
 
-:::image type="content" source="../media/striped-disks-iops/striped-disk-volume-configuration.png" alt-text="Screenshot showing how to configure the disk volume for a game development VM":::
+:::image type="content" source="./media/striped-disks-iops/striped-disk-volume-configuration.png" alt-text="Screenshot showing how to configure the disk volume for a game development VM":::
 
 ## Striped Disk Volume
 

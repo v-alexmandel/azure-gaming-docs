@@ -56,11 +56,11 @@ To create a Game Dev VM instance:
     - From here you can create a disk volume in the VM for data storage that is striped across multiple data disks, which improves the disk throughput. If you don’t want to use the striped disk, please set the number of data disks to be 1. If you don’t want to attach a data disk at all, please set the number to be 0. This VM will still have an OS disk and a temporary data disk as the default configuration. **Note:** It is highly recommended to choose at least 2 disks that will be striped together for the best IOPS performance, and to install your source control and game projects on that drive for the best experience and available space on the VM. The C drive defaults to 256GB and could quickly run out of space for medium to large projects.
     - You can also mount an existing Azure Storage File Share if you have one, which allows for network shares across your team in Azure.
 
-12. Click **Next: Management.** You can choose to integrate Azure Active Directory (AAD). It is a similar experience as you enable AAD for a regular Azure virtual machine. With AAD, you can use your corporate credentials to login to this Game Dev VM. Please check both boxes if you want to enable AAD. Otherwise, leave those two boxes blank. [Learn more about integrating with Azure Active Directory]().
+12. Click **Next: Management.** You can choose to integrate Azure Active Directory (AAD). It is a similar experience as you enable AAD for a regular Azure virtual machine. With AAD, you can use your corporate credentials to login to this Game Dev VM. Please check both boxes if you want to enable AAD. Otherwise, leave those two boxes blank. [Learn more about integrating with Azure Active Directory](./integrate-vm-with-aad.md).
 13. Click **Next: Tags**. Tags are used to categorize resources, usually for billing management purposes. If you don't need tags now, you can skip this page and click **Next: Review + create**
 14. **Review+create**
 
-    - The Azure Portal will validate whether all the required information has been filled. If any information is missing or incorrect, you will see the validation failed message at the top. You can click **View error details** to know what is causing the error. You will then need to go back to complete the missing field(s) or make the correction. 
+    - The Azure Portal will validate whether all the required information has been filled. If any information is missing or incorrect, you will see the validation failed message at the top. You can click **View error details** to know what is causing the error. You will then need to go back to complete the missing field(s) or make the correction.
     - Once validation is passed, please verify that all the information you entered is correct
     - Select  **Create**.
 
@@ -78,7 +78,7 @@ After the VM is created and provisioned, there are three methods to access this 
 1. Follow the steps listed to [connect and sign on to Azure-based virtual machine](/azure/virtual-machines/windows/connect-logon). Use the credentials that you configured when created this virtual machine before. If you enable AAD for this VM, you can also use your corporate credentials for RDP access [if you meet the requirements](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows#requirements).  
 2. Once you sign on to the VM, you'll be prompted immediately to accept Epic Games store End User License Agreement (EULA). If your Epic Games account has already accepted the latest EULA agreement, there is no need to accept it again, and you will be redirected to the desktop after your Epic Games account is authenticated. This is a one-time step when first deploying a new game development VM, and you don’t need repeat this step when you access this VM again.
 
-:::image type="content" source="../media/create-game-development-vm-for-unreal/sign-eula-agreement.png" alt-text="Screenshot of prompt to sign the EULA agreement for Epic Games":::
+:::image type="content" source="./media/create-game-development-vm-for-unreal/sign-eula-agreement.png" alt-text="Screenshot of prompt to sign the EULA agreement for Epic Games":::
 
 > [!NOTE]
 > Your VM may stay at the Windows welcome screen for up to 1 minute until you see the above EULA Agreement--this is normal.  
@@ -88,9 +88,9 @@ After the VM is created and provisioned, there are three methods to access this 
 > [!NOTE]
 > You may see a command prompt window pop up which shows the Microsoft GDK or other components are being installed in the background. This may take up to 10 minutes. You can safely ignore it but leave the window open, as it will automatically close once all the tasks are finished.
 
-:::image type="content" source="../media/create-game-development-vm-for-unreal/user-configuration-tasks-messages-terminal.png" alt-text="Screenshot of terminal window showing user configuration tasks are still completing":::
+:::image type="content" source="./media/create-game-development-vm-for-unreal/user-configuration-tasks-messages-terminal.png" alt-text="Screenshot of terminal window showing user configuration tasks are still completing":::
 
-Alternatively, you can follow the steps to remote into the Game Development Virtual Machine with either [Teradici]() or [Parsec]() depending on your chosen method of remote access technology.
+Alternatively, you can follow the steps to remote into the Game Development Virtual Machine with either [Teradici](./remote-to-vm-with-teradici.md) or [Parsec](./remote-to-vm-with-parsec.md) depending on your chosen method of remote access technology.
 
 ## Clean up resources
 

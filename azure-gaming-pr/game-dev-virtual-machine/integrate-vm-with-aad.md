@@ -16,7 +16,7 @@ You may integrate Azure Active Directory authentication with this Game Developme
 
 When you are creating an Azure Game Development Virtual Machine, under the **Management** tab, select the **Identity** and **Azure AD** options.
 
-:::image type="content" source="../media/integrate-gm-with-add/enable-azure-ad.png" alt-text="Screenshot showing how to enable Azure AD when creating a new Game Development VM":::
+:::image type="content" source="./media/integrate-gm-with-add/enable-azure-ad.png" alt-text="Screenshot showing how to enable Azure AD when creating a new Game Development VM":::
 
 The Identity option is a system assigned managed identity and is automatically enabled when you enable Azure AD. However, the system assigned identity may also be enabled independently without including Azure AD. It is a similar experience to what you do for a regular Azure VM on Azure portal after VM is created: [Using Azure portal create VM experience to enable Azure AD login](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows#using-azure-portal-create-vm-experience-to-enable-azure-ad-login).
 
