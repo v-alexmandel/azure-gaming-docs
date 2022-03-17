@@ -83,5 +83,3 @@
     items:
     - name: Azure Game Development Virtual Machine
       href: game-dev-virtual-machine/index.yml 
-    - name: What is the Azure Game Development Virtual Machine?
-      href: game-dev-virtual-machine/overview.md
