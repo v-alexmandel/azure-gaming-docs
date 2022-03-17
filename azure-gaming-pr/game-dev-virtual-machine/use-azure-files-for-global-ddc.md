@@ -28,7 +28,7 @@ The first thing to be done is to [plan for an Azure Files for deployment](/azure
 
 When you’re ready to deploy, you will first need to [create an Azure file share](/azure/storage/files/storage-how-to-create-file-share?tabs=azure-portal). Your Azure File share should look like the following:
 
-:::image type="content" source="../media/use-azure-files-for-global-ddc/azure-file-share.png" alt-text="Screenshot showing an Azure file share":::
+:::image type="content" source="./media/use-azure-files-for-global-ddc/azure-file-share.png" alt-text="Screenshot showing an Azure file share":::
 
 ## Mount Azure Storage File Share
 

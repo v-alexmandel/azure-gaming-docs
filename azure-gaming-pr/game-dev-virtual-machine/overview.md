@@ -44,7 +44,7 @@ For distributed game development teams who want to take advantage of the [benefi
 
 Game engines are a ubiquitous technology driving efficiency in the games industry, enabling developers to create games quicker. Currently Unreal Engine comes pre-installed with multiple recent versions of Unreal Engine 4 and Unreal Engine 5 (preview), with more options to grow as they are released. The Game Development Virtual Machine also includes Visual Studio Community Edition 2019, along with various utilities including Microsoft’s Game Development Kit, PlayFab SDK, DirectX and more to start building your game directly in Azure. If you’re in an AAA game studio working with multiple developers, the pre-configured Perforce or Git client in this game dev VM can help connect each developer to the code repository for version control integration.
 
-:::image type="content" source="../media/overview/game-dev-vm-diagram.png" alt-text="Screenshot of diagram showing how to improve sharing and collaboration experience for worldwide remote developers":::
+:::image type="content" source="./media/overview/game-dev-vm-diagram.png" alt-text="Screenshot of diagram showing how to improve sharing and collaboration experience for worldwide remote developers":::
 
 ### Using as build servers
 
