@@ -30,7 +30,7 @@ Log on to the Helix Core Virtual Machine
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Allow the p4 client to create a logged-on context to the database
@@ -51,7 +51,7 @@ Normally we’d be able to install HAS through YUM, however at the time of writi
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Download and install the service
@@ -95,7 +95,7 @@ The extension cannot be installed through YUM at this time. It can be downloaded
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Download and extract the extension
@@ -257,7 +257,7 @@ To complete this step, you’ll need the public IP address from the machine wher
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Configure the extension
@@ -301,7 +301,7 @@ Lastly, we configure the Extension to send the Application ID URI to the client.
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Set the P4 SSO Args:
@@ -334,7 +334,7 @@ Now we can go to the Virtual Machine and configure HAS:
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Create a new configuration file:
@@ -369,7 +369,7 @@ After this step everything is configured, and we should restart both the Extensi
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. restart HAS and the Extension
@@ -397,7 +397,7 @@ To create the user do the following:
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Create a user named buildserver
@@ -440,7 +440,7 @@ To test the setup, you’ll need the IP address of the Helix Core instance. If t
 
 ```dos
 p4 set P4USER=buildserver
-p4 set P4PORT=ssl:<<PUBLIC IP ADDRESS>>:1666
+p4 set P4PORT=ssl:<<PERFORCE IP ADDRESS>>:1666
 ```
 
 3. Perform a P4 login:
@@ -449,7 +449,7 @@ p4 set P4PORT=ssl:<<PUBLIC IP ADDRESS>>:1666
 p4 login
 ```
 
-4. You should see a prompt telling you you have logged in:
+4. You should see a prompt showing you have logged in:
 [![P4 CLI successful login using Managed Identity](media/cloud-build-pipeline/perforce-mi-login-success.png)](media/cloud-build-pipeline/perforce-mi-login-success.png)
 
 ## Troubleshooting

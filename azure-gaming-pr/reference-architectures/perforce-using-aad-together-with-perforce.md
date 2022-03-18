@@ -30,7 +30,7 @@ To configure Helix Core to use Azure Active Directory (AAD) as its Identity Prov
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Allow the p4 client to create a logged-on context to the database
@@ -45,13 +45,13 @@ The official documentation for installing Helix Authentication Service (HAS) fro
 
 In this walkthrough we install HAS on the same machine as Helix Core. HAS can also be installed on a dedicated machine, so not to utilize resources from the commit server.
 
-On CentOS we can install the Proxy through YUM, and the Enhanced Studio Pack installation has already added the Perforce repository to the YUM configuration. So, all we need to do is install HAS:
+On CentOS we can install HAS through YUM, and the Enhanced Studio Pack installation has already added the Perforce repository to the YUM configuration. So, all we need to do is install HAS:
 
 1. SSH into the Virtual Machine
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Install HAS
@@ -85,7 +85,7 @@ The extension cannot be installed through YUM at this time. It can be downloaded
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Download and extract the extension
@@ -101,7 +101,7 @@ unzip master.zip
 ```bash
 cd helix-authentication-extension-2021.2/
 p4 extension --package loginhook
-p4 extension --install loginhook.p4-extension –allow-unsigned -y
+p4 extension --install loginhook.p4-extension --allow-unsigned -y
 ```
 
 ## Setting up Perforce Users and Groups
@@ -112,7 +112,7 @@ When the Enhanced Studio Pack is just installed, there is only one user, and the
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Create a user named John
@@ -168,7 +168,7 @@ The easiest way to configure HAS to work with AAD is by using Perforce’s AAD M
 3. Choose **Enterprise Application** from the menu on the left
 4. Click **+ New application**
 5. Search for **Perforce** in the **Search application box**
-6. Select **Perforce Helix Core – Helix Authentication Service**
+6. Select **Perforce Helix Core - Helix Authentication Service**
 7. Click **Create**
 
 After the **Enterprise Application** was successfully deployed, you should see a screen like this:
@@ -200,7 +200,7 @@ To complete this step, you’ll need the public IP address from the machine wher
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Configure the extension
@@ -256,7 +256,7 @@ To configure HAS, you’ll need 3 pieces of information:
     3. Go to **Enterprise Applications**
     4. Select the **Enterprise Application** you created earlier
     5. Go to **Single sign-on** on the left
-    6. Scroll down to **4. Set up Perforce Helix Core – Helix Authentication Service**
+    6. Scroll down to **4. Set up Perforce Helix Core - Helix Authentication Service**
     7. Copy the **Login URL**
 
 Now we can go to the Virtual Machine and configure HAS:
@@ -265,7 +265,7 @@ Now we can go to the Virtual Machine and configure HAS:
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Create a new configuration file:
@@ -300,7 +300,7 @@ After this step everything is configured, and we should restart both the Extensi
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. restart HAS and the Extension
@@ -337,7 +337,7 @@ To complete this step, you’ll need the public IP address from the machine wher
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Configure the extension
@@ -390,7 +390,7 @@ Now we can go to the Virtual Machine and configure HAS:
 2. Move to the perforce user
  
 ```bash 
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Create a new configuration file:
@@ -437,7 +437,7 @@ After this step everything is configured, and we should restart both the Extensi
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. restart HAS and the Extension
@@ -514,7 +514,7 @@ The key should be named:
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Configure the extension
@@ -536,7 +536,7 @@ p4 extension --configure Auth::loginhook
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. Edit the .env file
@@ -565,7 +565,7 @@ After this step everything is configured, and we should restart both the Extensi
 2. Move to the perforce user
 
 ```bash
-sudo su – perforce
+sudo su - perforce
 ```
 
 3. restart HAS and the Extension

@@ -159,7 +159,7 @@ vi /etc/yum.repos.d/perforce.repo
 ```ini
 [perforce]
 name=Perforce
-baseurl=http://package.perforce.com/yum/rhel/7/x86_64
+baseurl=https://package.perforce.com/yum/rhel/7/x86_64
 enabled=1
 gpgcheck=1
 ```
@@ -173,11 +173,20 @@ yum install helix-proxy
 The configuration of SSL is optional, although in many cases it is considered a requirement. A blogpost on the Perforce website discussing this can be found [here](https://community.perforce.com/s/article/2596). Setting up SSL for the Proxy is done through the following steps:
 
 ```bash
+# setting up the folder
 mkdir /hxproxy/sslkeys
 chmod 700 /hxproxy/sslkeys
+
+# configure P4 to know where the certs are
 export P4SSLDIR=/hxproxy/sslkeys
+
+# generate key and certificate path
 p4p -Gc
+
+# generate fingerprint
 p4p -Gf
+
+# trust the commit server's certs
 p4 -p ssl:<<COMMIT SERVER PRIVATE IP>>:1666 trust -y
 ```
 
