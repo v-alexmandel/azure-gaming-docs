@@ -44,8 +44,8 @@ In this case, we assume:
 - The Azure DevOps pipeline will use a custom build agent that will act as the Coordinator and Initiator Agent
 
 Also consider where your Helper Agents will come from. During the Incredibuild Cloud setup, you will be asked to specify what type(s) of VMs you would like to use, and the maximum number of VMs to scale. 
-You also have the option of using Spot VM instances as agents. Spot instances allow you to take advantage of Azure’s unused capacity at a significant cost savings. The trade-off is that when Azure needs the capacity back, the Azure infrastructure will evict these Spot Virtual Machines. However, because of the way Incredibuild divides the compute tasks, Azure Spot VM remain a viable option for a build pipeline. For more information on Azure Spot VMs, please see the **[documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/spot-vms)**.
-You should also check your Azure core quota. You cannot allocate more VMs of a certain type than your Subscriptions’ quotas allow, so make sure that you confirm you can allocate as many as you need. You can **[request more quota](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests)** of a certain VM SKU if needed.
+You also have the option of using Spot VM instances as agents. Spot instances allow you to take advantage of Azure’s unused capacity at a significant cost savings. The trade-off is that when Azure needs the capacity back, the Azure infrastructure will evict these Spot Virtual Machines. However, because of the way Incredibuild divides the compute tasks, Azure Spot VM remain a viable option for a build pipeline. For more information on Azure Spot VMs, please see the **[documentation](https://docs.microsoft.com/azure/virtual-machines/spot-vms)**.
+You should also check your Azure core quota. You cannot allocate more VMs of a certain type than your Subscriptions’ quotas allow, so make sure that you confirm you can allocate as many as you need. You can **[request more quota](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests)** of a certain VM SKU if needed.
 
 ### Hybrid setup
 You may already have an on-premises compute farm that you would like to use as part of the machine pool. Incredibuild deals with both on-premises machines and cloud machines, so you would just have to configure them accordingly.
@@ -56,7 +56,7 @@ Don’t forget to check your Azure core quota as well. If you don’t have enoug
 You will need a working Incredibuild license. You can obtain a **[free trial license](https://www.incredibuild.com/free-trial)** from Incredibuild. This will allow you to run a limited number of agent cores to get started. For a full license, please contact Incredibuild.
 
 ### Azure Subscription
-Assuming you will use Azure VMs to scale computation, you will need an Azure Subscription with a suitable RBAC role for yourself, such that you can create an **[App Registration](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals)**. This will be needed in the Incredibuild Cloud setup phase.
+Assuming you will use Azure VMs to scale computation, you will need an Azure Subscription with a suitable RBAC role for yourself, such that you can create an **[App Registration](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)**. This will be needed in the Incredibuild Cloud setup phase.
 
 ### Full Incredibuild requirements
 Incredibuild specifies requirements for open ports, networking, storage, operating system and more, in their **[documentation here](https://docs.incredibuild.com/win/latest/windows/system_requirements.html)**.
