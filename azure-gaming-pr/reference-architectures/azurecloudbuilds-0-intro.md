@@ -38,30 +38,36 @@ This guide assumes the use of the Azure Game Developer VM as the developer works
 Here’s the order in which we will be setting up and testing this demo pipeline.
 
 Section 1: [Development workstation](./azurecloudbuilds-1-devworkstation.md)
-    Create the developer workstation VM
+- Create the developer workstation VM
+
 Section 2: [Version control](./azurecloudbuilds-2-versioncontrol.md)
-    Create the Perforce Helix Core commit server
-    Create the code depot
-    Install Azure Storage Explorer
+- Create the Perforce Helix Core commit server
+- Create the code depot
+- Install Azure Storage Explorer
+
 Section 3: [Azure DevOps organization and project](./azurecloudbuilds-3-azdo.md)
-    Create the Organization 
-    Install Perforce extensions
-    Create a Personal Access Token
-    Create a Project
-    Create a service principal and set up a service connection to Azure
+- Create the Organization 
+- Install Perforce extensions
+- Create a Personal Access Token
+- Create a Project
+- Create a service principal and set up a service connection to Azure
+
 Section 4: [The Build agent](./azurecloudbuilds-4-buildagent.md)
-    Create the build agent VM
-    Install the Azure DevOps agent
-    Install and configure Incredibuild
+- Create the build agent VM
+- Install the Azure DevOps agent
+- Install and configure Incredibuild
+
 Section 5: [Simple build distribution](./azurecloudbuilds-5-dist.md)
-    Create Azure storage account and blob container
+- Create Azure storage account and blob container
+
 Section 6: [The Azure DevOps pipeline](./azurecloudbuilds-6-azdopipeline.md)
-    Create the pipeline
-    Set up the Perforce trigger
+- Create the pipeline
+- Set up the Perforce trigger
+
 Section 7: [Testing](./azurecloudbuilds-7-testing.md)
 
 ## Saving set up information
-As you set up the various components, there will be many pieces of configuration data you will need in downstream steps. When you see  Save this info!  Please take note of the configuration values and save them temporarily in a consolidated list, to make setup easier.
+As you set up the various components, there will be many pieces of configuration data you will need in downstream steps. When you see  :pencil: ==Save this info!==  Please take note of the configuration values and save them temporarily in a consolidated list, to make setup easier.
 
 ## Troubleshooting and Conclusions
 If you come across any problems in your set up, look at the [Troubleshooting](./azurecloudbuilds-9-troubleshooting.md) section to see if any of the information there could help.
