@@ -17,7 +17,7 @@ The focus of this documentation is the portion from version control through buil
 
 [![Azure Cloud Build Overview](media/cloud-build-pipeline/acb-0-intro/overview.png)](media/cloud-build-pipeline/acb-0-intro/overview.png)
 
-While we recommend using the Azure Game Development VM for this exercise, will not be covering the specifics of it, nor Virtual Desktop Infrastructure portion here. For that, please see documentation for the Azure Game Development VM <link>.  
+While we recommend using the Azure Game Development VM for this exercise, will not be covering the specifics of it, nor Virtual Desktop Infrastructure portion here. For that, please see documentation for the [Azure Game Development VM]().  
 This is a large guide, so it’s best to take some time to review it before working on it, to understand what you might need ahead of time.
 
 ## Broad Prerequisites
@@ -67,7 +67,11 @@ Section 6: [The Azure DevOps pipeline](./azurecloudbuilds-6-azdopipeline.md)
 Section 7: [Testing](./azurecloudbuilds-7-testing.md)
 
 ## Saving set up information
-As you set up the various components, there will be many pieces of configuration data you will need in downstream steps. When you see  :pencil: ==Save this info!==  Please take note of the configuration values and save them temporarily in a consolidated list, to make setup easier.
+As you set up the various components, there will be many pieces of configuration data you will need in downstream steps. When you see  
+
+     :pencil: *Save this info!*  
+
+...please take note of the configuration values and save them temporarily in a consolidated list, to make setup easier.
 
 ## Troubleshooting and Conclusions
 If you come across any problems in your set up, look at the [Troubleshooting](./azurecloudbuilds-9-troubleshooting.md) section to see if any of the information there could help.
