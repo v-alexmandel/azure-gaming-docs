@@ -138,3 +138,5 @@ productDirectory:
         url: reference-architectures/perforce-set-up-a-proxy-in-azure.md
       - text: Incredibuild - Scale out your cloud builds
         url: reference-architectures/incredibuild-scale-out-your-cloud-builds.md
+      - text: Azure Cloud Builds
+        url: reference-architectures/azurecloudbuilds-0-intro.md
