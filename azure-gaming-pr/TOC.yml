@@ -91,3 +91,5 @@
       href: reference-architectures/perforce-set-up-a-proxy-in-azure.md
     - name: Incredibuild - Scale out your cloud builds
       href: reference-architectures/incredibuild-scale-out-your-cloud-builds.md
+    - name: Azure Cloud Builds
+      href: reference-architectures/azurecloudbuilds-0-intro.md
