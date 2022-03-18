@@ -41,7 +41,8 @@ Much will depend on your current setup and your budgets. Here are some suggestio
 ### Complete Azure setup
 In this case, we assume:
 - Coordinators and Agents will all be VMs in Azure
-- The Azure DevOps pipeline will use a custom build agent  that will act as the Coordinator and Initiator Agent
+- The Azure DevOps pipeline will use a custom build agent that will act as the Coordinator and Initiator Agent
+
 Also consider where your Helper Agents will come from. During the Incredibuild Cloud setup, you will be asked to specify what type(s) of VMs you would like to use, and the maximum number of VMs to scale. 
 You also have the option of using Spot VM instances as agents. Spot instances allow you to take advantage of Azure’s unused capacity at a significant cost savings. The trade-off is that when Azure needs the capacity back, the Azure infrastructure will evict these Spot Virtual Machines. However, because of the way Incredibuild divides the compute tasks, Azure Spot VM remain a viable option for a build pipeline. For more information on Azure Spot VMs, please see the **[documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/spot-vms)**.
 You should also check your Azure core quota. You cannot allocate more VMs of a certain type than your Subscriptions’ quotas allow, so make sure that you confirm you can allocate as many as you need. You can **[request more quota](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests)** of a certain VM SKU if needed.
@@ -62,6 +63,7 @@ Incredibuild specifies requirements for open ports, networking, storage, operati
 
 
 ## Setting up Incredibuild
+
 
 
 ## Testing and troubleshooting
