@@ -32,8 +32,6 @@ We will use an Azure Blob Storage container to hold all our builds. Let’s set 
 
 6.	Now, create a container within the new storage account. In the left settings menu, click on **Containers**, then **+ Container**.
 
-[![Create Storage Account 3](media/cloud-build-pipeline/acb5-dist/createstorageaccount3.png)](media/cloud-build-pipeline/acb5-dist/createstorageaccount3.png)
-
 7.	In the New container blade:
 - Name: Enter the name of your new container 
 - Public access level: select Container (anonymous read access for containers and blobs)
@@ -48,6 +46,6 @@ We will use an Azure Blob Storage container to hold all our builds. Let’s set 
 
 
 ## Next steps
-Next, go to Section 5: [Simple build distribution](./azurecloudbuilds-5-dist.md).
+Next, go to Section 6: [Azure DevOps Pipeline](./azurecloudbuilds-6-azdopipeline.md).
 Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).
