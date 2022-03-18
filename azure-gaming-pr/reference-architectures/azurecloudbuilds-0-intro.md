@@ -69,7 +69,7 @@ Section 7: [Testing](./azurecloudbuilds-7-testing.md)
 ## Saving set up information
 As you set up the various components, there will be many pieces of configuration data you will need in downstream steps. When you see  
 
-:pencil: ===*Save this info!*===
+:pencil: ***Save this info!*** :pencil:
 
 ...please take note of the configuration values and save them temporarily in a consolidated list, to make setup easier.
 
