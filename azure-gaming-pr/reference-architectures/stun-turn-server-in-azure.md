@@ -17,7 +17,7 @@ When deploying Unreal Pixel Streaming, some of your clients might be on networks
 
 ## Setting up the machine
 
-The walkthrough assumes a deployed Ubuntu 18.04 machine in Azure. If you are looking how to deploy a Linux VM in Azure, have a look at []his quickstart](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) on the Microsoft Docs site.
+The walkthrough assumes a deployed Ubuntu 18.04 machine in Azure. If you are looking how to deploy a Linux VM in Azure, have a look at [this quickstart](/azure/virtual-machines/linux/quick-create-portal) on the Microsoft Docs site.
 
 ## Setting up the STUN/TURN Server
 
@@ -25,7 +25,7 @@ The walkthrough assumes a deployed Ubuntu 18.04 machine in Azure. If you are loo
 
 ## DNS Option
 
-In the walkthrough DNS is configured. In case you need a domain name, you can [register one in Azure](https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain), and use [Azure DNS](https://docs.microsoft.com/en-us/azure/dns/dns-overview) to host the DNS for your domain.
+In the walkthrough DNS is configured. In case you need a domain name, you can [register one in Azure](/azure/app-service/manage-custom-dns-buy-domain), and use [Azure DNS](/azure/dns/dns-overview) to host the DNS for your domain.
 
 ## SSL Certificate Option
 
