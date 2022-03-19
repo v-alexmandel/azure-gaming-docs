@@ -19,7 +19,7 @@ Now we have all the pieces to finally create the pipeline in Azure DevOps. We ca
 - Archive files
 - Copy files to Storage blob
 
-Create the pipeline
+## Create the pipeline
 
 1.	In a browser, navigate to https://dev.azure.com/<*{your Organization name}*
 
@@ -141,7 +141,7 @@ steps:
     storage: '$(storagename)'
     ContainerName: '$(containername)'
 ```
-Populate the variables with your values
+### Populate the variables with your values
 
 - p4depotpath: the depot path of the build user, e.g. //depot/...
 - p4port: the connection string of your perforce server, e.g. ssl:*{ip address}*:1666
@@ -160,7 +160,7 @@ Once you have filled in your values for each variable, your script should look s
 
 ## Set a secret pipeline variable
 
-There’s one variable, the perforce user password, that we want to keep hidden. To do this:
+There’s one variable, the Perforce user password, that we want to keep hidden. To do this:
 
 10. Click on Variables in the upper-right of the screen
 
@@ -180,19 +180,19 @@ There’s one variable, the perforce user password, that we want to keep hidden.
 
 ## Pipeline explanation
 
-There are basically 8 sections to the pipeline.
+These are the main sections to the pipeline, explained in brief.
 
-- Trigger. This tells the pipeline not to trigger on changes to the Azure DevOps repo, because we are going to install our own trigger later.
-- Pool. This requests a build agent from the Default agent pool. There is only one build agent in there, the one you set up in Section 4.
-- Variables. This section defines all the variables the pipeline will consume downstream.
-- Task: Find Perforce Change List number. Finds the latest change list number at head and stores it to variable ChangelistNumber.
-- Task: Perforce. Syncs the depot on the build machine to the ChangelistNumber. 
-- Task: Powershell script.
+- *Trigger*. This tells the pipeline not to trigger on changes to the Azure DevOps repo, because we are going to install our own trigger later.
+- *Pool*. This requests a build agent from the Default agent pool. There is only one build agent in there, the one you set up in Section 4.
+- *Variables*. This section defines all the variables the pipeline will consume downstream.
+- *Task: Find Perforce Change List number*. Finds the latest change list number at head and stores it to variable ChangelistNumber.
+- *Task: Perforce*. Syncs the depot on the build machine to the ChangelistNumber. 
+- *Task: Powershell script*.
     - Executes an inline powershell script that calls the Unreal Automation Tool to build the game at a specific location in the depot
     - Stores the resulting build to the output folder
     - Renames the file with a build tag comprised of date/time and ChangelistNumber
-- Task: Archive File. Zips up the loose files in the build output into a single compressed file.
-- Task: Azure File Copy. Copies the file into an Azure Blob store for downstream use.
+- *Task: Archive File*. Zips up the loose files in the build output into a single compressed file.
+- *Task: Azure File Copy*. Copies the file into an Azure Blob store for downstream use.
 
 ## Test Run without Perforce trigger
 At this point, you can test the pipeline directly in Azure DevOps to see if it works.
@@ -211,6 +211,7 @@ Since this is the first time the pipeline is run, you will have to grant permiss
 ## Install the Helix Core commit server trigger
 
 This is the final setup step! 
+
 We are ready to link Perforce with the Azure DevOps pipeline with a Perforce trigger.
 This trigger goes into action whenever a change happens on a specified branch in the depot. In our example, we want the trigger to fire whenever there is a change committed to the //depot/ShooterGame branch. The trigger will call a shell script (“call_ado_pipeline.sh”) that will send a REST call to Azure DevOps to activate a pipeline. 
 
@@ -220,7 +221,7 @@ This trigger goes into action whenever a change happens on a specified branch in
 https://dev.azure.com/gamestudio/ShooterGameBuildPipeline/_build?definitionId=1
 ```
 
-The number after definitionId is your pipeline’s serial number; note it for the next step.
+The number after definitionId is your pipeline’s serial number; note it for the next step. In the case above, the pipeline's number is 1.
 
 
 17.	On your dev workstation, with your favorite code editor, create a text file “call_ado_pipeline.sh” with the following content:
@@ -257,20 +258,20 @@ p4triggers
 ``` 
 
 22.	The default editor, vi, starts up with the triggers file. 
-- Go to the bottom of the file   <Shift-G>
+- Go to the bottom of the file:   Shift-G
 - Type ‘o’ to enter insert mode on a new line.
-- Hit tab 
+- Indent: tab 
 - Copy this text and place it in the file:
 
 ```sh
-call_ado change-commit //depot/ShooterGame/… “%//depot/triggers/call_ado_pipeline.sh% %change%”
+call_ado change-commit //depot/ShooterGame/... “%//depot/triggers/call_ado_pipeline.sh% %change%”
 ```
 
 Your file should now look similar to this: 
 
 [![Trigger setup 3](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers3.png)](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers3.png)
 
-23.	Save and exit with “<esc> : wq”
+23.	Save and exit with Ctrl-ZZ (that is twice with the Z)
 
 For more info on perforce triggers, please see the following links.
 
