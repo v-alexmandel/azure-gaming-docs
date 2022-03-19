@@ -29,7 +29,7 @@ In the walkthrough DNS is configured. In case you need a domain name, you can [r
 
 ## SSL Certificate Option
 
-There are many ways to obtain an SSL certificate. An easy and cheap way is to use LetsEncrypt. Since the Coturn server does not have port 80 available, a manual request with a DNS challenge is easiest:
+There are many ways to obtain an SSL certificate. An easy and cheap way is to use [LetsEncrypt](https://letsencrypt.org/). Setting up LetsEncrypt for a server that uses port 80 for a webserver is extremely easy. Since the Coturn server does use port 80, a manual request with a DNS challenge is easiest:
 
 1. Install CertBot
 
