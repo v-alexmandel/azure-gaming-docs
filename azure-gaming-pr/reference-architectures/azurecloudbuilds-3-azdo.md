@@ -102,11 +102,14 @@ For manual setup, have on hand your:
 
 Check the box “Grant access permissions to all pipelines”.
 
-:pencil: *Save this info!* 
+:pencil: ***Save this info!*** :pencil:
 - Service connection name
 
 
 ## Next steps
+
 Next, go to Section 4: [The Build Agent](./azurecloudbuilds-4-buildagent.md).
-Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
+
+Or return to the [Introduction](./azurecloudbuilds-0-intro.md).
+
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).

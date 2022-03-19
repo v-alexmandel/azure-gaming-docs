@@ -85,6 +85,4 @@ We hope you find this guide useful. Please send us feedback at EMAIL.
 
 Begin the setup! Go to Section 1: [Developer Workstation](./azurecloudbuilds-1-devworkstation.md).
 
-Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
-
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).

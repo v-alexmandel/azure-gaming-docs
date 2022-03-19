@@ -46,7 +46,7 @@ Alternatively, select an Azure VM or physical machine that you would like to use
 7. In Connect to and sync a Perforce depot, check the box.
 
 8. In Perforce Configuration, fill in:
-- P4 Port:  ssl:<ip address of your P4 server>:1666
+- P4 Port:  ssl:*{ip address of your P4 server}*:1666
 - P4 User: your build user name
 - P4 User password: your build user’s password
 - P4 Client Workspace: you can accept the default suggestion. Just make sure this workspace name is unique and does not exist for any other user.
@@ -59,7 +59,7 @@ Alternatively, select an Azure VM or physical machine that you would like to use
 10.	Leave all other choices as default.
 
 
-:pencil: **Save This Info!**
+:pencil: ***Save this info!*** :pencil:
 -	P4 client (workspace) name
 -	Depot path
 
@@ -164,6 +164,9 @@ Incredibuild can help accelerate your compile jobs. This package is not installe
 
 
 ## Next steps
+
 Next, go to Section 5: [Simple build distribution](./azurecloudbuilds-5-dist.md).
-Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
+
+Or return to the [Introduction](./azurecloudbuilds-0-intro.md).
+
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).

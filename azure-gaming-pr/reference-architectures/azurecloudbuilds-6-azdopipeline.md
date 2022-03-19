@@ -144,7 +144,7 @@ steps:
 Populate the variables with your values
 
 - p4depotpath: the depot path of the build user, e.g. //depot/...
-- p4port: the connection string of your perforce server, e.g. ssl:<ip address>:1666
+- p4port: the connection string of your perforce server, e.g. ssl:*{ip address}*:1666
 - fingerprint: the SSL fingerprint of your perforce server, e.g. BA:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:F4
 - p4user: the name of your p4 build user, e.g. build_user
 - p4client: the client workspace name of your build user, e.g. demobuild1-ws
@@ -281,8 +281,9 @@ For more info on perforce triggers, please see the following links.
 
 
 ## Next steps
+
 Next, go to Section 7: [Testing](./azurecloudbuilds-7-testing.md).
 
-Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
+Or return to the [Introduction](./azurecloudbuilds-0-intro.md).
 
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).

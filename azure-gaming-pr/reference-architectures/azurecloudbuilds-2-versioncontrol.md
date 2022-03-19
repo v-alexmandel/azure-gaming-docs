@@ -32,7 +32,7 @@ Some notes:
 - this offering will install a user named ‘perforce’. This is the administrative user of the depot. As described in Perforce’s documentation, the password for this user is the Helix Core Instance ID.
 - also described in their documentation, the administrative user of the Perforce commit VM is a separate user named “centos”. Login is via the SSH key that you would have generated or provided at creation time.
 
- :pencil: *Save this info!*  
+:pencil: ***Save this info!*** :pencil:
 -	Helix core Instance ID
 -	P4 commit public IP address
 
@@ -47,7 +47,7 @@ Once the Helix Core commit server is up and running, the next step is to set up 
 
 [![Azure Perforce Users Groups](media/cloud-build-pipeline/acb-2-versioncontrol/p4usersgroups.png)](media/cloud-build-pipeline/acb-2-versioncontrol/p4usersgroups.png)
 
-:pencil: *Save this info!*  
+:pencil: ***Save this info!*** :pencil:
 -	Build user name
 -	Build user password
 -	Fingerprint
@@ -113,6 +113,9 @@ We will use this tool to download the build created by the build pipeline. In a 
 
 
 ## Next steps
+
 Next, go to Section 3: [Azure DevOps Organization and Project](./azurecloudbuilds-3-azdo.md).
-Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
+
+Or return to the [Introduction](./azurecloudbuilds-0-intro.md).
+
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).

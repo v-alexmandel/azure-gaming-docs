@@ -9,3 +9,10 @@ ms.author: tzong
 ms.prod: azure-gaming
 ---
 # Conclusion
+
+
+## Next steps
+
+Return to the [Introduction](./azurecloudbuilds-0-intro.md).
+
+Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).

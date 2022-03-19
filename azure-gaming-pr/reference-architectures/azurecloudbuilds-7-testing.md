@@ -34,6 +34,6 @@ ms.prod: azure-gaming
 
 Next, go to Section 8: [Conclusion](./azurecloudbuilds-8-conclusion.md).
 
-Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
+Or return to the [Introduction](./azurecloudbuilds-0-intro.md).
 
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).

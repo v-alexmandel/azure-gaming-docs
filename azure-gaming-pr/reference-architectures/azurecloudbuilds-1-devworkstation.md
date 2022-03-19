@@ -50,6 +50,10 @@ If you do not wish to use the Azure Game Development VM, please make sure you ha
 - [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
 
 ## Next steps
+
 Next, go to Section 2: [Version Control](./azurecloudbuilds-2-versioncontrol.md).
+
 Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
+
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).
+
