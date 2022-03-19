@@ -69,7 +69,7 @@ Section 7: [Testing](./azurecloudbuilds-7-testing.md)
 ## Saving set up information
 As you set up the various components, there will be many pieces of configuration data you will need in downstream steps. When you see  
 
-     :pencil: *Save this info!*  
+:pencil: ***Save this info!*** :pencil:
 
 ...please take note of the configuration values and save them temporarily in a consolidated list, to make setup easier.
 
@@ -79,3 +79,10 @@ If you come across any problems in your set up, look at the [Troubleshooting](./
 Finally, see what else you could do with this pipeline in the [Conclusion](./azurecloudbuilds-8-conclusion.md). We also highlight some other customer examples there.
 
 We hope you find this guide useful. Please send us feedback at EMAIL.
+
+
+## Next steps
+
+Begin the setup! Go to Section 1: [Developer Workstation](./azurecloudbuilds-1-devworkstation.md).
+
+Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).
