@@ -28,14 +28,14 @@ Here are just a few other areas to explore with the pipeline you've just built.
 
 Azure Active Directory can be integrated with Perforce's Helix Authentication Service to provide  convenient, secure Single-Sign On capability for your Perforce users and the build system. Please take a look at how to [integrate AAD together with Perforce](./perforce-using-aad-together-with-perforce.md) and boost security in your workflow.
 
-For more on this, please refer to [this article](./perforce-logging-on-with-a-managed-identity.md) on using Managed Identities with Perforce. 
+For more on this, see how to [use AAD Managed Identities with Perforce](./perforce-logging-on-with-a-managed-identity.md).
 
 
 ## Perforce Proxies
 
 In this example pipeline, we have a single Perforce commit server. In real-world situations, however, a more advanced Perforce deployment topology is probably required to address the geographical locality of your development staff.  
 
-Proxies are a way of balancing the load between local depots and the main commit server. Check out [this guide](./perforce-set-up-a-proxy-in-azure.md) to see how to set up a Perforce Proxy in Azure.
+Proxies are a way of balancing the load between local depots and the main commit server. Check out how to [set up a Perforce Proxy in Azure](./perforce-set-up-a-proxy-in-azure.md).
 
 
 ## Pixel Streaming
