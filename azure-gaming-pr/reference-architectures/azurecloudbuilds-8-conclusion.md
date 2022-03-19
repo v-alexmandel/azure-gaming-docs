@@ -12,7 +12,14 @@ ms.prod: azure-gaming
 
 Hopefully you've gone through all the steps and now have a basic pipeline that's working. If so, congratulations!
 
-The rest of the journey begins here- this is **not** a production-grade pipeline yet, of course! Build on this pipeline and make it really work for your studio's situation.
+## Clean up
+If you used the Azure Game Development VMs in the pipeline, you might want to stop and deallocate them when not in use - the NV-class VMs can be costly.  
+
+---
+
+## The journey begins here
+
+Of course, this is **not** a production-grade pipeline yet! Build on this pipeline and make it really work for your studio's situation.
 
 Here are just a few other areas to explore with the pipeline you've just built.
 
@@ -35,11 +42,13 @@ Proxies are a way of balancing the load between local depots and the main commit
 
 Azure Gaming and Epic Games have collaborated to integrate Unreal Engine Pixel Streaming capabilities into Azure. Check out [this guide](./unreal-pixel-streaming-at-scale.md) to see how you can enable builds to be streamed to production and QA staff for quick reviews, post-build.
 
+
 ## Customer examples
 
 Other game developers are benefitting from Azure cloud build pipelines today. Please take a look at these examples:
 
 [Bandai Namco Studios: Building a Cloud Native CI/CD Pipeline for Unity Games](https://www.youtube.com/watch?v=zT5r_B1ZtUc)
+
 [Game Studio Inc. uses Azure to cloudify its development](https://developer.microsoft.com/games/customer-stories/game-studio-inc-uses-azure-to-cloudify-its-development/)
 
 [Cloud Build Pipelines: The Coalition](https://developer.microsoft.com/games/customer-stories/cloud-build-pipelines-the-coalition/)
