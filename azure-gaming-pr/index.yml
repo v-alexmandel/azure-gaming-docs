@@ -138,23 +138,5 @@ productDirectory:
           url: reference-architectures/perforce-set-up-a-proxy-in-azure.md
         - text: Incredibuild - Scale out your cloud builds
           url: reference-architectures/incredibuild-scale-out-your-cloud-builds.md
-        - text: Azure Cloud Builds - Introduction
+        - text: Azure Cloud Builds - Full Guide
           url: reference-architectures/azurecloudbuilds-0-intro.md
-        - text: Azure Cloud Builds - Development Workstation
-          url: reference-architectures/azurecloudbuilds-1-devworkstation.md
-        - text: Azure Cloud Builds - Version Control
-          url: reference-architectures/azurecloudbuilds-2-versioncontrol.md
-        - text: Azure Cloud Builds - Azure DevOps Organization and Project
-          url: reference-architectures/azurecloudbuilds-3-azdo.md
-        - text: Azure Cloud Builds - The Build Agent
-          url: reference-architectures/azurecloudbuilds-4-buildagent.md
-        - text: Azure Cloud Builds - Simple build distribution
-          url: reference-architectures/azurecloudbuilds-5-dist.md
-        - text: Azure Cloud Builds - Azure DevOps Pipeline
-          url: reference-architectures/azurecloudbuilds-6-azdopipeline.md
-        - text: Azure Cloud Builds - Testing
-          url: reference-architectures/azurecloudbuilds-7-testing.md
-        - text: Azure Cloud Builds - Conclusion
-          url: reference-architectures/azurecloudbuilds-8-conclusion.md
-        - text: Azure Cloud Builds - Troubleshooting
-          url: reference-architectures/azurecloudbuilds-9-troubleshooting.md
