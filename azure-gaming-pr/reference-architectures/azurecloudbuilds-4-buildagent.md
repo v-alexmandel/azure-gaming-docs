@@ -161,7 +161,7 @@ To confirm that your build agent is connecting correctly with Azure DevOps, look
 
 ## Optional: Build acceleration
 
-Incredibuild can help accelerate your compile jobs. This package is not installed by default. If you would like to try it, please refer this guide on [setting up Incredibuild on your build agent](./incredibuild-scale-out-your-builds.md).
+Incredibuild can help accelerate your compile jobs. This package is not installed by default. If you would like to try it, please refer this guide on [setting up Incredibuild on your build agent](./incredibuild-scale-out-your-cloud-builds.md).
 
 
 ## Next steps
