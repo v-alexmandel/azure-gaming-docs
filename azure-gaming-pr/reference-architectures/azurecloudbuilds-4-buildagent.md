@@ -18,7 +18,7 @@ The easiest way to set up a build agent is through the Azure Game Development Vi
 
 [![Azure Game Development VM Offer](media/cloud-build-pipeline/acb4-buildagent/gamedevvmazureoffer.png)](media/cloud-build-pipeline/acb4-buildagent/gamedevvmazureoffer.png)
 
-Alternatively, select an Azure VM or physical machine that you would like to use, and install the follwoing software packages:
+Alternatively, select an Azure VM or physical machine that you would like to use, and install the following software packages:
 - Unreal Engine 4 (version 4.27 to match the version of the demo game, ShooterGame)
 - [Perforce Visual Client (P4V)](https://www.perforce.com/downloads/helix-visual-client-p4v)
 - [Perforce Helix Admin Tool (P4Admin)](https://www.perforce.com/downloads/administration-tool)
