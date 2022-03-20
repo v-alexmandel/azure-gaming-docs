@@ -24,7 +24,7 @@ This offering lets you define where inside your Azure Subscription a Perforce He
 In this pipeline example, we use this Perforce Enhanced Studio Pack and set up a linux-based Helix Core main server.
 
 1. In the Azure Marketplace, search for “Perforce Enhanced Studio Pack”. 
-2. Click on Create to begin the process.
+2. Click on **Create** to begin the process.
 3. Please continue setup with Perforce's have a comprehensive setup and verification [documentation]().
 4. Once done return here to resume. For the purposes of this pipeline, only the Helix Core server needs to be set up; Helix Swarm, Hansoft and Virtual workstation are optional.
 
@@ -65,10 +65,10 @@ Once the Helix Core commit server is up and running, the next step is to set up 
 
 11. Click OK. 
 
-12. In Workspace tab, right-click c:\p4depots and click Get Latest Revision.
+12. In Workspace tab, right-click c:\p4depots and click **Get Latest Revision**.
 13. You should see the config-depot and spec depots show up. But the main depot will likely be missing because there are no files in it. This is a unique situation for a first-time Perforce depot setup, and we will fix this manually:
 - Create the folder c:\p4depots\depot
-- In p4v, click Refresh. All your depots should now be set up.
+- In p4v, click **Refresh**. All your depots should now be set up.
 
 [![Azure Perforce Depots](media/cloud-build-pipeline/acb-2-versioncontrol/p4depots.png)](media/cloud-build-pipeline/acb-2-versioncontrol/p4depots.png)
 
@@ -88,15 +88,15 @@ Once the Helix Core commit server is up and running, the next step is to set up 
 
 [![p4ignore File](media/cloud-build-pipeline/acb-2-versioncontrol/p4ignorefile.png)](media/cloud-build-pipeline/acb-2-versioncontrol/p4ignorefile.png)
 
-17.	In p4v, click Refresh. You should now see all the ShooterGame files in your workspace.
+17.	In p4v, click **Refresh**. You should now see all the ShooterGame files in your workspace.
 
 [![Shooter Game 1](media/cloud-build-pipeline/acb-2-versioncontrol/ShooterGame1.png)](media/cloud-build-pipeline/acb-2-versioncontrol/ShooterGame1.png)
 
-18.	Right-click ShooterGame and click Mark for Add…
+18.	Right-click **ShooterGame** and click **Mark for Add…**
 
 [![Shooter Game 2](media/cloud-build-pipeline/acb-2-versioncontrol/ShooterGame2.png)](media/cloud-build-pipeline/acb-2-versioncontrol/ShooterGame2.png)
 
-19. Right-click ShooterGame again and click Submit… write a changelist description, like “initial check in”. Click Submit.
+19. Right-click **ShooterGame** again and click **Submit…** write a changelist description, like “initial check in”. Click **Submit**.
 
 18.	After all files are sync’ed to the depot, your depot layout should look something like this, with all ShooterGame files under source control:
 

@@ -25,17 +25,17 @@ Also, if you do not already have an Azure DevOps Organization, navigate to the [
 There are two extensions in the Azure DevOps Marketplace to be installed. You will require Project Collection Administrator permissions to do so, otherwise please get the help of your Azure DevOps administrator.
 The Azure DevOps Perforce extensions are in Private Preview now, so they won’t be visible in the Azure DevOps marketplace. Instead, please contact <email> and request to be added. You will need to provide your Azure DevOps Organization name, e.g. dev.azure.com/MyStudioName.
 
-1. Navigate to https://dev.azure.com/<your Organization name>
+1. Navigate to https://dev.azure.com/*{your Organization name}*
 
-2. In the bottom left corner, click on Organization settings.
+2. In the bottom left corner, click on **Organization settings**.
 
 [![Azure DevOps Org settings](media/cloud-build-pipeline/acb3-azdo/orgsettings.png)](media/cloud-build-pipeline/acb3-azdo/orgsettings.png)
 
-3. In the left settings menu, under General, click on Extensions.
+3. In the left settings menu, under **General**, click on **Extensions**.
 
 [![Azure DevOps extensions](media/cloud-build-pipeline/acb3-azdo/azdoextensions.png)](media/cloud-build-pipeline/acb3-azdo/azdoextensions.png)
 
-4. Click on Extensions / Shared. If you have received confirmation that the extensions have been shared with you, you will see them here:
+4. Click on **Extensions / Shared**. If you have received confirmation that the extensions have been shared with you, you will see them here:
 
 [![Azure DevOps shared extensions](media/cloud-build-pipeline/acb3-azdo/sharedextensions.png)](media/cloud-build-pipeline/acb3-azdo/sharedextensions.png)
 
@@ -43,21 +43,21 @@ The Azure DevOps Perforce extensions are in Private Preview now, so they won’t
 
 5.	Click on each of these extensions and install them in your Azure DevOps instance.
 
-6.	They should now show up under Installed Extensions.
+6.	They should now show up under **Installed Extensions**.
 
 
 ## Create a personal access token (PAT)
 
 A Personal Access Token will be needed later for the Perforce trigger to call the Azure DevOps pipeline and manage build agents and agent pools.  Set one up as follows:
 
-7.	In Azure DevOps look for the Personal Settings icon (pictured below) in the top-right corner of the web page. Left click on it, then click on “Personal Access Tokens”. 
+7.	In Azure DevOps look for the **Personal Settings** icon (pictured below) in the top-right corner of the web page. Left click on it, then click on **Personal Access Tokens**. 
 
 [![Azure DevOps user settings](media/cloud-build-pipeline/acb3-azdo/usersettings.png)](media/cloud-build-pipeline/acb3-azdo/usersettings.png)
 
-8. Create a new token by clicking on + New Token. Fill in all the data for the PAT, name it, choose (and note!) your expiry date carefully. For Scopes for this demo, you will want:
+8. Create a new token by clicking on **+ New Token**. Fill in all the data for the PAT, name it, choose (and note!) your expiry date carefully. For Scopes for this demo, you will want:
 - Agent Pools – Read & manage
 - Build – Read & execute
-You may have to click on “Show all scopes” to uncover them all. As good security practice, you’ll want to keep the expiry time as soon as is practicable, with the fewest Scopes needed to fulfill the task. 
+You may have to click on **Show all scopes** to uncover them all. As good security practice, you’ll want to keep the expiry time as soon as is practicable, with the fewest Scopes needed to fulfill the task. 
 
 
 [![Azure DevOps PAT scopes](media/cloud-build-pipeline/acb3-azdo/patscopes.png)](media/cloud-build-pipeline/acb3-azdo/patscopes.png)
@@ -68,7 +68,7 @@ You may have to click on “Show all scopes” to uncover them all. As good secu
 
 ## Create a Project
 
-9.	Within your Organization, create a new project by clicking + New project in the top right of the web page.
+9.	Within your Organization, create a new project by clicking **+ New project** in the top right of the web page.
 
 [![Create Azure DevOps Project](media/cloud-build-pipeline/acb3-azdo/createproject.png)](media/cloud-build-pipeline/acb3-azdo/createproject.png)
 
@@ -78,7 +78,7 @@ You may have to click on “Show all scopes” to uncover them all. As good secu
 
 [![Create Azure DevOps Repo](media/cloud-build-pipeline/acb3-azdo/createrepo.png)](media/cloud-build-pipeline/acb3-azdo/createrepo.png)
 
-12. It will say the project is empty, and to add some code. In the bottom-most option (Initialize a main branch with a README or gitignore), click Initialize. Although our game code is in perforce, we will use this Repo to store and version our pipeline code. 
+12. It will say the project is empty, and to add some code. In the bottom-most option (Initialize a main branch with a README or gitignore), click **Initialize**. Although our game code is in perforce, we will use this Repo to store and version our pipeline code. 
 
 [![Init Azure DevOps Repo](media/cloud-build-pipeline/acb3-azdo/initrepo.png)](media/cloud-build-pipeline/acb3-azdo/initrepo.png)
 
@@ -100,7 +100,7 @@ For manual setup, have on hand your:
 - Service Principal Key (the actual value, not the Secret ID)
 - Directory (Tenant) ID
 
-Check the box “Grant access permissions to all pipelines”.
+Check the box **Grant access permissions to all pipelines**.
 
 :pencil: ***Save this info!*** :pencil:
 - Service connection name

@@ -44,9 +44,13 @@ Find the Azure Game Development VM offering in the Azure Marketplace and create 
 
 ## Using your own developer workstation
 If you do not wish to use the Azure Game Development VM, please make sure you have the following software on your workstation:
+
 - Unreal Engine 4 (version 4.27 to match the version of the demo game, ShooterGame)
+
 - [Perforce Visual Client (P4V)](https://www.perforce.com/downloads/helix-visual-client-p4v)
+
 - [Perforce Helix Admin Tool (P4Admin)](https://www.perforce.com/downloads/administration-tool)
+
 - [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
 
 ## Next steps

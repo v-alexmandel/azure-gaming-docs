@@ -23,33 +23,31 @@ Now we have all the pieces to finally create the pipeline in Azure DevOps. We ca
 
 1.	In a browser, navigate to https://dev.azure.com/<*{your Organization name}*
 
-2.	Go to your Azure DevOps project. In the left menu blade, click on Pipelines, under Pipelines:
+2.	Go to your Azure DevOps project. In the left menu blade, click **Pipelines**, under Pipelines:
 
 [![Pipelines Menu](media/cloud-build-pipeline/acb6-azdopipeline/pipelinemenu.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinemenu.png)
 
 3.	On the Create your first Pipeline page, click **Create pipeline**.
 
-4.	For where is your code? Choose Azure Repos Git and pick the Repo you just created in the previous step.
+4.	For where is your code? Choose **Azure Repos Git** and pick the Repo you just created in the previous step.
 
 [![Pipeline setup 1](media/cloud-build-pipeline/acb6-azdopipeline/pipelinesetup1.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinesetup1.png)
 
 
-5.	 Select Existing Azure Pipelines YAML file. Pick the Starter pipeline.
+5.	 Select **Existing Azure Pipelines YAML file**. Pick the **Starter pipeline**.
 
-6.	You will advance to the “Review your pipeline YAML” page.
+6.	You will advance to the **Review your pipeline YAML** page.
 
 [![Pipeline setup 2](media/cloud-build-pipeline/acb6-azdopipeline/pipelinesetup2.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinesetup2.png)
 
-7.	We will overwrite almost all the boilerplate code in the following steps. But for now, click on the down chevron next to Save and run, select Save. enter a commit message, and hit “Save” again.
+7.	We will overwrite almost all the boilerplate code in the following steps. But for now, click the down chevron next to **Save and run**, click **Save**. enter a commit message, and click **Save** again.
 
-8.	Once the pipeline saves, click Edit.
+8.	Once the pipeline save is complete, click **Edit**.
 
 [![Pipeline setup 3](media/cloud-build-pipeline/acb6-azdopipeline/pipelinesetup3.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinesetup3.png)
 
 
-Now let’s modify the existing pipeline. Edit the YAML script as follows:
-
-9.	Delete all the boilerplate YAML script and insert the following:
+9.	Now let’s modify the existing pipeline. Delete all the boilerplate YAML script and insert the following:
 
 ```yaml
 
@@ -143,15 +141,15 @@ steps:
 ```
 ### Populate the variables with your values
 
-- p4depotpath: the depot path of the build user, e.g. //depot/...
-- p4port: the connection string of your perforce server, e.g. ssl:*{ip address}*:1666
-- fingerprint: the SSL fingerprint of your perforce server, e.g. BA:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:F4
-- p4user: the name of your p4 build user, e.g. build_user
-- p4client: the client workspace name of your build user, e.g. demobuild1-ws
-- p4root: the perforce root on your build machine, e.g. c:\p4depots\depot
-- serviceconnection: the name of the service connection you created in step LINK
-- storagename: the name of the Azure Storage Account you created in step LINK
-- containername: the name of the Container you created in step LINK
+- **p4depotpath**: the depot path of the build user, e.g. //depot/...
+- **p4port**: the connection string of your perforce server, e.g. ssl:*{ip address}*:1666
+- **fingerprint**: the SSL fingerprint of your perforce server, e.g. BA:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:F4
+- **p4user**: the name of your p4 build user, e.g. build_user
+- **p4client**: the client workspace name of your build user, e.g. demobuild1-ws
+- **p4root**: the perforce root on your build machine, e.g. c:\p4depots\depot
+- **serviceconnection**: the name of the service connection you created in step LINK
+- **storagename**: the name of the Azure Storage Account you created in step LINK
+- **containername**: the name of the Container you created in step LINK
 
 Once you have filled in your values for each variable, your script should look something like this:
 
@@ -162,18 +160,18 @@ Once you have filled in your values for each variable, your script should look s
 
 There’s one variable, the Perforce user password, that we want to keep hidden. To do this:
 
-10. Click on Variables in the upper-right of the screen
+10. Click **Variables** in the upper-right of the screen
 
 [![Secret variable 1](media/cloud-build-pipeline/acb6-azdopipeline/variables1.png)](media/cloud-build-pipeline/acb6-azdopipeline/variables1.png)
 
-11.	Click on New variable (for the first one) 
+11.	Click **New variable**
 12.	Insert the following data
 
 - Name: p4pass
 - Value: *{your p4 build user password}*
 - Keep this value secret: check this box
 
-13.	Click Save. Your variables blade should look something like the following.
+13.	Click **Save**. Your variables blade should look something like the following.
 
 [![Secret variable 2](media/cloud-build-pipeline/acb6-azdopipeline/variables2.png)](media/cloud-build-pipeline/acb6-azdopipeline/variables2.png)
 
@@ -201,7 +199,7 @@ At this point, you can test the pipeline directly in Azure DevOps to see if it w
 
 [![Test run](media/cloud-build-pipeline/acb6-azdopipeline/variables1.png)](media/cloud-build-pipeline/acb6-azdopipeline/variables1.png)
 
-Since this is the first time the pipeline is run, you will have to grant permissions for the pipeline to access resources:
+Since this is the first time the pipeline is run, you must grant permissions for the pipeline to access resources:
 
 [![Pipeline first run](media/cloud-build-pipeline/acb6-azdopipeline/pipelinefirstrun.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinefirstrun.png)
 
@@ -213,9 +211,9 @@ Since this is the first time the pipeline is run, you will have to grant permiss
 This is the final setup step! 
 
 We are ready to link Perforce with the Azure DevOps pipeline with a Perforce trigger.
-This trigger goes into action whenever a change happens on a specified branch in the depot. In our example, we want the trigger to fire whenever there is a change committed to the //depot/ShooterGame branch. The trigger will call a shell script (“call_ado_pipeline.sh”) that will send a REST call to Azure DevOps to activate a pipeline. 
+This trigger goes into action whenever a change happens on a specified branch in the depot. In our example, we want the trigger to fire whenever there is a change committed to the //depot/ShooterGame branch. The trigger will call a shell script (*call_ado_pipeline.sh*) that will send a REST call to Azure DevOps to activate a pipeline. 
 
-16.	First, find out the number of the Azure DevOps pipeline you just created. The easiest way is to go to Pipelines, then click on your pipeline. The browser URL bar will display something like 
+16.	First, find out the number of the Azure DevOps pipeline you just created. The easiest way is to go to Pipelines, then click your pipeline. The browser URL bar will display something like 
 
 ```
 https://dev.azure.com/gamestudio/ShooterGameBuildPipeline/_build?definitionId=1
@@ -236,13 +234,13 @@ curl -u <PAT token> -X POST https://dev.azure.com/<your ADOName>/<yourProjectNam
 
 [![Trigger setup 1](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers1.png)](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers1.png)
 
-17.	Open p4v and refresh your workspace. You should see the triggers folder appear in the workspace. Right-click on it and Mark for add…   then right-click again and Submit…
+17.	Open p4v and refresh your workspace. You should see the triggers folder appear in the workspace. Right-click on it and **Mark for add…**   then right-click again and **Submit…**
 
 18.	Your depot should now contain the trigger as follows:
 
 [![Trigger setup 2](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers2.png)](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers2.png)
 
-19.	SSH login to your Helix Core commit server as the administrative user, centos.  You can use something like PuTTY, or a more secure way like an Azure Bastion host. Either way, make sure you have your SSL key handy.
+19.	SSH login to your Helix Core commit server as the administrative user, centos.  You can use something like PuTTY, or an Azure Bastion host. Either way, make sure you have your SSL key handy.
 
 20.	Become the perforce user with 
 
@@ -271,7 +269,7 @@ Your file should now look similar to this:
 
 [![Trigger setup 3](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers3.png)](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers3.png)
 
-23.	Save and exit with Ctrl-ZZ (that is twice with the Z)
+23.	Save and exit with: '\<esc\> Shift-ZZ' (that is twice with  Z)
 
 For more info on perforce triggers, please see the following links.
 

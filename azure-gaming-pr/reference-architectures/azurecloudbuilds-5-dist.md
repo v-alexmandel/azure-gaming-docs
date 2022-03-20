@@ -30,7 +30,7 @@ We will use an Azure Blob Storage container to hold all our builds. Let’s set 
 
 [![Create Storage Account 2](media/cloud-build-pipeline/acb5-dist/createstorageaccount2.png)](media/cloud-build-pipeline/acb5-dist/createstorageaccount2.png)
 
-6.	Now, create a container within the new storage account. In the left settings menu, click on **Containers**, then **+ Container**.
+6.	Now, create a container within the new storage account. In the left settings menu, click on **Containers**, then **+Container**.
 
 7.	In the New container blade:
 - Name: Enter the name of your new container 
