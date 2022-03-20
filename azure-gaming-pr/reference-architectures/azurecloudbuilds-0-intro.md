@@ -9,7 +9,6 @@ ms.author: tzong
 ms.prod: azure-gaming
 ---
 # Azure Cloud Build Pipelines
-A guide to creating a demo build pipeline 
 
 ## Overview
 This document will guide you through all the steps required to create a basic Azure build pipeline like the one seen in the Game Developer Conference 2022 talk entitled “Harness the power of Azure cloud builds from development to deployment”. 
