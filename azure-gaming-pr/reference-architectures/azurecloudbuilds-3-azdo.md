@@ -89,7 +89,7 @@ For your Azure DevOps pipelines to access Azure resources like Virtual Machine S
 
 13. You will first need to create a service principal in your Azure subscription. Follow [these instructions](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal). 
 
-14. Next, create an Azure Resource Manager [service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal). Use the existing service principal created from the step before.
+14. Next, create an Azure Resource Manager [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal). Use the existing service principal created from the step before.
 
 For Azure Resource Manager service connection setup, try the automatic method first, and if there is a problem with finding your subscription, try the manual method next.
 

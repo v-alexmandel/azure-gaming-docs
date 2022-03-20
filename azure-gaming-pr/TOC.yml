@@ -107,7 +107,7 @@
       href: reference-architectures/azurecloudbuilds-6-azdopipeline.md
     - name: Azure Cloud Builds - Testing
       href: reference-architectures/azurecloudbuilds-7-testing.md
-    - tenamext: Azure Cloud Builds - Conclusion
+    - name: Azure Cloud Builds - Conclusion
       href: reference-architectures/azurecloudbuilds-8-conclusion.md
     - name: Azure Cloud Builds - Troubleshooting
       href: reference-architectures/azurecloudbuilds-9-troubleshooting.md    
