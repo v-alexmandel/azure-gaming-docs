@@ -28,7 +28,7 @@ Find the Azure Game Development VM offering in the Azure Marketplace and create 
 
 [![Game Dev VM creation part 1](media/cloud-build-pipeline/acb-1-devws/createvm1.png)](media/cloud-build-pipeline/acb-1-devws/createvm1.png)
 
-6.	Next, choose the **Game Engine** to be installed. Select Unreal Engine 4.27.2. You can leave all other choices as the default.
+6. Next, choose the **Game Engine** to be installed. Select Unreal Engine 4.27.2. You can leave all other choices as the default.
 
 [![Game Dev VM creation part 2](media/cloud-build-pipeline/acb-1-devws/createvm2.png)](media/cloud-build-pipeline/acb-1-devws/createvm2.png)
 
@@ -36,8 +36,8 @@ Find the Azure Game Development VM offering in the Azure Marketplace and create 
 
 [![Game Dev VM creation part 3](media/cloud-build-pipeline/acb-1-devws/createvm3.png)](media/cloud-build-pipeline/acb-1-devws/createvm3.png)
 
-8.	At this point, you can click on **“Review + create”** for purposes of this demo.
-9.	Click **Create** once the review is done with no errors.
+8. At this point, you can click on **“Review + create”** for purposes of this demo.
+9. Click **Create** once the review is done with no errors.
 
 ## Using your own developer workstation
 
