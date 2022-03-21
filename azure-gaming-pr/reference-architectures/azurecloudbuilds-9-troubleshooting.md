@@ -31,7 +31,7 @@ If you have Incredibuild installed but no license, Incredibuild restricts execut
 
 ### Azure DevOps service connection steps not showing up my Azure Subscriptions
 
-As part of the Azure DevOps setup, you will create an Azure Resource Manager service connection. The first two choices in the menu are to do so either automatically, or manually. 
+As part of the Azure DevOps setup, you will create an Azure Resource Manager service connection. The first two choices in the menu are to do so either automatically, or manually.
 
 The automatic way should auto-detect all the subscriptions associated with your login account and populate them on screen for you to choose. If it doesn't do that, try the manual method instead, whereby you have to specify the Subscription ID, etc.
 
@@ -61,13 +61,14 @@ You can always attach a larger data drive to the VM. However, take care to re-co
 ### I cannot access my Perforce commit server/build server
 
 Make sure your network security groups are not blocking the relevant means of access (e.g. ports 22, 3389 for ssh and RDP access respectively). The VM itself has a firewall that you need to check.
-A good way to ensure access is to either use [Just-In-Time VM access](/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-asc) (if your Azure Security tier allows it) or use [Azure Bastion hosts](https://azure.microsoft.com/en-ca/services/azure-bastion/#features) to access them.
+A good way to ensure access is to either use [Just-In-Time VM access](/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-asc) (if your Azure Security tier allows it) or use [Azure Bastion hosts](https://azure.microsoft.com/services/azure-bastion/#features) to access them.
 
 ### I can't find the fingerprint of my Perforce commit server
 
 It appears when you first connect to the Perforce server from a new machine. The problem is that the pop-up it appears in does not allow you to copy and paste the fingerprint data, making it easy to lose it later. There are various resources on line that will show you how to do this within the server, please search in your favorite search engine.
 
 ### I can't add more users to my Perforce server
+
 The free Perforce trial allows up to five users to be created on the system. Either delete existing users, or contact Perforce for a paid license.
 
 ## Next steps

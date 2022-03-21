@@ -50,7 +50,6 @@ Other game developers are benefitting from Azure cloud build pipelines today. Pl
 
 [Cloud Build Pipelines: The Coalition](https://developer.microsoft.com/games/customer-stories/cloud-build-pipelines-the-coalition/)
 
-
 ## Next steps
 
 Return to the [Introduction](./azurecloudbuilds-0-intro.md).
