@@ -71,6 +71,10 @@
       href: reference-architectures/cognitive-speech-to-text.md
     - name: Customer Service Bot
       href: reference-architectures/cognitive-css-bot.md
+  - name: Azure Game Development Virtual Machine
+    items:
+    - name: Azure Game Development Virtual Machine
+      href: game-dev-virtual-machine/index.yml
   - name: Game Streaming
     items:
     - name: Unreal Pixel Streaming in Azure
@@ -112,8 +116,4 @@
       - name: Azure Cloud Builds - Conclusion
         href: reference-architectures/azurecloudbuilds-8-conclusion.md
       - name: Azure Cloud Builds - Troubleshooting
-        href: reference-architectures/azurecloudbuilds-9-troubleshooting.md    
-  - name: Azure Game Development Virtual Machine
-    items:
-    - name: Azure Game Development Virtual Machine
-      href: game-dev-virtual-machine/index.yml      
+        href: reference-architectures/azurecloudbuilds-9-troubleshooting.md         
