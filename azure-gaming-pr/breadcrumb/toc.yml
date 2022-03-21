@@ -1,3 +1,14 @@
 - name: Game Stack Docs
   tocHref: /gaming/
   topicHref: /gaming/
+  items:
+  - name: Azure Gaming
+    tocHref: /gaming/azure/
+    topicHref: ../index.yml
+    items:
+    - name: Game Development Virtual Machine
+      tocHref: /gaming/azure/game-dev-virtual-machine/
+      topicHref: /gaming/azure/game-dev-virtual-machine/index
+    - name: Reference Architectures
+      tocHref: /gaming/azure/reference-architectures/
+      topicHref: ../index.yml
