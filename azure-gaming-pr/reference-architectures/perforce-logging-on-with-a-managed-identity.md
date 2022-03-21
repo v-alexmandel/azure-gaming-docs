@@ -428,7 +428,7 @@ yes $(uuidgen) | p4 -u perforce passwd buildserver
 
 ## Test the setup
 
-Testing the setup can be done through multiple ways. Examples include the Windows Workstation that can be deployed as part of the Enhanced Studio Pack, or the use of the Azure Game Dev VM. In the end we’ll need a machine with the Perforce CLI tools installed.
+Testing the setup can be done through multiple ways. Examples include the Windows Workstation that can be deployed as part of the Enhanced Studio Pack, or the use of the [Azure Game Dev VM](./game-dev-virtual-machine). In the end we’ll need a machine with the Perforce CLI tools installed.
 
 In this walkthrough we’ll RDP into an instance of the Azure Game Dev VM, as it has all the tools installed.
 
