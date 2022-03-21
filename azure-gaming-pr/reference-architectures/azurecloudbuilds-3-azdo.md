@@ -23,7 +23,7 @@ Also, if you do not already have an Azure DevOps Organization, navigate to the [
 There are two extensions in the Azure DevOps Marketplace to be installed. You will require Project Collection Administrator permissions to do so, otherwise please get the help of your Azure DevOps administrator.
 The Azure DevOps Perforce extensions are in Private Preview now, so they won’t be visible in the Azure DevOps marketplace. Instead, please contact [azuregameproduction@microsoft.com](mailto:azuregameproduction@microsoft.com) and request to be added. You will need to provide your Azure DevOps Organization name, e.g. dev.azure.com/MyStudioName.
 
-1. Navigate to https://dev.azure.com/**{yourOrganizationname}**
+1. Navigate to https://dev.azure.com/{yourStudioName}
 
 2. In the bottom left corner, click on **Organization settings**.
 

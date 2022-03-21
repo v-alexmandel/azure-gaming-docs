@@ -22,7 +22,7 @@ Now we have all the pieces to finally create the pipeline in Azure DevOps. We ca
 
 ## Create the pipeline
 
-1. In a browser, navigate to https://dev.azure.com/**yourOrganizationname**
+1. In a browser, navigate to https://dev.azure.com/{yourStudioName}
 
 2. Go to your Azure DevOps project. In the left menu blade, click **Pipelines**, under Pipelines:
 
@@ -34,7 +34,7 @@ Now we have all the pieces to finally create the pipeline in Azure DevOps. We ca
 
 [![Pipeline setup 1](media/cloud-build-pipeline/acb6-azdopipeline/pipelinesetup1.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinesetup1.png)
 
-5.  Select **Existing Azure Pipelines YAML file**. Pick the **Starter pipeline**.
+5. Select **Existing Azure Pipelines YAML file**. Pick the **Starter pipeline**.
 
 6. You will advance to the **Review your pipeline YAML** page.
 
@@ -49,7 +49,6 @@ Now we have all the pieces to finally create the pipeline in Azure DevOps. We ca
 9. Now let’s modify the existing pipeline. Delete all the boilerplate YAML script and insert the following:
 
 ```yaml
-
 trigger: none
 
 pool: 
