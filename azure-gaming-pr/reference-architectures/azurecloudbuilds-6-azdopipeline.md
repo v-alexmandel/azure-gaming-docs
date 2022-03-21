@@ -74,18 +74,6 @@ variables:
   buildtag: 
   outputfolder: c:\BuildOutput
 
-steps:
-- task: FindPerforceChangelistNumber@1
-     displayName: Find Perforce CL Number
-  inputs:
-    STATUS: 'submitted'
-    DEPOTPATH: '$(p4depotpath)'
-    P4PORT: '$(p4port)'
-    ssl: true
-    fingerprint: '$(fingerprint)'
-    P4USER: '$(p4user)'
-    P4PASSWD: '$(p4pass)'
-    
 - task: Perforce@1
   displayName: Sync Perforce to CL
   inputs:
@@ -97,7 +85,7 @@ steps:
     Clean: false
     Force: false
     synctype: 'changelist'
-    CHANGELIST: '$(ChangelistNumber)'
+    CHANGELIST: '$(CHANGESET)'
     P4CLIENT: '$(p4client)'
     P4PORT: '$(p4port)'
     ssl: true
@@ -160,18 +148,19 @@ Once you have filled in your values for each variable, your script should look s
 
 There’s one variable, the Perforce user password, that we want to keep hidden. To do this:
 
-10. Click **Variables** in the upper-right of the screen
+1. Click **Variables** in the upper-right of the screen
 
 [![Secret variable 1](media/cloud-build-pipeline/acb6-azdopipeline/variables1.png)](media/cloud-build-pipeline/acb6-azdopipeline/variables1.png)
 
-11.	Click **New variable**
-12.	Insert the following data
+2.	Click **New variable**
+
+3.	Insert the following data
 
 - Name: p4pass
 - Value: *{your p4 build user password}*
 - Keep this value secret: check this box
 
-13.	Click **Save**. Your variables blade should look something like the following.
+4.	Click **Save**. Your variables blade should look something like the following.
 
 [![Secret variable 2](media/cloud-build-pipeline/acb6-azdopipeline/variables2.png)](media/cloud-build-pipeline/acb6-azdopipeline/variables2.png)
 
@@ -183,8 +172,7 @@ These are the main sections to the pipeline, explained in brief.
 - *Trigger*. This tells the pipeline not to trigger on changes to the Azure DevOps repo, because we are going to install our own trigger later.
 - *Pool*. This requests a build agent from the Default agent pool. There is only one build agent in there, the one you set up in Section 4.
 - *Variables*. This section defines all the variables the pipeline will consume downstream.
-- *Task: Find Perforce Change List number*. Finds the latest change list number at head and stores it to variable ChangelistNumber.
-- *Task: Perforce*. Syncs the depot on the build machine to the ChangelistNumber. 
+- *Task: Perforce*. This is the extension you installed earlier. It syncs the depot on the build machine to the changelist number defined in variable CHANGESET. This variable will be passed in directly from the Perforce trigger, which we will set up shortly. 
 - *Task: Powershell script*.
     - Executes an inline powershell script that calls the Unreal Automation Tool to build the game at a specific location in the depot
     - Stores the resulting build to the output folder
@@ -192,28 +180,13 @@ These are the main sections to the pipeline, explained in brief.
 - *Task: Archive File*. Zips up the loose files in the build output into a single compressed file.
 - *Task: Azure File Copy*. Copies the file into an Azure Blob store for downstream use.
 
-## Test Run without Perforce trigger
-At this point, you can test the pipeline directly in Azure DevOps to see if it works.
-
-14. In the top-right corner of the webpage, click Run.
-
-[![Test run](media/cloud-build-pipeline/acb6-azdopipeline/variables1.png)](media/cloud-build-pipeline/acb6-azdopipeline/variables1.png)
-
-Since this is the first time the pipeline is run, you must grant permissions for the pipeline to access resources:
-
-[![Pipeline first run](media/cloud-build-pipeline/acb6-azdopipeline/pipelinefirstrun.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinefirstrun.png)
-
-
-15.  Click **Permit**. You can track the progress of the build by following the pipeline output. 
 
 ## Install the Helix Core commit server trigger
-
-This is the final setup step! 
 
 We are ready to link Perforce with the Azure DevOps pipeline with a Perforce trigger.
 This trigger goes into action whenever a change happens on a specified branch in the depot. In our example, we want the trigger to fire whenever there is a change committed to the //depot/ShooterGame branch. The trigger will call a shell script (*call_ado_pipeline.sh*) that will send a REST call to Azure DevOps to activate a pipeline. 
 
-16.	First, find out the number of the Azure DevOps pipeline you just created. The easiest way is to go to Pipelines, then click your pipeline. The browser URL bar will display something like 
+1.	First, find out the number of the Azure DevOps pipeline you just created. The easiest way is to go to Pipelines, then click your pipeline. The browser URL bar will display something like 
 
 ```
 https://dev.azure.com/gamestudio/ShooterGameBuildPipeline/_build?definitionId=1
@@ -222,7 +195,7 @@ https://dev.azure.com/gamestudio/ShooterGameBuildPipeline/_build?definitionId=1
 The number after definitionId is your pipeline’s serial number; note it for the next step. In the case above, the pipeline's number is 1.
 
 
-17.	On your dev workstation, with your favorite code editor, create a text file “call_ado_pipeline.sh” with the following content:
+2.	On your dev workstation, with your favorite code editor, create a text file “call_ado_pipeline.sh” with the following content:
 
 ```sh
 #!/bin/sh
@@ -230,32 +203,34 @@ The number after definitionId is your pipeline’s serial number; note it for th
 curl -u <PAT token> -X POST https://dev.azure.com/<your ADOName>/<yourProjectName>/_apis/pipelines/<pipelineNumber>/runs?api-version=6.0-preview.1 -H "Content-Type: application/json" -d '{"variables":{"CHANGESET":{"isSecret":false,"value":"'$1'"}}}'
 ```
 
-16. Create a folder under the depot called triggers and save the file there.
+Note the variable CHANGESET in the JSON block; that is the variable you used in the Azure DevOps pipeline to tell the extension what changelist number to sync to.
+
+3. Create a folder under the depot called triggers and save the file there.
 
 [![Trigger setup 1](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers1.png)](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers1.png)
 
-17.	Open p4v and refresh your workspace. You should see the triggers folder appear in the workspace. Right-click on it and **Mark for add…**   then right-click again and **Submit…**
+4.	Open p4v and refresh your workspace. You should see the triggers folder appear in the workspace. Right-click on it and **Mark for add…**   then right-click again and **Submit…**
 
-18.	Your depot should now contain the trigger as follows:
+5.	Your depot should now contain the trigger as follows:
 
 [![Trigger setup 2](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers2.png)](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers2.png)
 
-19.	SSH login to your Helix Core commit server as the administrative user, centos.  You can use something like PuTTY, or an Azure Bastion host. Either way, make sure you have your SSL key handy.
+6.	SSH login to your Helix Core commit server as the administrative user, centos.  You can use something like PuTTY, or an Azure Bastion host. Either way, make sure you have your SSL key handy.
 
-20.	Become the perforce user with 
+7.	Become the perforce user with 
 
 ```
 su – perforce
 (enter your password, which is the Helix Core Instance ID)
 ```
 
-21.	Edit the p4 triggers file.
+8.	Edit the p4 triggers file.
 
 ```
 p4triggers
 ``` 
 
-22.	The default editor, vi, starts up with the triggers file. 
+9.	The default editor, vi, starts up with the triggers file. 
 - Go to the bottom of the file:   Shift-G
 - Type ‘o’ to enter insert mode on a new line.
 - Indent: tab 
@@ -269,7 +244,13 @@ Your file should now look similar to this:
 
 [![Trigger setup 3](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers3.png)](media/cloud-build-pipeline/acb6-azdopipeline/p4triggers3.png)
 
-23.	Save and exit with: '\<esc\> Shift-ZZ' (that is twice with  Z)
+10.	Save and exit with: '\<esc\> Shift-ZZ' (that is twice with  Z)
+
+> [!WARNING]
+> The trigger you have created contains the Personal Access Token in the clear. For purposes of illustration, this guide does not specifically secure the trigger branch. 
+> However, for security, we highly recommend you set permissions such that only highly-privileged users can see it.
+
+
 
 For more info on perforce triggers, please see the following links.
 
