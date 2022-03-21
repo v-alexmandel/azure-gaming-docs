@@ -105,19 +105,13 @@ You might also have an existing machine on which you want to install Incredibuil
 
 Here, you can choose from a range of suggested VM types to deploy your Incredibuild main machine (the one containing the initiator Agent and a Coordinator), including some pre-set options. If you’re not sure what to choose, try a pre-set option of a General Purpose D-series default VM, that should give you a good balance of compute, networking and storage performance to begin with.  
 
-[![Incredibuild - Azure MP Offer](media/cloud-build-pipeline/incredibuild-offer.png)](media/cloud-build-pipeline/incredibuild-offer.png)
-
 #### 2. Create the Incredibuild VM
 
 After setting up your VM with the appropriate data like Subscription, Resource Group, VM name, disks and so on, click on Create to create the VM.
 
-[![Incredibuild - Azure MP Deployment](media/cloud-build-pipeline/incredibuild-deploy.png)](media/cloud-build-pipeline/incredibuild-deploy.png)
-
 #### 3. RDP into the system and continue setup
 
-Once done, open a Remote Desktop Session to the VM to continue setup of the system. The first thing you will want to do is install your Incredibuild license; In the Coordinator window, click on Tools -> Coordinator settings -> License. You should see the following screen appear, then install your license file.
-
-[![Incredibuild - Coordinator Monitor](media/cloud-build-pipeline/incredibuild-coordinator.png)](media/cloud-build-pipeline/incredibuild-coordinator.png)
+Once done, open a Remote Desktop Session to the VM to continue setup of the system. The first thing you will want to do is install your Incredibuild license; In the Coordinator window, click on Tools -> Coordinator settings -> License. In the Settings window, install your license file.
 
 #### 4. Configure according to Incredibuild instructions
 
@@ -129,8 +123,6 @@ You will need access to an Azure Subscription, Azure Active Directory to perform
 
 Once you set everything up, start up the Coordinator Monitor. You should see all the agent machines, both on-prem and in the cloud, appear in the Coordinator Monitor window.
 If you are using Azure Spot VMs, please note that the VMs will not appear in the Coordinator Monitor until they have been requisitioned, allocated and put into active service. This is due the on-demand nature of this particular VM offering.
-
-[![Incredibuild - Coordinator Monitor](media/cloud-build-pipeline/incredibuild-coordinator-monitor.png)](media/cloud-build-pipeline/incredibuild-coordinator-monitor.png)
 
 You can do a simple verification that your setup works by starting up a compilation job on the Initiator agent or coordinator (often the same machine). You could load up a Visual Studio project that you own for this purpose, but you want to make sure the job is a large one, otherwise it will simply finish on the Initiator agent without Incredibuild needing to spread out the work. The Build Monitor will show the cores in action during compilation stages.
 
