@@ -24,7 +24,7 @@ In this pipeline example, we use this Perforce Enhanced Studio Pack and set up a
 
 1. In the Azure Marketplace, search for “Perforce Enhanced Studio Pack”.
 2. Click on **Create** to begin the process.
-3. Please continue setup with Perforce's have a comprehensive setup and verification [documentation]().
+3. Please continue setup with Perforce's comprehensive setup and verification (![documentation](https://www.perforce.com/products/helix-core/install-enhanced-studio-pack-azure).
 4. Once done return here to resume. For the purposes of this pipeline, only the Helix Core server needs to be set up; Helix Swarm, Hansoft and Virtual workstation are optional.
 
 Some notes:

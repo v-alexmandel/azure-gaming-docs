@@ -79,6 +79,8 @@ There is another Azure DevOps Perforce extension called FindPerforceChangeListNu
     P4PASSWD: '$(p4pass)'
 ```
 
+This extension makes Perforce changelist operations more flexible from within Azure DevOps, so please check it out.
+
 
 ## Pixel Streaming
 
