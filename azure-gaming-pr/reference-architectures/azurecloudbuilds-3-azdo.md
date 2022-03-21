@@ -14,16 +14,16 @@ ms.prod: azure-gaming
 
 In this section, we will do initial set up of Azure DevOps. We will use an Azure DevOps Perforce extension that will handle code sync from the Perforce depot. At the time of this guide's publication, this extension was in Private Preview.
 
-Please contact us at azuregameproduction@microsoft.com to be included in a Private Preview of this extension. 
+Please contact us at [azuregameproduction@microsoft.com](mailto:azuregameproduction@microsoft.com) to be included in a Private Preview of this extension.
 
 Also, if you do not already have an Azure DevOps Organization, navigate to the [Azure DevOps home page](https://dev.azure.com/) to start a free account.
 
 ## Install Perforce Extensions
 
 There are two extensions in the Azure DevOps Marketplace to be installed. You will require Project Collection Administrator permissions to do so, otherwise please get the help of your Azure DevOps administrator.
-The Azure DevOps Perforce extensions are in Private Preview now, so they won’t be visible in the Azure DevOps marketplace. Instead, please contact <email> and request to be added. You will need to provide your Azure DevOps Organization name, e.g. dev.azure.com/MyStudioName.
+The Azure DevOps Perforce extensions are in Private Preview now, so they won’t be visible in the Azure DevOps marketplace. Instead, please contact [azuregameproduction@microsoft.com](mailto:azuregameproduction@microsoft.com) and request to be added. You will need to provide your Azure DevOps Organization name, e.g. dev.azure.com/MyStudioName.
 
-1. Navigate to https://dev.azure.com/*{your Organization name}*
+1. Navigate to https://dev.azure.com/**{yourOrganizationname}**
 
 2. In the bottom left corner, click on **Organization settings**.
 
@@ -82,9 +82,9 @@ Once the PAT token is generated, note it down securely – after navigating away
 
 For your Azure DevOps pipelines to access Azure resources like Virtual Machine Scale Sets and Storage Accounts, you will need a service principal-based linkage between the two. This project-level linkage is in the form of a service connection. Specifically, one that is an Azure Resource Manager type. Please follow the instructions starting here to set this up.
 
-1. You will first need to create a service principal in your Azure subscription. Follow [these instructions](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
+1. You will first need to create a service principal in your Azure subscription. Follow [these instructions](/azure/active-directory/develop/howto-create-service-principal-portal).
 
-2. Next, create an Azure Resource Manager [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal). Use the existing service principal created from the step before.
+2. Next, create an Azure Resource Manager [service connection](https://azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal). Use the existing service principal created from the step before.
 
 For Azure Resource Manager service connection setup, try the automatic method first, and if there is a problem with finding your subscription, try the manual method next.
 

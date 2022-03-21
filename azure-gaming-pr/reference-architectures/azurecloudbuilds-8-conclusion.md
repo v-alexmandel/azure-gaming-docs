@@ -13,6 +13,7 @@ ms.prod: azure-gaming
 Hopefully you've gone through all the steps and now have a basic pipeline that's working. If so, congratulations!
 
 ## Clean up
+
 If you used the Azure Game Development VMs in the pipeline, you might want to stop and deallocate them when not in use - the NV-class VMs can be costly.  
 
 ---
@@ -23,13 +24,11 @@ Of course, this is **not** a production-grade pipeline yet! Build on this pipeli
 
 Here are just a few other areas to explore with the pipeline you've just built.
 
-
 ## Identity Management
 
 Azure Active Directory can be integrated with Perforce's Helix Authentication Service to provide  convenient, secure Single-Sign On capability for your Perforce users and the build system. Please take a look at how to [integrate AAD together with Perforce](./perforce-using-aad-together-with-perforce.md) and boost security in your workflow.
 
 For more on this, see how to [use AAD Managed Identities with Perforce](./perforce-logging-on-with-a-managed-identity.md).
-
 
 ## Perforce Proxies
 
@@ -37,11 +36,9 @@ In this example pipeline, we have a single Perforce commit server. In real-world
 
 Proxies are a way of balancing the load between local depots and the main commit server. Check out how to [set up a Perforce Proxy in Azure](./perforce-set-up-a-proxy-in-azure.md).
 
-
 ## Pixel Streaming
 
 Azure Gaming and Epic Games have collaborated to integrate Unreal Engine Pixel Streaming capabilities into Azure. Check out [this guide](./unreal-pixel-streaming-at-scale.md) to see how you can enable builds to be streamed to production and QA staff for quick reviews, post-build.
-
 
 ## Customer examples
 
@@ -52,7 +49,6 @@ Other game developers are benefitting from Azure cloud build pipelines today. Pl
 [Game Studio Inc. uses Azure to cloudify its development](https://developer.microsoft.com/games/customer-stories/game-studio-inc-uses-azure-to-cloudify-its-development/)
 
 [Cloud Build Pipelines: The Coalition](https://developer.microsoft.com/games/customer-stories/cloud-build-pipelines-the-coalition/)
-
 
 
 ## Next steps

@@ -54,7 +54,7 @@ Section 2: [Version control](./azurecloudbuilds-2-versioncontrol.md)
 
 Section 3: [Azure DevOps organization and project](./azurecloudbuilds-3-azdo.md)
 
-- Create the Organization 
+- Create the Organization
 - Install Perforce extensions
 - Create a Personal Access Token
 - Create a Project
