@@ -79,6 +79,8 @@
       href: reference-architectures/unreal-pixel-streaming-deploying.md
     - name: Unreal Pixel Streaming at Scale in Azure
       href: reference-architectures/unreal-pixel-streaming-at-scale.md
+    - name: Set up a STUN and TURN Server in Azure
+      href: reference-architectures/stun-turn-server-in-azure.md   
   - name: Cloud Build Pipelines
     items:
     - name: Perforce - Using AAD together with Perforce
@@ -114,6 +116,4 @@
   - name: Azure Game Development Virtual Machine
     items:
     - name: Azure Game Development Virtual Machine
-      href: game-dev-virtual-machine/index.yml 
-    - name: Set up a STUN and TURN Server in Azure
-      href: reference-architectures/stun-turn-server-in-azure.md      
+      href: game-dev-virtual-machine/index.yml      

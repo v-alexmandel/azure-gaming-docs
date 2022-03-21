@@ -123,8 +123,6 @@ productDirectory:
           url: reference-architectures/unreal-pixel-streaming-deploying.md
         - text: Unreal Pixel Streaming at Scale in Azure
           url: reference-architectures/unreal-pixel-streaming-at-scale.md
-<<<<<<< HEAD
-=======
         - text: Set up a STUN and TURN Server in Azure
           url: reference-architectures/stun-turn-server-in-azure.md
 
@@ -142,4 +140,3 @@ productDirectory:
           url: reference-architectures/incredibuild-scale-out-your-cloud-builds.md
         - text: Azure Cloud Builds - Full Guide
           url: reference-architectures/azurecloudbuilds-0-intro.md
->>>>>>> bb1339e8745a44e5a9676b7303a378329d8b814e
