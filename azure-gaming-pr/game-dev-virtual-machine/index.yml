@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Azure Game Development Virtual Machine documentation
+title: Game Development Virtual Machine documentation
 summary: The Game Development Virtual Machine is a customized VM image on the Azure cloud platform, built by game developers for game developers.
 
 metadata:
@@ -16,7 +16,7 @@ metadata:
 
 landingContent:
   # Card
-  - title: Get started with your Azure Game Development Virtual Machine
+  - title: Get started with your Game Development Virtual Machine
     linkLists:
       - linkListType: overview
         links:
