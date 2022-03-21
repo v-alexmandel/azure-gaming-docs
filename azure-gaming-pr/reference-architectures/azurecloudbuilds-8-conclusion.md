@@ -36,6 +36,50 @@ In this example pipeline, we have a single Perforce commit server. In real-world
 
 Proxies are a way of balancing the load between local depots and the main commit server. Check out how to [set up a Perforce Proxy in Azure](./perforce-set-up-a-proxy-in-azure.md).
 
+## Perforce Changelist Number
+In this example pipeline, you saw the Azure DevOps Perforce extension used, as seen in this script fragment:
+```yaml
+- task: Perforce@1
+  displayName: Sync Perforce to CL
+  inputs:
+  ...
+```
+This is useful for a build trigger per-check in, but in many cases, you will also want a regular timed build, e.g. nightly builds.
+
+There is another Azure DevOps Perforce extension called FindPerforceChangeListNumber. This extension lets you specify the changelist number from within the Azure DevOps pipeline, including the head of a given branch. To do this, define a pipeline variable $(ChangelistNumber) that will contain the changelist that FindPerforceChangeListNumber will write into, then have the other Perforce extension consume that variable. For instance:
+
+```yaml
+- task: FindPerforceChangelistNumber@1
+  displayName: Find Perforce CL Number
+  inputs:
+    STATUS: 'submitted'
+    DEPOTPATH: '$(p4depotpath)'
+    P4PORT: '$(p4port)'
+    ssl: true
+    fingerprint: '$(fingerprint)'
+    P4USER: '$(p4user)'
+    P4PASSWD: '$(p4pass)'
+- task: Perforce@1
+  displayName: Sync Perforce to CL
+  inputs:
+    UseDepotPath: true
+    DepotPath: '$(p4depotpath)'
+    P4ROOT: '$(p4root)'
+    CreateWorkspace: false
+    Sync: true
+    Clean: false
+    Force: false
+    synctype: 'changelist'
+    CHANGELIST: '$(ChangelistNumber)'
+    P4CLIENT: '$(p4client)'
+    P4PORT: '$(p4port)'
+    ssl: true
+    fingerprint: '$(fingerprint)'
+    P4USER: '$(p4user)'
+    P4PASSWD: '$(p4pass)'
+```
+
+
 ## Pixel Streaming
 
 Azure Gaming and Epic Games have collaborated to integrate Unreal Engine Pixel Streaming capabilities into Azure. Check out [this guide](./unreal-pixel-streaming-at-scale.md) to see how you can enable builds to be streamed to production and QA staff for quick reviews, post-build.
