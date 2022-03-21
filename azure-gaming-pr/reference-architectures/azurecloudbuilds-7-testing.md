@@ -19,6 +19,15 @@ ms.prod: azure-gaming
 
 4. Refresh the browser showing your Azure DevOps pipelines. Your pipeline build should show as starting up.
 
+>[!NOTE]
+>  Since this is the first time the pipeline is run, you may have to grant permissions for the pipeline to access resources. 
+>  A message will pop up with a message:
+>  "This pipeline needs permission to access a resource before this run can continue"
+> [![Permission]](media/cloud-build-pipeline/acb6-azdopipeline/pipelinefirstrun.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinefirstrun.png)
+>  Go ahead and click Permit.
+>  Again, you should only have to do this once for the project.
+
+
 5. Wait for the build to be completed, archived and copied.
 
 6. On your developer workstation, open Azure Storage Explorer. Sign in to your subscription and navigate to the storage container.
