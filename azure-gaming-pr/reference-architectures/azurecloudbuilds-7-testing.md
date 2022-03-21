@@ -23,7 +23,6 @@ ms.prod: azure-gaming
 >  Since this is the first time the pipeline is run, you may have to grant permissions for the pipeline to access resources. 
 >  A message will pop up with a message:
 >  "This pipeline needs permission to access a resource before this run can continue"
-> [![Permission]](media/cloud-build-pipeline/acb6-azdopipeline/pipelinefirstrun.png)](media/cloud-build-pipeline/acb6-azdopipeline/pipelinefirstrun.png)
 >  Go ahead and click Permit.
 >  Again, you should only have to do this once for the project.
 
