@@ -243,8 +243,8 @@ Your file should now look similar to this:
 
 10.	Save and exit with: '\<esc\> Shift-ZZ' (that is twice with  Z)
 
-> [!WARNING]
-> The trigger you have created contains the Personal Access Token in the clear. For purposes of illustration, this guide does not specifically secure the trigger branch. 
+> [!IMPORTANT]
+> The trigger you have created contains a Personal Access Token in the clear. For purposes of illustration, this guide does not specifically secure the trigger branch. 
 > However, for security, we highly recommend you set permissions such that only highly-privileged users can see it.
 
 For more info on perforce triggers, please see the following links.
