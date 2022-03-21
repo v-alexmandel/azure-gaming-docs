@@ -19,6 +19,7 @@ The easiest way to set up a build agent is through the Azure Game Development Vi
 [![Azure Game Development VM Offer](media/cloud-build-pipeline/acb4-buildagent/gamedevvmazureoffer.png)](media/cloud-build-pipeline/acb4-buildagent/gamedevvmazureoffer.png)
 
 Alternatively, select an Azure VM or physical machine that you would like to use, and install the following software packages:
+
 - Unreal Engine 4 (version 4.27 to match the version of the demo game, ShooterGame)
 - [Perforce Visual Client (P4V)](https://www.perforce.com/downloads/helix-visual-client-p4v)
 - [Perforce Helix Admin Tool (P4Admin)](https://www.perforce.com/downloads/administration-tool)
@@ -33,7 +34,7 @@ Alternatively, select an Azure VM or physical machine that you would like to use
 
 2. Fill in your Subscription, Resource Group (create a new one if desired), Region.
 
-3. Select your VM size. For the demo, you can use the default VM choice. Note: the Game Development VM currently ships on N-series VMs, so please ensure you have [enough quota](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests) on these SKUs.  
+3. Select your VM size. For the demo, you can use the default VM choice. Note: the Game Development VM currently ships on N-series VMs, so please ensure you have [enough quota](/azure/azure-portal/supportability/per-vm-quota-requests) on these SKUs.  
 
 4. Fill in the VM name, admin name, password. For operating system, either Windows 10 or Windows Server 2019 works well, and the choice depends on the type of licenses you own.
 
@@ -46,23 +47,21 @@ Alternatively, select an Azure VM or physical machine that you would like to use
 7. In Connect to and sync a Perforce depot, check the box.
 
 8. In Perforce Configuration, fill in:
-- **P4 Port**:  ssl:*{ip address of your P4 server}*:1666
-- **P4 User**: your build user name
-- **P4 User password**: your build user’s password
-- **P4 Client Workspace**: you can accept the default suggestion. Just make sure this workspace name is unique and does not exist for any other user.
-- **Configure P4 Workspace by**: Using Client View mappings.
+    - **P4 Port**:  ssl:*{ip address of your P4 server}*:1666
+    - **P4 User**: your build user name
+    - **P4 User password**: your build user’s password
+    - **P4 Client Workspace**: you can accept the default suggestion. Just make sure this workspace name is unique and does not exist for any other user.
+    - **Configure P4 Workspace by**: Using Client View mappings.
 
 9.	For P4 Client Views, fill in:
-- **Depot path**: //depot/...
-- **Relative path underneath the Client Workspace**: /...
+    - **Depot path**: //depot/...
+    - **Relative path underneath the Client Workspace**: /...
 
 10.	Leave all other choices as default.
 
-
 :pencil: ***Save this info!*** :pencil:
--	P4 client (workspace) name
--	Depot path
-
+- P4 client (workspace) name
+- Depot path
 
 11.	Go to the next step: Remote Access Configuration
 
@@ -72,67 +71,66 @@ Alternatively, select an Azure VM or physical machine that you would like to use
 
 13. At this point, you can click on Review + create for purposes of this demo. Click on Create once the review is completed.
 
-The VM will take some time to provision. Once completed, open a Remote Desktop session with the VM. 
+The VM will take some time to provision. Once completed, open a Remote Desktop session with the VM.
 
 ## Unreal Engine licensing
 
-14.	Upon login to the VM, an Epic Games license selection screen will be presented. Please select a license version. Find out more about Unreal licenses [here](https://www.unrealengine.com/download). 
+1. Upon login to the VM, an Epic Games license selection screen will be presented. Please select a license version. Find out more about Unreal licenses [here](https://www.unrealengine.com/download).
 
-15.	Next, you will be asked to log in to the Unreal Launcher, so have your Epic Games login details handy.
+2. Next, you will be asked to log in to the Unreal Launcher, so have your Epic Games login details handy.
 
-16.	At this point, some command windows will pop up to show that the system is installing some packages like the Windows GDK. You can let it continue while you proceed with the rest of the setup.
+3. At this point, some command windows will pop up to show that the system is installing some packages like the Windows GDK. You can let it continue while you proceed with the rest of the setup.
 
 ## Install Azure DevOps build agent on the build machine
 
 A build agent is a small executable that will identify a machine as an available build machine for Azure DevOps.
 
-17. On the build machine, open the Edge browser and navigate to https://dev.azure.com/*{your Organization name}*
+1. On the build machine, open the Edge browser and navigate to https://dev.azure.com/*{your Organization name}*
 
-18. Click on Organization settings in the bottom left of the web page.
+2. Click on Organization settings in the bottom left of the web page.
 
 [![Azure DevOps Organizational Settings](media/cloud-build-pipeline/acb4-buildagent/orgsettings.png)](media/cloud-build-pipeline/acb4-buildagent/orgsettings.png)
 
-19.	In the left toolbar, click on **Agent Pools**.
+3. In the left toolbar, click on **Agent Pools**.
 
 [![Azure DevOps Agent pool menu](media/cloud-build-pipeline/acb4-buildagent/agentpoolsmenu.png)](media/cloud-build-pipeline/acb4-buildagent/agentpoolsmenu.png)
 
-20.	Click **Default**, then click **Agents**, then click **New agent**.
+4. Click **Default**, then click **Agents**, then click **New agent**.
 
-21.	A pop-up will appear with instructions; follow these.
+5. A pop-up will appear with instructions; follow these.
 
 [![Azure DevOps Build Agent install 1](media/cloud-build-pipeline/acb4-buildagent/installagent1.png)](media/cloud-build-pipeline/acb4-buildagent/installagent1.png)
 
-22.	Click **Download the agent** and let it download to the default location.
+6. Click **Download the agent** and let it download to the default location.
 
-23.	Open a Powershell window by typing **powershell** in the Windows search bar. Execute the commands in the instructions line-by-line. You can create the agent folder referenced in the instructions on your build machine’s Desktop:
+7. Open a Powershell window by typing **powershell** in the Windows search bar. Execute the commands in the instructions line-by-line. You can create the agent folder referenced in the instructions on your build machine’s Desktop:
 
-```
+```dos
 cd ~/Desktop
-mkdir agent ; cd agent	
+mkdir agent ; cd agent
 Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$HOME\Downloads\vsts-agent-win-x64-2.200.2.zip", "$PWD")
 ```
 
-24.	Run the agent configuration script
+8.	Run the agent configuration script
 
-```
+```dos
 .\config.cmd
 ```
 
-25.	Fill in the following:
+9.	Fill in the following:
 
 [![Azure DevOps Build Agent install 2](media/cloud-build-pipeline/acb4-buildagent/installagent2.png)](media/cloud-build-pipeline/acb4-buildagent/installagent2.png)
-
 
 - **Server URL**: https://dev.azure.com/*{your instance name}*
 - **Authentication Type**: hit enter for PAT
 - **Enter personal access token**: copy and paste the token that you saved from before
 - **Enter agent pool, agent name, work folder**: for all these, press enter to accept defaults
 
-26.	Run agent as a service and configure autologon/run agent on startup? For this demo, press enter for N, for both. This means you will have to run the agent manually, but it will show the results of getting a job in a more obvious way, for demo purposes.
+10.	Run agent as a service and configure autologon/run agent on startup? For this demo, press enter for N, for both. This means you will have to run the agent manually, but it will show the results of getting a job in a more obvious way, for demo purposes.
 
-27.	Now that everything is set up, run the agent. Making sure you are in the agent folder, run
+11.	Now that everything is set up, run the agent. Making sure you are in the agent folder, run
 
-```
+```dos
 .\run.cmd
 ```
 
@@ -148,21 +146,19 @@ To confirm that your build agent is connecting correctly with Azure DevOps, look
 
 ## Setup build output folder
 
-28. Create a folder c:\BuildOutput. Completed builds will be put here.
+1. Create a folder c:\BuildOutput. Completed builds will be put here.
 
 ## Set up Perforce build user workspace
 
-29. Open p4v (Perforce Visual Client) and log in as the build user.
+1. Open p4v (Perforce Visual Client) and log in as the build user.
 
-30. Configure the workspace as follows:
+2. Configure the workspace as follows:
 
 [![Build User Perforce Workspace](media/cloud-build-pipeline/acb4-buildagent/p4workspace.png)](media/cloud-build-pipeline/acb4-buildagent/p4workspace.png)
-
 
 ## Optional: Build acceleration
 
 Incredibuild can help accelerate your compile jobs. This package is not installed by default. If you would like to try it, please refer this guide on [setting up Incredibuild on your build agent](./incredibuild-scale-out-your-cloud-builds.md).
-
 
 ## Next steps
 

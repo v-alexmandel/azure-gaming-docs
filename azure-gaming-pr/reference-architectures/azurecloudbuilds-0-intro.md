@@ -38,7 +38,7 @@ Here’s how we plan to deploy each of the components in terms of Azure resource
 
 ## Azure Subscription Prerequisites
 
-This guide assumes the use of the Azure Game Developer VM as the developer workstation and the build agent. At present, this requires availability of an NV-series (GPU equipped) VM SKU. If you intend to follow this, please check that you have enough quota in your region for you subscription to allocate two such VMs. You can check and request quota increases at [Per VM Quota Requests](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests).
+This guide assumes the use of the Azure Game Developer VM as the developer workstation and the build agent. At present, this requires availability of an NV-series (GPU equipped) VM SKU. If you intend to follow this, please check that you have enough quota in your region for you subscription to allocate two such VMs. You can check and request quota increases at [Per VM Quota Requests](/azure/azure-portal/supportability/per-vm-quota-requests).
 
 Here’s the order in which we will be setting up and testing this demo pipeline.
 
