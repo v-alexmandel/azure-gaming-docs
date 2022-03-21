@@ -71,6 +71,10 @@
       href: reference-architectures/cognitive-speech-to-text.md
     - name: Customer Service Bot
       href: reference-architectures/cognitive-css-bot.md
+  - name: Game Development Virtual Machine
+    items:
+    - name: Game Development Virtual Machine docs
+      href: game-dev-virtual-machine/index.yml
   - name: Game Streaming
     items:
     - name: Unreal Pixel Streaming in Azure
@@ -79,3 +83,37 @@
       href: reference-architectures/unreal-pixel-streaming-deploying.md
     - name: Unreal Pixel Streaming at Scale in Azure
       href: reference-architectures/unreal-pixel-streaming-at-scale.md
+    - name: Set up a STUN and TURN Server in Azure
+      href: reference-architectures/stun-turn-server-in-azure.md   
+  - name: Cloud Build Pipelines
+    items:
+    - name: Perforce - Using AAD together with Perforce
+      href: reference-architectures/perforce-using-aad-together-with-perforce.md
+    - name: Perforce - Logging on with a Managed Identity
+      href: reference-architectures/perforce-logging-on-with-a-managed-identity.md
+    - name: Perforce - Set up a Proxy in Azure
+      href: reference-architectures/perforce-set-up-a-proxy-in-azure.md
+    - name: Incredibuild - Scale out your cloud builds
+      href: reference-architectures/incredibuild-scale-out-your-cloud-builds.md
+    - name: Azure Cloud Builds
+      items:
+      - name: Azure Cloud Builds - Introduction
+        href: reference-architectures/azurecloudbuilds-0-intro.md
+      - name: Azure Cloud Builds - Development Workstation
+        href: reference-architectures/azurecloudbuilds-1-devworkstation.md
+      - name: Azure Cloud Builds - Version Control
+        href: reference-architectures/azurecloudbuilds-2-versioncontrol.md
+      - name: Azure Cloud Builds - Azure DevOps Organization and Project
+        href: reference-architectures/azurecloudbuilds-3-azdo.md
+      - name: Azure Cloud Builds - Build Agent
+        href: reference-architectures/azurecloudbuilds-4-buildagent.md
+      - name: Azure Cloud Builds - Simple build distribution
+        href: reference-architectures/azurecloudbuilds-5-dist.md
+      - name: Azure Cloud Builds - Azure DevOps Pipeline
+        href: reference-architectures/azurecloudbuilds-6-azdopipeline.md
+      - name: Azure Cloud Builds - Testing
+        href: reference-architectures/azurecloudbuilds-7-testing.md
+      - name: Azure Cloud Builds - Conclusion
+        href: reference-architectures/azurecloudbuilds-8-conclusion.md
+      - name: Azure Cloud Builds - Troubleshooting
+        href: reference-architectures/azurecloudbuilds-9-troubleshooting.md         
