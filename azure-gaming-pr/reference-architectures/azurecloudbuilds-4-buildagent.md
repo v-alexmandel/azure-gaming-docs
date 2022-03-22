@@ -1,7 +1,7 @@
 ---
 title: Azure Cloud Build Pipelines - The Build Agent
 description: This section of the guide shows how to set up the build agent. This is part 5 of an 8 part series.
-author: Tze Lin Ong
+author: whenslunch
 keywords: 
 ms.topic: reference-architectures
 ms.date: 3/18/2022
@@ -28,7 +28,7 @@ Alternatively, select an Azure VM or physical machine that you would like to use
 
 ## Setting up the build agent VM
 
-1. Find the [Azure Game Development VM](./game-dev-virtual-machine) offering in the Azure Marketplace and create a VM.
+1. Find the [Azure Game Development VM](https://azuremarketplace.microsoft.com/marketplace/apps/microsoft-agci-gaming.agci-gamedev-vm) offering in the Azure Marketplace and create a VM.
 
 [![Create Game Dev VM 1](media/cloud-build-pipeline/acb4-buildagent/gdvmcreate1.png)](media/cloud-build-pipeline/acb4-buildagent/gdvmcreate1.png)
 
@@ -103,10 +103,10 @@ A build agent is a small executable that will identify a machine as an available
 
 6. Click **Download the agent** and let it download to the default location.
 
-7. Open a Powershell window by typing **powershell** in the Windows search bar. Execute the commands in the instructions line-by-line. You can create the agent folder referenced in the instructions on your build machine’s Desktop:
+7. Open a Powershell window by typing **powershell** in the Windows search bar. Execute the commands in the instructions line-by-line. You can create the agent folder referenced in the instructions, in somewhere like the root of your c: drive:
 
 ```dos
-cd ~/Desktop
+cd c:\
 mkdir agent ; cd agent
 Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$HOME\Downloads\vsts-agent-win-x64-2.200.2.zip", "$PWD")
 ```
@@ -165,5 +165,7 @@ Incredibuild can help accelerate your compile jobs. This package is not installe
 Next, go to Section 5: [Simple build distribution](./azurecloudbuilds-5-dist.md).
 
 Or return to the [Introduction](./azurecloudbuilds-0-intro.md).
+
+Find out more about the [Azure Game Development VM](../game-dev-virtual-machine/overview.md).
 
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).

@@ -1,7 +1,7 @@
 ---
 title: Logging on to Perforce with a Managed Identity
 description: Learn how to configure Perforce to allow logons from Managed Identities
-author: Erik Jansen
+author: erik-jansen
 keywords: 
 ms.topic: reference-architecture
 ms.date: 3/14/2022
@@ -10,8 +10,6 @@ ms.prod: azure-gaming
 ---
 
 # Using Azure Active Directory Managed Identities to connect to Perforce Helix Core
-
-## Overview
 
 To use Azure Active Directory as an Identity Provider for Helix Core, Perforce has developed two pieces of software that need to be installed and configured:
 
@@ -428,7 +426,7 @@ yes $(uuidgen) | p4 -u perforce passwd buildserver
 
 ## Test the setup
 
-Testing the setup can be done through multiple ways. Examples include the Windows Workstation that can be deployed as part of the Enhanced Studio Pack, or the use of the [Azure Game Dev VM](./game-dev-virtual-machine). In the end we’ll need a machine with the Perforce CLI tools installed.
+Testing the setup can be done through multiple ways. Examples include the Windows Workstation that can be deployed as part of the Enhanced Studio Pack, or the use of the [Azure Game Dev VM](/gaming/azure/game-dev-virtual-machine). In the end we’ll need a machine with the Perforce CLI tools installed.
 
 In this walkthrough we’ll RDP into an instance of the Azure Game Dev VM, as it has all the tools installed.
 

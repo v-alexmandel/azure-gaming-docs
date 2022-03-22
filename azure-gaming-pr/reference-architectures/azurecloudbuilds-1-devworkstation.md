@@ -1,7 +1,7 @@
 ---
 title: Azure Cloud Build Pipelines - Developer Workstation
 description: This section of the guide shows how to set up the development workstation. This is part 2 of an 8 part series.
-author: Tze Lin Ong
+author: whenslunch
 keywords: 
 ms.topic: reference-architectures
 ms.date: 3/18/2022
@@ -14,7 +14,7 @@ ms.prod: azure-gaming
 
 ## Setting up the developer workstation
 
-For the demo, this workstation can be a physical machine or a VM, but in either case it needs discrete graphics capability. In this guide, we will use the [Azure Game Development Virtual Machine](./game-dev-virtual-machine). You can find it in the Azure Marketplace as a public preview offering:
+For the demo, this workstation can be a physical machine or a VM, but in either case it needs discrete graphics capability. In this guide, we will use the [Azure Game Development Virtual Machine](https://azuremarketplace.microsoft.com/marketplace/apps/microsoft-agci-gaming.agci-gamedev-vm). You can find it in the Azure Marketplace as a public preview offering:
 
 [![Game Dev VM](media/cloud-build-pipeline/acb-1-devws/gamedevvm-azureoffer.png)](media/cloud-build-pipeline/acb-1-devws/gamedevvm-azureoffer.png)
 
@@ -53,5 +53,7 @@ If you do not wish to use the Azure Game Development VM, please make sure you ha
 Next, go to Section 2: [Version Control](./azurecloudbuilds-2-versioncontrol.md).
 
 Or go back to the [Introduction](./azurecloudbuilds-0-intro.md).
+
+Find out more about the [Azure Game Development VM](../game-dev-virtual-machine/overview.md).
 
 Troubleshooting page is [here](./azurecloudbuilds-9-troubleshooting.md).
