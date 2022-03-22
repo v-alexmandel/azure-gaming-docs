@@ -1,7 +1,7 @@
 ---
 title: Azure Cloud Build Pipelines - Conclusion
 description: This document summarizes the demo build pipelines and sets out further steps a reader may take. It also contains links to other publicly-available example setups from third-party game studios.
-author: Tze Lin Ong
+author: whenslunch
 keywords: 
 ms.topic: reference-architectures
 ms.date: 3/18/2022
@@ -22,7 +22,8 @@ If you used the Azure Game Development VMs in the pipeline, you might want to st
 
 Of course, this is **not** a production-grade pipeline yet! Build on this pipeline and make it really work for your studio's situation.
 
-Here are just a few other areas to explore with the pipeline you've just built.
+Below are just a few other areas to explore with the pipeline you've just built. 
+Please contact us at [azuregamedevs@microsoft.com](mailto:azuregamedevs@microsoft.com) for any feedback or inquiries.
 
 ## Identity Management
 

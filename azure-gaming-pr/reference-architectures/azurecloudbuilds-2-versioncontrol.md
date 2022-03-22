@@ -1,7 +1,7 @@
 ---
 title: Azure Cloud Build Pipelines - Version Control
 description: This section of the guide shows how to set up version control. This is part 3 of an 8 part series.
-author: Tze Lin Ong
+author: whenslunch
 keywords: 
 ms.topic: reference-architectures
 ms.date: 3/18/2022

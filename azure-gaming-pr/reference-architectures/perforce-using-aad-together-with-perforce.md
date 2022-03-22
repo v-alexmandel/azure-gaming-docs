@@ -1,7 +1,7 @@
 ---
 title: Using AAD together with Perforce
 description: Learn how to configure Perforce to use Azure Active Directory
-author: Erik Jansen
+author: erik-jansen
 keywords: 
 ms.topic: reference-architecture
 ms.date: 3/14/2022
@@ -10,8 +10,6 @@ ms.prod: azure-gaming
 ---
 
 # Using AAD together with Perforce
-
-## Overview
 
 To use Azure Active Directory as an Identity Provider for Helix Core, Perforce has developed two pieces of software that need to be installed and configured:
 
@@ -196,6 +194,7 @@ Now, we’ll configure the single sign on. For this step, you’ll need the publ
 ### Configure the Helix Authentication Extension for SAML
 
 To complete this step, you’ll need the public IP address from the machine where HAS has been installed.
+
 1. SSH into the Virtual Machine
 2. Move to the perforce user
 
@@ -213,6 +212,7 @@ p4 extension --configure Auth::loginhook
     1. ExtP4USER: perforce
     2. Auth-Protocol: saml
     3. Service-URL: https://&lt;&lt;PUBLIC IP ADDRESS&gt;&gt;:3000
+
 5. Exit vi and save the configuration
 
 ```bash
@@ -221,7 +221,7 @@ p4 extension --configure Auth::loginhook
 
 6. Configure the extension instance
 
-```bash    
+```bash
 p4 extension --configure Auth::loginhook --name loginhook-a1
 ```
 
@@ -231,6 +231,7 @@ p4 extension --configure Auth::loginhook --name loginhook-a1
     3. non-sso-users: perforce
     4. sso-groups: sso
     5. user-identifier: email
+
 5. Exit vi and save the configuration
 
 ```bash
@@ -346,7 +347,7 @@ sudo su - perforce
             1. ExtP4USER: perforce
             2. Auth-Protocol: oidc
             3. Service-URL: https://&lt;&lt;PUBLIC IP ADDRESS&gt;&gt;:3000
-    1. Exit vi and save the configuration
+    2. Exit vi and save the configuration
 
     ```bash
     :wq <ENTER>
@@ -360,7 +361,7 @@ sudo su - perforce
             3. non-sso-users: perforce
             4. sso-groups: sso
             5. user-identifier: user
-    1. Exit vi and save the configuration
+    2. Exit vi and save the configuration
 
     ```bash
     :wq <ENTER>
@@ -388,8 +389,8 @@ Now we can go to the Virtual Machine and configure HAS:
 
 1. SSH into the Virtual Machine
 2. Move to the perforce user
- 
-```bash 
+
+```bash
 sudo su - perforce
 ```
 
@@ -449,7 +450,7 @@ p4 admin restart
 
 ## Test the setup
 
-Testing the setup can be done through multiple ways. Examples include the Windows Workstation that can be deployed as part of the Enhanced Studio Pack, or the use of the [Azure Game Dev VM](./game-dev-virtual-machine). In the end we’ll need a machine with the Perforce Client tools installed, either P4V or the CLI tools. It can be an on-premises machine or a cloud-based machine.
+Testing the setup can be done through multiple ways. Examples include the Windows Workstation that can be deployed as part of the Enhanced Studio Pack, or the use of the [Azure Game Dev VM](../game-dev-virtual-machine/overview.md). In the end we’ll need a machine with the Perforce Client tools installed, either P4V or the CLI tools. It can be an on-premises machine or a cloud-based machine.
 
 In this walkthrough we’ll RDP into an instance of the Azure Game Dev VM, as it has all the tools installed.
 
@@ -575,7 +576,7 @@ sudo systemctl restart helix-auth
 p4 admin restart
 ```
 
-Now HAS is available using the configured domain name, using SSL. 
+Now HAS is available using the configured domain name, using SSL.
 
 ## Troubleshooting
 
