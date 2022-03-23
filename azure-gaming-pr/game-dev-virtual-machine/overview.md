@@ -23,7 +23,7 @@ The Game Development Virtual Machine is currently supported for the following op
 
 See a [full list of tools](./tools-included-azure-game-dev-kit.md) on the Game Development Virtual Machine.
 
-## Why Develop Games in the Cloud?
+## Why Develop Games on the Cloud?
 
 With many teams working remotely either due to hybrid working scenarios or being geographically distributed, there are great benefits to moving either part or your entire game development pipeline to the cloud. Some of the key benefits include the following:
 
