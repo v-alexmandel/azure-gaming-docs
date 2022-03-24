@@ -21,8 +21,6 @@
 - name: Concepts
   expanded: false
   items:
-  - name: Azure Cloud Build Pipeline
-    href: https://docs.microsoft.com/gaming/azure/reference-architectures/azurecloudbuilds-0-intro
   - name: GitHub and Git Tools on the Game Development Virtual Machine
     href: github-git-tools-on-vm.md
   - name: Striped disks for more IOPS
