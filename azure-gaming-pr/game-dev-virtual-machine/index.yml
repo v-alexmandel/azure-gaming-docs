@@ -51,6 +51,6 @@ landingContent:
       - linkListType: learn
         links:
         - text: Azure for gaming
-          url: https://review.docs.microsoft.com/en-us/gaming/azure/?branch=game-dev-public-preview
+          url: /gaming/azure/
 
 
