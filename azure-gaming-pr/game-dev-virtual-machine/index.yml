@@ -43,7 +43,9 @@ landingContent:
         - text: Integrate with Azure Active Directory
           url: integrate-vm-with-aad.md
         - text: Use Azure Files for network derived data cache with Unreal Engine
-          url: use-azure-files-for-global-ddc.md     
+          url: use-azure-files-for-global-ddc.md
+        - text: Integrate with a Perforce Depot
+          url: integrate-perforce-depot.md      
 
   # Card
   - title: Resources
