@@ -140,3 +140,19 @@ productDirectory:
           url: reference-architectures/incredibuild-scale-out-your-cloud-builds.md
         - text: Azure Cloud Builds - Full Guide
           url: reference-architectures/azurecloudbuilds-0-intro.md
+    
+    - title: Game Development Virtual Machine
+      imageSrc: ./media/game-server-hosting.svg
+      links:
+        - text: Overview
+          url: game-dev-virtual-machine/overview.md
+        - text: Tools included
+          url: game-dev-virtual-machine/tools-included-azure-game-dev-kit.md
+        - text: Get started with Unreal
+          url: game-dev-virtual-machine/create-game-development-vm-for-unreal.md
+        - text: Remoting with Parsec
+          url: game-dev-virtual-machine/remote-to-vm-with-parsec.md
+        - text: Remoting with Teradici
+          url: game-dev-virtual-machine/remote-to-vm-with-teradici.md
+        - text: Choosing the right GPU SKU
+          url: game-dev-virtual-machine/choosing-gpu-sku.md            
