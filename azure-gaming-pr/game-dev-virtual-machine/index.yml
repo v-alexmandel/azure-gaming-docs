@@ -53,7 +53,7 @@ landingContent:
       - linkListType: learn
         links:
         - text: Game Development in Azure
-          url: https://docs.microsoft.com/en-us/gaming/azure/reference-architectures/azurecloudbuilds-0-intro
+          url: /gaming/azure/reference-architectures/azurecloudbuilds-0-intro/
         - text: Azure for gaming
           url: /gaming/azure/
 
