@@ -19,6 +19,11 @@ The Game Development Virtual Machine is currently supported for the following op
 * Windows Server 2019
 * Windows 10
 
+## Introductory video
+
+Learn how to make remote game development easy with the Azure Game Development Virtual Machine in this video:
+> [!VIDEO https://www.youtube.com/embed/5tx99WgzBcc ]
+
 ## What's included on the Azure Game Development Virtual Machine?
 
 See a [full list of tools](./tools-included-azure-game-dev-kit.md) on the Game Development Virtual Machine.
