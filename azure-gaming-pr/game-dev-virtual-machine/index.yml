@@ -52,10 +52,10 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-        - text: Game Development in Azure
-          url: /gaming/azure/reference-architectures/azurecloudbuilds-0-intro/
         - text: Azure for gaming
           url: /gaming/azure/
+        - text: Azure Cloud Build Pipelines
+          url: /gaming/azure/reference-architectures/azurecloudbuilds-0-intro/
 
 
 
