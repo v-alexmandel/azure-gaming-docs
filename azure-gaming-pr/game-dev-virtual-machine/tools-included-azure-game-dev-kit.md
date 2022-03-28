@@ -26,7 +26,7 @@ The following list of software is installed on the Game Development Virtual Mach
 
 * [Parsec Agent](https://parsec.app/)
 * [Teradici PCoIP Agent](https://www.teradici.com/)  
-* RDP [GPU accelerated encoding](/azure/virtual-desktop/configure-vm-gpu.md#configure-gpu-accelerated-frame-encoding)
+* RDP [GPU accelerated encoding](/azure/virtual-desktop/configure-vm-gpu#configure-gpu-accelerated-frame-encoding)
 
 ## Game engines
 
