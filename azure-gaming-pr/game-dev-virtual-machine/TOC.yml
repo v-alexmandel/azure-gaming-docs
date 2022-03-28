@@ -31,4 +31,6 @@
   - name: Integrate with Azure Active Directory
     href: integrate-vm-with-aad.md
   - name: Use Azure Files for network derived data cache with Unreal Engine
-    href: use-azure-files-for-global-ddc.md          
+    href: use-azure-files-for-global-ddc.md
+  - name: Integrate with a Perforce Depot
+    href: integrate-perforce-depot.md          
