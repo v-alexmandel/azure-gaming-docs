@@ -1,7 +1,7 @@
 ---
 title: Set up a Perforce Proxy in Azure
 description: Learn how to deploy a Perforce Proxy in Azure
-author: Erik Jansen
+author: erik-jansen
 keywords: 
 ms.topic: reference-architecture
 ms.date: 3/14/2022
@@ -10,8 +10,6 @@ ms.prod: azure-gaming
 ---
 
 # Set up a Perforce Proxy in Azure
-
-## Overview
 
 In this guide we’ll show how to set up a Perforce Proxy in Azure. A scenario where a Perforce Proxy is beneficial is to bring Perforce closer to its users, whether that is for working from home scenarios or teams that span the globe. The Perforce Proxy can be used for on premises deployments of the Helix Core commit server, or Azure deployed Helix Core commit servers.
 

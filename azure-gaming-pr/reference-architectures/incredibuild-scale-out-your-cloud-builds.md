@@ -1,7 +1,7 @@
 ---
 title: Scale out your cloud builds with Incredibuild
 description: Learn how to set up Incredibuild in your build pipeline
-author: Tze Lin Ong
+author: whenslunch
 keywords: 
 ms.topic: reference-architecture
 ms.date: 3/14/2022
@@ -10,8 +10,6 @@ ms.prod: azure-gaming
 ---
 
 # Set up Incredibuild on Azure DevOps build agents
-
-## Overview
 
 This guide will show how to set up Incredibuild on an Azure DevOps Windows build agent as part of an Azure-powered build pipeline from the related GDC 2022 talk . This document is not intended as a substitute for Incredibuild’s documentation, rather, it aims to give the context of Incredibuild setup within an Azure DevOps build pipeline. We will refer to the Incredibuild documentation where appropriate.
 
