@@ -10,7 +10,7 @@ ms.prod: azure-gaming
 
 # What is the Azure Game Development Virtual Machine?
 
-The Game Development Virtual Machine is a customized Azure Virtual Machine built for game developers to save them time in having to spend hours to install and setup common tools for game remote development in Azure. Microsoft has assembled the top game development tooling in one single VM, allowing you to focus less on setup and more on building great games. Supported by GPU intensive Azure VMs, these common game development tools include a game engine, frameworks, remoting protocols, drivers and SDKS, allowing you to get started developing your games in Azure within minutes. It can also be used for scaled-out build servers which also need similar tooling to build your game. In addition to Remote Desktop Protocol, this game dev VM includes options for Teradici and Parsec technology, which both provide a high fidelity and low latency remote access experience.
+The Game Development Virtual Machine is a customized Azure Virtual Machine built for game developers to save them time in having to spend hours to install and setup common tools for game remote development in Azure. Microsoft has assembled the top game development tooling in one single VM, allowing you to focus less on setup and more on building great games. Supported by GPU intensive Azure VMs, these common game development tools include a game engine, frameworks, remoting protocols, drivers and SDKs, allowing you to get started developing your games in Azure within minutes. It can also be used for [scaled-out build servers](/gaming/azure/reference-architectures/incredibuild-scale-out-your-cloud-builds/) which also need similar tooling to build your game. In addition to Remote Desktop Protocol, this game dev VM includes options for Teradici and Parsec technology, which both provide a high fidelity and low latency remote access experience.
 
 The Game Development Virtual Machine is a great choice for developers who are building interactive games that use engines like Unreal and code with Visual Studio, leveraging Perforce and Git source control solutions. No matter if you’re working for your next AAA title or an Indie game, spin up a VM to enjoy the game development journey in the cloud. All tooling is pre-installed with Bring Your Own License (BYOL) options where applicable, and you only pay for the base Azure compute costs used—no additional costs are added for leveraging this VM.
 
@@ -39,6 +39,8 @@ With many teams working remotely either due to hybrid working scenarios or being
 * Better collaboration experiences when sharing your desktop or creative work across distributed teams, especially when using Parsec’s screen sharing or even Unreal Pixel Streaming.
 * Allow quick turnaround times for game testers to get compiled builds faster for testing
 
+Read this blog post [Game Creation Cloud Adoption and The Azure Game Dev VM](https://developer.microsoft.com/games/blog/game-creation-cloud-adoption-and-the-azure-game-dev-vm/) to know more.
+
 ## Use Cases for the Azure Game Development Virtual Machine
 
 Below we illustrate some common use cases for customers.
@@ -56,6 +58,8 @@ Game engines are a ubiquitous technology driving efficiency in the games industr
 Since build servers require many of the same tooling used to develop the game such as a compiler and your game engine, the Game Development Virtual Machine is a great accelerator to deploy as a build server as well. This can be setup as an individual build machine, using virtual machine scale sets, or even containerizing the image and integrating with Azure Kubernetes Service. This VM has Incredibuild tooling pre-installed (requires you to bring your license), which allows it to be a Custom Build Agent for spinning up multiple build servers to dramatically reduce the build time by using parallel computing. The Game Development Virtual Machine can be automated to pull down the latest source code and then orchestrate accelerated builds across hundreds or more of distributed cores.
 
 :::image type="content" source="./media/overview/use-game-dev-vm-as-build-server.png" alt-text="Screenshot of diagram showing how a game dev VM can be used as a build server":::
+
+For the step-by-step instructions, please refer to this article: [Incredibuild - Scale out your cloud builds](/gaming/azure/reference-architectures/incredibuild-scale-out-your-cloud-builds/)
 
 ### Using as test servers
 
