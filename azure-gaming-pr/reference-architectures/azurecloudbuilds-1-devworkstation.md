@@ -21,7 +21,7 @@ For the demo, this workstation can be a physical machine or a VM, but in either 
 Find the Azure Game Development VM offering in the Azure Marketplace and create a VM.
 
 1. Fill in your **Subscription**, **Resource Group**, and **Region**.
-2. The Game Developer VM currently ships on N-series VMs, so please ensure you have enough quota on these SKUs. For information on checking and requesting quota, please see [this page](/azure/azure-portal/supportability/per-vm-quota-requests).  
+2. The Game Development VM currently ships on N-series VMs, so please ensure you have enough quota on these SKUs. For information on checking and requesting quota, please see [this page](/azure/azure-portal/supportability/per-vm-quota-requests).  
 3. Select your **VM size**. For the demo, you can use the default VM choice.
 4. Fill in the **VM name**, **admin name**, and **password**. For operating system, either Windows 10 or Windows Server 2019 works well, and the choice depends more on what you have a license for.
 5. Go to the next step: **Game Developer Tools**.
