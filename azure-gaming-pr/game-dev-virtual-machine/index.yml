@@ -45,7 +45,9 @@ landingContent:
         - text: Use Azure Files for network derived data cache with Unreal Engine
           url: use-azure-files-for-global-ddc.md
         - text: Integrate with a Perforce Depot
-          url: integrate-perforce-depot.md      
+          url: integrate-perforce-depot.md   
+        - text: Integrate with Incredibuild
+          url: /gaming/azure/reference-architectures/incredibuild-scale-out-your-cloud-builds#setting-up-incredibuild     
 
   # Card
   - title: Resources
