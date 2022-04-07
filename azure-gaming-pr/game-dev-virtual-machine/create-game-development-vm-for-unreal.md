@@ -24,9 +24,9 @@ If you choose to access the VM with either Teradici or Parsec, you need to have 
 To create a Game Dev VM instance:
 
 1. Go to the [Azure portal](https://portal.azure.com/). You might be prompted to sign in to your Azure account if you're not already signed in.
-2. Find the virtual machine listing by typing in **game development** and selecting **zure Game Development Virtual Machine**.
+2. Find the virtual machine listing by typing in **game development** and selecting **Azure Game Development Virtual Machine**.
 3. Select the  **Create**  button.
-4. You should be redirected to the **reate Azure Game Development Virtual Machine** blade.
+4. You should be redirected to the **create Azure Game Development Virtual Machine** blade.
 5. Fill in the  **Basics**  tab:
 
     - **Subscription** : If you have more than one subscription, select the one on which the machine will be created and billed. You must have resource creation privileges for this subscription.
