@@ -58,6 +58,8 @@ landingContent:
           url: /gaming/azure/
         - text: Azure Cloud Build Pipelines
           url: /gaming/azure/reference-architectures/azurecloudbuilds-0-intro/
+        - text: Troubleshooting
+          url: troubleshoot-support.md  
 
 
 
