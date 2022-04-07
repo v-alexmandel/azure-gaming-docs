@@ -33,4 +33,9 @@
   - name: Use Azure Files for network derived data cache with Unreal Engine
     href: use-azure-files-for-global-ddc.md
   - name: Integrate with a Perforce Depot
-    href: integrate-perforce-depot.md          
+    href: integrate-perforce-depot.md
+- name: Resources
+  expanded: false
+  items:
+  - name: Troubleshooting
+    href: troubleshoot-support.md               
