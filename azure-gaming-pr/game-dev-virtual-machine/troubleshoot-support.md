@@ -10,7 +10,7 @@ ms.prod: azure-gaming
 
 # Troubleshoot Azure Game Development Virtual Machine and Get Support
 
-The Game Development Virtual machine is built on top of common Windows images currently available in Azure, which allows you to use much of the same troubleshooting guidance found for general Azure VMs. For more details about how to get support with your Azure VMs, please visit the [Azure support FAQ](https://azure.microsoft.com/support/faq/#support-overview).
+The Game Development Virtual Machine is built on top of common Windows images currently available in Azure, which allows you to use much of the same troubleshooting guidance found for general Azure VMs. For more details about how to get support with your Azure VMs, please visit the [Azure support FAQ](https://azure.microsoft.com/support/faq/#support-overview).
 
 We are very eager to hear your feedback and invite you to share your experiences and feedback in our [survey](https://forms.office.com/r/VHK5iEqeBm); however, be sure to [create a ticket](https://azure.microsoft.com/support/create-ticket/) in the Azure Portal if you run into issues that require support to help unblock you. Additionally, join our [Game Stack Discord channel](https://discord.gg/6WWxr3xXBY) to connect with thousands of game developers around the world and talk with the Game Development Virtual Machine team.
 
@@ -81,7 +81,7 @@ Here are some additional Parsec technical resources:
 
 ### Teradici
 
-The pre-installed Teradici component in the Game Development VM is the [Teradici PCoIP Graphics Agent for Windows 21.07](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/windows/21.07/). If you need, first follow the [instructions to remote into the VM with Teradici](./remote-to-vm-with-teradici.md).If you can access the VM via RDP but not Teradici, please make sure the ports: 4172, 443 and 60443 are not blocked by a firewall in your network environment.
+The pre-installed Teradici component in the Game Development VM is the [Teradici PCoIP Graphics Agent for Windows 21.07](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/windows/21.07/). If you need, first follow the [instructions to remote into the VM with Teradici](./remote-to-vm-with-teradici.md). If you can access the VM via RDP but not Teradici, please make sure the ports: 4172, 443 and 60443 are not blocked by a firewall in your network environment.
 
 :::image type="content" source="./media/troubleshoot-support/teradici-rdp.png" alt-text="Screenshot showing Teradici remote connections to a VM":::
 
