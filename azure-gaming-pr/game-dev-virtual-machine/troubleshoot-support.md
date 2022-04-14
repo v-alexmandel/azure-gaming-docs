@@ -12,7 +12,7 @@ ms.prod: azure-gaming
 
 The Game Development Virtual Machine is built on top of common Windows images currently available in Azure, which allows you to use much of the same troubleshooting guidance found for general Azure VMs. For more details about how to get support with your Azure VMs, please visit the [Azure support FAQ](https://azure.microsoft.com/support/faq/#support-overview).
 
-We are very eager to hear your feedback and invite you to share your experiences and feedback in our [survey](https://forms.office.com/r/VHK5iEqeBm); however, be sure to [create a ticket](https://azure.microsoft.com/support/create-ticket/) in the Azure Portal if you run into issues that require support to help unblock you. Additionally, join our <a href="https://discord.com/channels/684463257276121192/949072214689452083" target="_blank">Game Stack Discord channel</a> to connect with thousands of game developers around the world and talk with the Game Development Virtual Machine team.
+We are very eager to hear your feedback and invite you to share your experiences and feedback in our <a href="https://forms.office.com/r/VHK5iEqeBm" target="_blank">survey</a>; however, be sure to [create a ticket](https://azure.microsoft.com/support/create-ticket/) in the Azure Portal if you run into issues that require support to help unblock you. Additionally, join our <a href="https://discord.com/channels/684463257276121192/949072214689452083" target="_blank">Game Stack Discord channel</a> to connect with thousands of game developers around the world and talk with the Game Development Virtual Machine team.
 
 This article describes common support issues that customers might experience, and guidance from us about how to resolve them.
 
@@ -48,7 +48,7 @@ In some cases, if you see a pencil icon, then you click it and set up a [new quo
 ```azurecli-interactive
 az vm list-skus --all --output table | sort | grep "\([[:alnum:]]\+[[:space:]]\+\)Standard_N\(V[[:digit:]]\+\(s_v3\)\?\|C[[:digit:]]\+as_T4_v3\)\b"
 ```
-**Example 2:** Get the compute resource usage, which supports Game Dev VM for the West US region in your Azure subscription
+**Example 2:** Get the compute resource usage, which supports Game Dev VM for the West US region in your Azure subscription.
 ```azurecli-interactive
 az vm list-usage --location westus -o table | sort | grep "\(NV\|NVSv3\|NCASv3_T4\)\b"
 ```
