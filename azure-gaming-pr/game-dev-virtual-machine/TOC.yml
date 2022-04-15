@@ -34,6 +34,8 @@
     href: use-azure-files-for-global-ddc.md
   - name: Integrate with a Perforce Depot
     href: integrate-perforce-depot.md
+  - name: Enable Pixel Streaming
+    href: enable-pixel-streaming.md  
 - name: Resources
   expanded: false
   items:
